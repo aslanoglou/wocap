@@ -1,56 +1,621 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="description" content="Tailwind Starter" />
-    <link as="style" rel="preload" href="./styles.css" />
-    <link href="./styles.css" rel="stylesheet">
-    <title>Tailwind Starter</title>
+    <meta charset="UTF-8"/>
+    <link href="/roompulse.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Simplify rate shopping with actionable insights, intelligent alerts, and automated room pricing to maximize your revenue growth." />
+    <link as="style" rel="preload" href="/style.css" />
+    <link rel="stylesheet" href="/style.css"/>
+    <title>roompulse</title>
 </head>
-<body>
-<div class="@container/main max-w-large large:bg-red-400 mx-auto p-4">
-    <h1 class="">
-        Hello world!
-        <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-    </h1>
-    <h2 class="">
-        Hello world!
-        <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-    </h2>
-    <h3 class="">
-        Hello world!
-        <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-    </h3>
-    <h4 class="">
-        Hello world!
-        <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-    </h4>
-    <h5 class="">
-        Hello world!
-        <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-    </h5>
-    <h6 class="">
-        Hello world!
-        <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-    </h6>
-    <div class="flex flex-row @desktop/main:bg-green-400">
-        <h1 class="">
-            Hello world!
-            <span class="font-icoMoon after:content-[var(--icon-stars)]"></span>
-        </h1>
-    </div>
-</div>
-<div class="@container/second max-w-large mx-auto p-4">
-    <div class="flex flex-row @min-desktop/second:w-[50cqw]">
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-            <span class="font-icoMoon after:content-[var(--icon-stars)]">
 
-            </span>
-        </h1>
+<body class="m-0 bg-white text-base font-normal text-grey-900">
+<!--nav data-bg values: none / blue / light-blue-->
+<nav data-bg="none" class="group animate-delay-0 fixed start-0 top-0 z-20 w-full px-4 py-4 bg-blue-100 data-[bg=blue]:bg-blue-500 data-[bg=light-blue]:bg-blue-400">
+    <div class="max-w-screen-2xl mx-auto flex flex-wrap items-center">
+        <a aria-label="roompulse" class="flex items-center lg:mr-10 z-10 text-blue-500 group-data-[bg=blue]:text-white" href="/">
+            <img src="/img/logo.svg" alt="roompulse" class="h-10">
+        </a>
+        <div class="flex space-x-3 lg:order-2 ml-auto rtl:space-x-reverse relative z-20">
+            <button
+                    aria-controls="navbar-sticky"
+                    aria-expanded="false"
+                    class="group relative z-20 inline-flex flex-col gap-1 justify-center h-8 w-8 items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
+                    data-collapse-toggle="navbar-sticky"
+                    type="button"
+            >
+                <span class="sr-only">Open main menu</span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:opacity-0"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
+            </button>
+        </div>
+        <div class="bg-white lg:bg-transparent w-full px-4 pt-[73px] lg:pt-0 lg:px-0 lg:items-center justify-between lg:order-1 lg:grow flex flex-col lg:flex-row lg:w-auto h-full lg:h-auto top-0 transition-transform translate-x-0 lg:translate-x-0 [&.active]:-translate-x-full [&.active]:lg:translate-x-0 lg:transition-none left-full lg:left-0 fixed lg:relative group-data-[bg=blue]:max-lg:before:block group-data-[bg=blue]:max-lg:before:bg-blue-500 group-data-[bg=blue]:max-lg:before:w-full group-data-[bg=blue]:max-lg:before:absolute group-data-[bg=blue]:max-lg:before:top-0 group-data-[bg=blue]:max-lg:before:left-0 group-data-[bg=blue]:max-lg:before:h-[64px]"
+             id="navbar-sticky">
+
+            <ul class="mt-4 flex flex-col px-0 py-4 text-base lg:mt-0 lg:flex-row lg:p-0 rtl:space-x-reverse">
+                <li class="lg:mx-6">
+                    <a class="nav-text-link" href="./features.html">
+                        Features
+                    </a>
+
+                </li>
+                <li class="lg:mx-6">
+                    <a class="nav-text-link"
+                       href="./company.html">Company</a>
+                </li>
+                <li class="lg:mx-6">
+                    <a class="nav-text-link"
+                       href="./contact.html">Contact us</a>
+                </li>
+            </ul>
+            <ul class=" max-lg:mt-18 flex flex-col px-0 py-4 text-base lg:items-center lg:text-md base lg:mt-0 lg:grow lg:flex-row lg:p-0 rtl:space-x-reverse">
+                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link text-blue-500 max-lg:text-center"
+                       href="#">Sign In</a>
+                </li>
+                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
+                    <button class="btn-primary group-data-[bg=blue]:lg:btn-white btn-primary--outline group-data-[bg=blue]:lg:btn-white--outline btn-primary--small group-data-[bg=blue]:lg:btn-white--small w-full lg:w-auto"
+                            type="button">Talk to an expert
+                    </button>
+                </li>
+                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
+                    <button class="w-full lg:w-auto btn-primary btn-primary--small group-data-[bg=blue]:lg:btn-white group-data-[bg=blue]:lg:btn-white--small"
+                            type="button">Start free
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
+
+<section class="pt-40 pb-20 bg-blue-100">
+    <div class="xl:container mx-auto px-4 xl:px-0">
+        <div class="flex flex-col lg:flex-row gap-20">
+            <div class="flex lg:flex-1 flex-col justify-center items-start">
+                <h1 class="h1"><span>Transform Your Hotel Pricing</span>
+                    with Roompulse </h1>
+                <p class="rfs:text-xl mb-8">Simplify rate shopping with actionable insights, intelligent alerts, and automated
+                    room pricing to maximize your revenue growth.</p>
+                <div class="flex flex-wrap gap-4 w-full">
+                    <div class="flex flex-col flex-1 text-center">
+                        <a class="btn-primary w-full" href="">Start Free</a>
+                        <span class="text-md"><i class="icon-check-simple mr-2 text-blue-500 font-bold"></i>No credit card required</span>
+                    </div>
+                    <div class="flex-1">
+                        <a class="btn-primary btn-primary--outline w-full" href="">Talk to an expert</a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-4 w-full items-center">
+                    <div class="text-center">
+                        <a class="btn-primary w-full" href="">Start Free</a>
+                    </div>
+                    <div class="grow">
+                        <p class="block text-md">Free 14-day full trial
+                            <span class="block">No credit card required</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="lottie" class="flex-1 aspect-square">
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/243f6229-dd38-4d21-9d40-8dbbbfda4199/yqH58tlPQa.lottie" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></dotlottie-player>
+<!--                <img loading="eager" alt="" class="mx-auto" height="560" src="/img/home-hero-img.png" width="560">-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-20 mb-40 text-center bg-blue-100" >
+    <div class="max-w-[900px] mx-auto px-4" data-animation="fadeInUp">
+        <h2 class="h2 mb-4"><span>Simplify</span> Your Pricing Decisions</h2>
+        <p class="mb-20">Roompulse .io is a SaaS platform that helps hoteliers make smarter pricing decisions and maximize revenue by
+            effortlessly tracking competitor pricing and predicting market trends</p>
+    </div>
+    <picture class=" block relative w-full px-4 after:absolute after:block after:w-full after:bottom-0 after:left-0 after:bg-white after:h-1/2" data-animation="fadeInUp">
+        <img
+                alt=""
+                class="mx-auto relative z-10 shadow-xl rounded-3xl bg-white" width="794" height="493"
+                src="/img/price-decisions.png">
+    </picture>
+</section>
+
+<section class="bg-white mt-40 mb-40">
+    <div class="xl:container mx-auto px-4 xl:px-0">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            <article data-animation="fadeInUp" class="animate-delay-0 relative aspect-square lg:aspect-auto 2xl:aspect-square flex flex-col content-between justify-between p-6 text-grey-200 rounded-2xl bg-blue-500 overflow-hidden">
+                <picture>
+<!--                    <source media="(max-width: 639px)" srcset="https://placehold.co/607x607/2463EB/FFF">-->
+                    <img
+                            alt=""
+                            class="absolute object-cover h-full w-full top-0 left-0"
+                            width="376"
+                            height="360"
+                            src="/img/metrics.png">
+                </picture>
+
+                <span class="icon-metrics-1 z-10 text-3xl"></span>
+                <h3 class="z-10 mt-auto rfs:text-5xl text-grey-200 font-bold font-PPPangram">
+                    20M+
+                </h3>
+                <p class="z-10 text-base lg:text-2xl ">Competitor Rates Analyzed Daily</p>
+            </article>
+            <article data-animation="fadeInUp" class="animate-delay-200 relative aspect-auto lg:aspect-auto 2xl:aspect-square flex flex-col content-between justify-between p-6 text-grey-200 rounded-2xl bg-blue-500 overflow-hidden">
+                <span class="icon-metrics-2 z-10 text-3xl"></span>
+                <h3 class="z-10 mt-auto rfs:text-5xl text-grey-200 font-bold font-PPPangram">
+                    <p>50M+</p>
+                </h3>
+                <p class="z-10 text-base lg:text-2xl ">Countries with Localized Market Data</p>
+            </article>
+            <div data-animation="fadeInUp" class="animate-delay-400 grid grid-cols-2 lg:grid-cols-none lg:grid-rows-2 gap-2 sm:col-span-2 lg:col-span-1">
+                <article
+                        class="relative flex flex-col justify-center p-6 text-grey-200 rounded-2xl bg-grey-900 overflow-hidden">
+                    <h3 class="z-10 rfs:text-5xl text-grey-200 font-bold font-PPPangram">
+                        5 minute
+                    </h3>
+                    <p class="z-10 text-base lg:text-2xl ">Setup Time for Hotels</p>
+                </article>
+                <article
+                        class="relative flex flex-col justify-center p-6 text-grey-800 rounded-2xl bg-grey-500 overflow-hidden">
+                    <h3 class="z-10 rfs:text-5xl text-blue-500 font-bold font-PPPangram">
+                        100.000
+                    </h3>
+                    <p class="z-10 text-base lg:text-2xl text-grey-800 ">Competitor Pricing Strategies Tracked</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-40 mb-20">
+    <div class="xl:container mx-auto px-4 xl:px-0 flex flex-col items-center">
+        <h2 class="h3 rfs:leading-10 text-center">Trusted by leading hotels</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-20 my-10">
+            <a href="#">
+                <img src="/img/koshotel_white.png" width="88" height="45" alt="Kos Hotel">
+            </a>
+            <a href="#">
+                <img src="/img/san-antonio.png" width="117" height="53" alt="San Antonio">
+            </a>
+            <a href="#">
+                <img src="/img/koshotel_white.png" width="88" height="45" alt="Kos Hotel">
+            </a>
+            <a href="#">
+                <img src="/img/san-antonio.png" width="117" height="53" alt="San Antonio">
+            </a>
+        </div>
+        <a href="" class="btn-primary btn-primary--outline mx-auto">Talk to an expert</a>
+    </div>
+</section>
+
+<section class="mt-40 mb-20">
+    <div class="xl:container mx-auto px-4 xl:px-0">
+        <h2 class="h2 mb-8 text-center"><span>Explore</span> Our Features</h2>
+        <div data-animation="fadeInUp" class="grid lg:grid-cols-2 bg-blue-500 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-bottom rounded-t-3xl">
+            <div class="pt-16 lg:pt-32 max-lg:px-8 lg:pl-16 pb-16">
+                <h3 class="h2 text-grey-200 font-PPPangram mb-6">Advanced Pricing Suite</h3>
+                <div class="flex flex-wrap gap-4">
+                    <a href="" class="btn-white">Start free</a>
+                    <a href="" class="btn-white btn-white--outline">Learn more</a>
+                </div>
+            </div>
+            <div class="flex max-lg:pl-8 justify-end lg:pt-16 lg:items-end">
+                <picture>
+<!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
+                    <img alt="" width="590" height="403" src="/img/features.png">
+                </picture>
+            </div>
+        </div>
+
+        <div class="px-8 py-8 lg:px-16 lg:py-16 bg-blue-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 rounded-b-3xl border border-grey-400 border-t-0">
+            <article data-animation="fadeInUp" class="lg:animate-delay-0">
+                <span class="icon-pc-search text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Advanced Rate Shopping</h4>
+                <p>Monitor real-time prices across multiple booking platforms to stay competitive.</p>
+            </article>
+            <article data-animation="fadeInUp" class="lg:animate-delay-150">
+                <span class="icon-bell text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Intelligent Alerts System</h4>
+                <p>Never miss a market shift—get instant alerts so you can adjust your prices proactively.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-300">
+                <span class="icon-squares-plus text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Flexisets</h4>
+                <p>Build flexible sets of hotels, Airbnbs, or mixed portfolios to analyze price changes, occupancy patterns, and competitive performance. Unlock deeper market insights to optimize pricing strategies.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-0">
+                <span class="icon-check text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Competitor Pace Analysis</h4>
+                <p>Understand booking trends by analyzing competitors' occupancy rates to make proactive decisions.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-150">
+                <span class="icon-calendar text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Event Impact Analysis</h4>
+                <p>Track local events that influence accommodation demand, allowing you to anticipate market fluctuations and optimize your pricing strategy.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-300">
+                <span class="icon-lamp text-2xl text-blue-500 mb-2"></span>
+                <span class="bg-light-violet text-dark-violet text-mb px-2 py-1.5 font-bold rounded leading-none align-super">BETA</span>
+                <h4 class="h3 mb-2">Price Recommendations and Integration</h4>
+                <p>Receive smart price recommendations and seamlessly update rates through your Channel Manager or PMS.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="mt-20 mb-20">
+    <div data-animation="fadeInUp" class="xl:container mx-auto px-4 xl:px-0">
+        <div class="grid lg:grid-cols-2 bg-grey-900 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-bottom rounded-t-3xl">
+            <div class="pt-16 lg:pt-32 max-lg:px-8 lg:pl-16 pb-8 lg:pb-16">
+                <span class="inline-block bg-green-bg text-grey-900 text-mb px-2 py-1.5 mb-2 font-bold rounded leading-none">COMING SOON</span>
+                <h3 class="h2 text-grey-200 font-PPPangram mb-6">Guest Feedback Management</h3>
+<!--                <div class="flex flex-wrap gap-2">-->
+<!--                    <a href="" class="btn-white btn-white&#45;&#45;outline">Request early access</a>-->
+<!--                </div>-->
+            </div>
+            <div class="flex justify-end max-lg:pl-8 lg:pt-16 lg:items-end">
+                <picture>
+<!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
+                    <img alt="" width="575" height="428" src="/img/feedback-management.png">
+                </picture>
+            </div>
+        </div>
+
+        <div class="px-8 py-8 lg:px-16 lg:py-16 bg-grey-300 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 rounded-b-3xl">
+            <article data-animation="fadeInUp"  class="lg:animate-delay-0">
+                <span class="icon-messages text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Review Management Module</h4>
+                <p>Analyze and categorize guest feedback from multiple platforms to uncover key trends and actionable insights. Enhance your online reputation by proactively addressing concerns and celebrating positive reviews.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-150">
+                <span class="icon-inbox text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Unified Review Inbox</h4>
+                <p>Manage and respond to customer reviews from multiple platforms in one place, streamlining your workflow and saving time.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-300">
+                <span class="icon-robot text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">AI-Powered Review Responses</h4>
+                <p>Generate personalized, on-brand replies to reviews with just one click, enhancing customer engagement without the extra effort.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-0">
+                <span class="icon-folder-star text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Multi-Channel Feedback Collection</h4>
+                <p>Collect customer feedback through online reviews, email surveys, QR code surveys, and website surveys to gain comprehensive insights.</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-150">
+                <span class="icon-target text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Actionable Satisfaction Metrics</h4>
+                <p>Measure performance effortlessly with built-in metrics like Net Promoter Score (NPS), Customer Satisfaction Score (CSAT), and Customer Effort Score (CES).</p>
+            </article>
+            <article data-animation="fadeInUp"  class="lg:animate-delay-300">
+                <span class="icon-clock text-2xl text-blue-500 mb-2"></span>
+                <h4 class="h3 mb-2">Real-Time Alerts and Notifications</h4>
+                <p>Stay updated with instant alerts for new reviews and feedback, enabling you to address customer concerns promptly.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!--<section class="mt-20 mb-20">-->
+<!--    <div class="xl:container mx-auto px-4 xl:px-0">-->
+<!--        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-10 text-center"><span>What sets us</span> apart</h2>-->
+<!--        <div class="grid lg:grid-cols-3 gap-6">-->
+<!--            <article data-animation="fadeInUp" class="lg:animate-delay-0 flex items-center">-->
+<!--                <span class="icon-bell flex items-center justify-center mr-4 text-blue-500 bg-blue-500 bg-opacity-10 rounded-full h-12 w-12 flex-none text-2xl"></span>-->
+<!--                <p>Real-Time Competitor Tracking and Intelligent Price Alerts</p>-->
+<!--            </article>-->
+<!--            <article data-animation="fadeInUp" class="lg:animate-delay-150 flex items-center">-->
+<!--                <span class="icon-pin flex items-center justify-center mr-4 text-blue-500 bg-blue-500 bg-opacity-10 rounded-full h-12 w-12 flex-none text-2xl"></span>-->
+<!--                <p>Deep Hyper-Local and Local Market Analytics</p>-->
+<!--            </article>-->
+<!--            <article data-animation="fadeInUp" class="lg:animate-delay-300 flex items-center">-->
+<!--                <span class="icon-pc-mobile flex items-center justify-center mr-4 text-blue-500 bg-blue-500 bg-opacity-10 rounded-full h-12 w-12 flex-none text-2xl"></span>-->
+<!--                <p>Intuitive Platform Making Pricing Decisions Effortless</p>-->
+<!--            </article>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section class="mt-20 mb-20 bg-lighter-blue-bg">
+    <div class="xl:container mx-auto px-4 xl:px-0 py-20">
+        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-10 text-center"><span>What sets us</span> apart</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article data-animation="fadeInUp" class="lg:animate-delay-0 flex flex-col bg-grey-200 p-6 rounded-2xl">
+                <span class="icon-bell text-blue-500 text-2xl mb-6"></span>
+                <h3 class="h3 mb-2 text-blue-500">Real-time customized alerts</h3>
+                <p class="mb-4">Get notified in real-time and make smarter pricing decisions.</p>
+                <picture class="flex justify-center">
+                    <img src="/img/customized-alerts.png" width="317" height="200" alt="Real-time customized alerts">
+                </picture>
+            </article>
+            <article data-animation="fadeInUp" class="lg:animate-delay-150 flex flex-col bg-beige p-6 rounded-2xl">
+                <span class="icon-eye text-blue-500 text-2xl mb-6"></span>
+                <h3 class="h3 mb-2 text-blue-500">Unified view</h3>
+                <p class="mb-4">Have control of member, mobile, and all rate types in a glance.</p>
+                <picture class="flex justify-center">
+                    <img src="/img/unified-view.png" width="318" height="200" alt="Real-time customized alerts">
+                </picture>
+            </article>
+            <article data-animation="fadeInUp" class="lg:animate-delay-300 flex flex-col bg-blue-500 p-6 rounded-2xl">
+                <span class="icon-search-stats text-white text-2xl mb-6"></span>
+                <h3 class="h3 mb-2 text-white">Market insights</h3>
+                <p class="mb-4 text-white">Gain real-time insights into competitor availability and pace trends</p>
+                <picture class="flex justify-center">
+                    <img src="/img/markets-insights.png"  width="317" height="200" alt="Real-time customized alerts">
+                </picture>
+            </article>
+            <article data-animation="fadeInUp" class="lg:animate-delay-0 flex flex-col bg-pink p-6 rounded-2xl">
+                <span class="icon-mobile-check text-blue-500 text-2xl mb-6"></span>
+                <h3 class="h3 mb-2 text-blue-500">Mobile-friendly design</h3>
+                <p class="mb-4">Use your mobile and stay connected anywhere.</p>
+                <picture class="flex justify-center">
+                    <img src="/img/mobile-friendly-design.png" width="317" height="200" alt="Real-time customized alerts">
+                </picture>
+            </article>
+            <article data-animation="fadeInUp" class="lg:animate-delay-150 flex flex-col bg-grey-900 p-6 rounded-2xl">
+                <span class="icon-laptop-search text-white text-2xl mb-6"></span>
+                <h3 class="h3 mb-2 text-white">Competitor data</h3>
+                <p class="mb-4 text-white">Instantly access competitor data on your booking engine screen.</p>
+                <picture class="flex justify-center">
+                    <img src="/img/competitor-data.png" width="318" height="200" alt="Real-time customized alerts">
+                </picture>
+            </article>
+            <article data-animation="fadeInUp" class="lg:animate-delay-300 flex flex-col bg-blue-bg p-6 rounded-2xl">
+                <span class="icon-recycle text-blue-500 text-2xl mb-6"></span>
+                <h3 class="h3 mb-2 text-blue-500">Scheduled refresh engine</h3>
+                <p class="mb-4">Stop worrying about handling various length-of-stays, channels and rates.</p>
+                <picture class="flex justify-center">
+                    <img src="/img/schedule-refresh-engine.png" width="317" height="200" alt="Real-time customized alerts">
+                </picture>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!--<section class="mt-20 mb-40 bg-blue-100 py-20 px-4">-->
+<!--    <div class="xl:container mx-auto px-4 xl:px-30 rounded-3xl bg-white bg-opacity-50 py-20">-->
+<!--        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-4 text-center"><span>Seamless Integration</span> with Your Systems</h2>-->
+<!--        <p data-animation="fadeInUp" class="animate-delay-150 text-center mb-20 rfs:text-xl">Roompulse  integrates effortlessly with all PMS and hotel systems</p>-->
+
+<!--        <div class="grid lg:grid-cols-2 gap-18 items-center">-->
+<!--            <p data-animation="fadeInUp" class="lg:animate-delay-0">Already connected with WebHotelier, we're actively working on many more integrations. Our flexible platform ensures compatibility, making implementation smooth and simple.</p>-->
+<!--            <div class="flex items-center justify-center">-->
+<!--                <figure data-animation="fadeInUp" class="lg:animate-delay-150 aspect-square bg-white rounded-xl shadow-xl w-full max-w-60 flex z-10">-->
+<!--                    <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>-->
+<!--                </figure>-->
+<!--                <figure data-animation="fadeInUp" class="lg:animate-delay-300 aspect-square bg-white rounded-xl border border-grey-400 w-48 flex flex-col items-center justify-center text-center text-grey-800 px-6 translate-x-3 text-md">-->
+<!--                    <span class="icon-calendar text-blue-500 text-2xl mb-2"></span>-->
+<!--                    <p>Many more integrations are coming soon</p>-->
+<!--                </figure>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section class="mt-20 mb-40 bg-blue-100 py-20 px-4">
+    <div class="xl:container mx-auto px-4 xl:px-30 rounded-3xl bg-white bg-opacity-50 py-20">
+        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-4 text-center"><span>Seamless Integration</span> with Your Systems</h2>
+        <p data-animation="fadeInUp" class="animate-delay-150 text-center mb-20 rfs:text-xl">Roompulse  integrates effortlessly with all PMS and hotel systems</p>
+
+        <div class="flex items-center justify-center max-md:flex-col max-md:space-y-9 md:space-x-18 md:rtl:space-x-reverse">
+            <figure data-animation="fadeInUp" class="md:animate-delay-0 aspect-square bg-white rounded-xl shadow-[0px_8.205px_24.615px_0px_rgba(48,61,91,0.15)] w-full max-w-[180px] flex z-10">
+                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>
+            </figure>
+            <figure data-animation="fadeInUp" class="md:animate-delay-150 aspect-square bg-white rounded-xl shadow-[0px_8.205px_24.615px_0px_rgba(48,61,91,0.15)] w-full max-w-[180px] flex z-10">
+                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/sabeeapp-logo.png" width="146" height="36" alt="Webhoteliers"></a>
+            </figure>
+            <figure data-animation="fadeInUp" class="md:animate-delay-300 aspect-square bg-white rounded-xl border border-grey-400 w-full max-w-[180px] flex flex-col items-center justify-center text-center text-grey-800 px-6 translate-x-3 text-md">
+                <span class="icon-calendar text-blue-500 text-2xl mb-2"></span>
+                <p>Many more integrations are coming soon</p>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<!--<section class="mt-20 mb-40 bg-blue-100 py-20 px-4" data-animation="fadeInUp">-->
+<!--    <div class="xl:container mx-auto px-4 xl:px-30 rounded-3xl bg-white bg-opacity-50 py-20">-->
+<!--        <h2 class="h2 mb-4 text-center"><span>Seamless Integration</span> with Your Systems</h2>-->
+<!--        <p class="text-center mb-20 rfs:text-xl">Roompulse  integrates effortlessly with all PMS and hotel systems</p>-->
+
+<!--        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">-->
+<!--            <figure class="aspect-square bg-white rounded-xl shadow-xl w-full max-w-60 flex z-10 mx-auto">-->
+<!--                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>-->
+<!--            </figure>-->
+<!--            <figure class="aspect-square bg-white rounded-xl shadow-xl w-full max-w-60 flex z-10 mx-auto">-->
+<!--                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>-->
+<!--            </figure>-->
+<!--            <figure class="aspect-square bg-white rounded-xl shadow-xl w-full max-w-60 flex z-10 mx-auto">-->
+<!--                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>-->
+<!--            </figure>-->
+<!--            <figure class="aspect-square bg-white rounded-xl shadow-xl w-full max-w-60 flex z-10 mx-auto">-->
+<!--                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>-->
+<!--            </figure>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!--<section class="mt-40 mb-40" >-->
+<!--    <div class="xl:container px-4 mx-auto xl:px-0">-->
+<!--        <h2 class="h2 mb text-center mb-10"><span>What’s</span> new</h2>-->
+<!--        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">-->
+<!--            <article class="p-8 rounded-3xl bg-grey-200 border border-grey-400 flex flex-col items-start"  data-animation="fadeInUp">-->
+<!--                <picture class="mb-6">-->
+<!--&lt;!&ndash;                    <source media="(max-width: 1023px)" srcset="https://placehold.co/417x306/pink/FFF">&ndash;&gt;-->
+<!--                    <img class="rounded-2xl w-full" src="/img/new-1.png" width="311" height="228" alt="new">-->
+<!--                </picture>-->
+<!--                <span class="bg-blue-500 bg-opacity-10 text-blue-500 text-mb px-2 py-1.5 font-bold rounded leading-none mb-2">TIPS</span>-->
+<!--                <h3 class="font-PPPangram rfs:text-2xl rfs:leading-8 mb-7">Maximizing Revenue Through Dynamic Pricing Strategies</h3>-->
+<!--                <a href="" aria-label="Read More" class="btn-arrow text-2xl"><span class="icon-arrow"></span></a>-->
+<!--            </article>-->
+<!--            <article class="p-8 rounded-3xl bg-grey-200 border border-grey-400 flex flex-col items-start"  data-animation="fadeInUp">-->
+<!--                <picture class="mb-6">-->
+<!--&lt;!&ndash;                    <source media="(max-width: 1023px)" srcset="https://placehold.co/417x306/pink/FFF">&ndash;&gt;-->
+<!--                    <img class="rounded-2xl w-full" src="/img/new-2.png" width="311" height="228" alt="new">-->
+<!--                </picture>-->
+<!--                <span class="bg-blue-500 bg-opacity-10 text-blue-500 text-mb px-2 py-1.5 font-bold rounded leading-none mb-2">TIPS</span>-->
+<!--                <h3 class="font-PPPangram rfs:text-2xl rfs:leading-8 mb-7">The Power of Competitor Rate Shopping in the Hospitality Industry</h3>-->
+<!--                <a href="" aria-label="Read More" class="btn-arrow text-2xl"><span class="icon-arrow"></span></a>-->
+<!--            </article>-->
+<!--            <article class="p-8 rounded-3xl bg-grey-200 border border-grey-400 flex flex-col items-start"  data-animation="fadeInUp">-->
+<!--                <picture class="mb-6">-->
+<!--&lt;!&ndash;                    <source media="(max-width: 1023px)" srcset="https://placehold.co/417x306/pink/FFF">&ndash;&gt;-->
+<!--                    <img class="rounded-2xl w-full" src="/img/new-3.png" width="311" height="228" alt="new">-->
+<!--                </picture>-->
+<!--                <span class="bg-blue-500 bg-opacity-10 text-blue-500 text-mb px-2 py-1.5 font-bold rounded leading-none mb-2">TIPS</span>-->
+<!--                <h3 class="font-PPPangram rfs:text-2xl rfs:leading-8 mb-7">Leveraging Guest Reviews to Enhance Your Hotel's Online Reputation</h3>-->
+<!--                <a href="" aria-label="Read More" class="btn-arrow text-2xl"><span class="icon-arrow"></span></a>-->
+<!--            </article>-->
+<!--        </div>-->
+<!--        <div class="text-center">-->
+<!--            <a href="" aria-label="Read More" class="btn-primary btn-primary&#45;&#45;outline">Read more</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section class="bg-white mt-40 mb-40 px-4 faqs">
+    <div class="max-w-[900px] mx-auto">
+        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-20 text-center"><span>Frequently Asked</span> Questions</h2>
+        <div data-animation="fadeInUp" class="grid grid-rows-1 gap-0">
+            <details>
+                <summary>
+                    <h3 class="faqs__title">What is Roompulse  and how can it help my hotel?</h3>
+                </summary>
+            </details>
+            <div role="definition" class="content">
+                <p>Roompulse  is a SaaS (Software as a Service) platform designed specifically for hoteliers to optimize
+                    their pricing strategies and maximize revenue. It offers real-time rate shopping, intelligent
+                    alerts, automated room mapping, competitor analysis, and predictive analytics—all in one intuitive
+                    platform. By using Roompulse , you can stay competitive in the market, make informed pricing
+                    decisions, and save valuable time.</p>
+            </div>
+
+            <details>
+                <summary>
+                    <h3 class="faqs__title">How do I get started with Roompulse ?</h3>
+                </summary>
+            </details>
+            <div role="definition" class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa
+                    massa ultricies. Congue nisi vitae suscipit tellus. Mollis aliquam ut porttitor leo a diam
+                    sollicitudin tempor. Nam aliquam sem et tortor consequat id porta. Quam quisque id diam vel. Donec
+                    massa sapien faucibus et molestie. Sed odio morbi quis commodo odio aenean sed. Amet est placerat in
+                    egestas erat.</p>
+            </div>
+
+            <details>
+                <summary>
+                    <h3 class="faqs__title">Is Roompulse  suitable for small and medium-sized hotels?</h3>
+                </summary>
+            </details>
+            <div role="definition" class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Enim sed faucibus
+                    turpis in eu mi. Nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat
+                    vivamus at augue eget arcu.</p>
+            </div>
+
+            <details>
+                <summary>
+                    <h3 class="faqs__title">Do you offer a free trial or demo of Roompulse ?</h3>
+                </summary>
+            </details>
+            <div role="definition" class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa
+                    massa ultricies. Congue nisi vitae suscipit tellus. Mollis aliquam ut porttitor leo a diam
+                    sollicitudin tempor. Nam aliquam sem et tortor consequat id porta. Quam quisque id diam vel. Donec
+                    massa sapien faucibus et molestie. Sed odio morbi quis commodo odio aenean sed. Amet est placerat in
+                    egestas erat.</p>
+            </div>
+
+            <details>
+                <summary>
+                    <h3 class="faqs__title">How much does Roompulse  cost?</h3>
+                </summary>
+            </details>
+            <div role="definition" class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames. Et pharetra
+                    pharetra massa massa ultricies mi quis hendrerit. Leo in vitae turpis massa sed elementum. Platea
+                    dictumst vestibulum rhoncus est pellentesque elit. A arcu cursus vitae congue mauris rhoncus aenean
+                    vel elit. Morbi tristique senectus et netus et malesuada. Libero volutpat sed cras ornare arcu dui.
+                    Nunc sed blandit libero volutpat. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.
+                    Morbi tristique senectus et netus et. Eu consequat ac felis donec et odio pellentesque diam. Eget
+                    egestas purus viverra accumsan in nisl. Neque volutpat ac tincidunt vitae. Vel orci porta non
+                    pulvinar neque laoreet suspendisse. Amet commodo nulla facilisi nullam vehicula ipsum. Vitae
+                    elementum curabitur vitae nunc sed velit dignissim. Pharetra diam sit amet nisl suscipit adipiscing
+                    bibendum est ultricies. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Augue
+                    eget arcu dictum varius.</p>
+            </div>
+
+            <details>
+                <summary>
+                    <h3 class="faqs__title">How does Roompulse  collect and update competitor pricing data?</h3>
+                </summary>
+            </details>
+            <div role="definition" class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa
+                    massa ultricies. Congue nisi vitae suscipit tellus. Mollis aliquam ut porttitor leo a diam
+                    sollicitudin tempor. Nam aliquam sem et tortor consequat id porta. Quam quisque id diam vel. Donec
+                    massa sapien faucibus et molestie. Sed odio morbi quis commodo odio aenean sed. Amet est placerat in
+                    egestas erat.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-40 mb-20">
+    <div class="xl:container mx-auto px-4 xl:px-0">
+        <div class="flex text-center flex-col justify-center py-20 px-8 md:px-20 items-center bg-blue-500 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-right-bottom rounded-3xl">
+            <h3 data-animation="fadeInUp" class="animate-delay-0 h2 text-grey-200 font-PPPangram mb-6">Unlock your potential</h3>
+            <p data-animation="fadeInUp" class="animate-delay-150 mb-20 text-white rfs:text-xl">Start now with Roompulse and stay ahead of the competition</p>
+            <div data-animation="fadeInUp" class="flex justify-center flex-wrap gap-4">
+                <a href="" class="btn-white">Start free</a>
+                <a href="" class="btn-white btn-white--outline">Talk to an expert</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="mt-40 px-4 py-4 lg:py-6 bg-black">
+    <div class="max-w-screen-2xl mx-auto flex flex-col items-center md:items-start md:flex-row md:items-start gap-4">
+        <div class="flex-auto md:flex-[280px] md:grow-0 md:shrink"><a href="/" alt="Roompulse "><img src="/img/logo-white.svg" loading="lazy" width="153" height="24" alt="Roompulse "></a> </div>
+        <nav class="text-md flex-auto flex flex-wrap gap-2 md:gap-6 whitespace-nowrap flex-auto max-md:justify-center justify-start text-gray-200">
+            <a href="./features.html" aria-label="Features">Features </a>
+            <a href="./company.html" aria-label="Company">Company</a>
+            <a href="./contact.html" aria-label="Contact us">Contact us</a>
+            <a href="./terms.html" aria-label="Contact us">Terms of Use</a>
+            <a href="./terms.html" aria-label="Contact us">Privacy Policy</a>
+            <a href="./terms.html" aria-label="Contact us">Cookie Policy</a>
+        </nav>
+        <div>
+            <form class="mb-6">
+                <div class="flex flex-col">
+                    <label for="email" class="text-md mb-3.5 text-gray-400">Sign up for our newsletter</label>
+                    <div class="flex flex-row gap-2">
+                        <input id="email" type="email" placeholder="Type your email" class="rounded-2xl bg-gray-200 border border-grey-800 bg-opacity-10 text-gray-400 text-base h-14 px-4 lg:px-8">
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+            <div class="flex flex-row text-gray-400 items-center gap-6 justify-center md:justify-start">
+                <div class="text-[.75rem]">Follow us:</div>
+                <nav class="text-2xl leading-none flex gap-4">
+                    <a href="/" aria-label="Facebook" class="icon-linkedIn"></a>
+<!--                    <a href="/" aria-label="Instagram" class="icon-instagram"></a>-->
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <div class="max-w-screen-2xl mx-auto mt-4 text-[.75rem] text-gray-400 text-center md:text-left md:mt-16">2024©Roompulse  All rights reserved</div>
+</footer>
 </body>
 <script src="./main.js" type="module"></script>
+<!--<script src="/js/index-animation.js" type="module"></script>-->
+
 </html>

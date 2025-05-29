@@ -1,0 +1,412 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: PPMori;
+        src: url('/fonts/PPMori-Regular.otf');
+        src: url('/fonts/PPMori-Regular.otf#iefix') format('embedded-opentype'),
+        url('/fonts/PPMori-Regular.ttf') format('truetype'),
+        url('/fonts/PPMori-Regular.woff') format('woff'),
+        url('/fonts/PPMori-Regular.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: PPMori;
+        src: url('/fonts/PPMori-Bold.otf');
+        src: url('/fonts/PPMori-Bold.otf#iefix') format('embedded-opentype'),
+        url('/fonts/PPMori-Bold.ttf') format('truetype'),
+        url('/fonts/PPMori-Bold.woff') format('woff'),
+        url('/fonts/PPMori-Bold.woff2') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: PPMori;
+        src: url('/fonts/PPMori-RegularItalic.otf');
+        src: url('/fonts/PPMori-RegularItalic#iefix') format('embedded-opentype'),
+        url('/fonts/PPMori-RegularItalic.ttf') format('truetype'),
+        url('/fonts/PPMori-RegularItalic.woff') format('woff'),
+        url('/fonts/PPMori-RegularItalic.woff2') format('woff');
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: PPPangram;
+        src: url('/fonts/PPPangramSansRounded-Bold.otf');
+        src: url('/fonts/PPPangramSansRounded-Bold.otf#iefix') format('embedded-opentype'),
+        url('/fonts/PPPangramSansRounded-Bold.ttf') format('truetype'),
+        url('/fonts/PPPangramSansRounded-Bold.woff') format('woff'),
+        url('/fonts/PPPangramSansRounded-Bold.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: 'icomoon';
+        src: url('/fonts/icomoon.eot?f6idwg');
+        src: url('/fonts/icomoon.eot?f6idwg#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?f6idwg') format('truetype'),
+        url('/fonts/icomoon.woff?f6idwg') format('woff'),
+        url('/fonts/icomoon.svg?f6idwg#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+    }
+}
+
+
+@layer components {
+    [data-animation] {
+        @apply invisible;
+    }
+
+    .fadeInRight {
+        @apply animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in-out visible;
+    }
+
+    .fadeInLeft {
+        @apply animate-fade-left animate-once animate-duration-1000 animate-delay-500 animate-ease-in-out visible;
+    }
+
+    .jumpIn {
+        @apply animate-jump-in animate-once animate-duration-1000 animate-delay-0 animate-ease-in-out visible;
+    }
+
+    .fadeInUp {
+        @apply animate-fade-up animate-once animate-duration-1000 animate-delay-500 animate-ease-in-out visible;
+    }
+
+    .fadeIn {
+        @apply animate-fade animate-once animate-duration-500 animate-delay-0 animate-ease-in-out visible;
+    }
+
+    .nav-text-link {
+        @apply block relative rounded px-3 py-2 lg:p-0 text-gray-900 group-data-[bg=blue]:lg:text-white lg:after:transition-all lg:after:absolute lg:after:bottom-0 lg:after:rounded-sm lg:after:left-0 lg:after:w-full lg:after:h-0.5 lg:after:bg-blue-500 lg:after:origin-left lg:after:scale-x-0 lg:hover:after:scale-x-100 lg:data-[active]:after:scale-x-100 lg:group-data-[bg=blue]:after:bg-white lg:group-data-[bg=blue]:hover:text-opacity-100 hover:bg-gray-100 lg:hover:bg-transparent transition-all;
+    }
+
+    .btn-primary {
+        @apply inline-block text-center relative overflow-hidden after:content-[attr(data-after)] py-5 px-8 leading-none bg-blue-500 text-white rounded-full  transition-all duration-[1000ms] hover:text-blue-500 hover:bg-blue-200;
+        &:after{
+            @apply transition-all duration-[500ms] absolute left-0 top-0 w-full h-full flex items-center justify-center translate-y-full
+        }
+
+        &--outline {
+            @apply bg-transparent text-blue-500  hover:bg-blue-200 ring-1 ring-blue-500 hover:ring-blue-200 ;
+        }
+
+        &--small {
+            @apply py-3 px-6;
+        }
+    }
+
+    .btn-white {
+        @apply inline-block text-center relative lg:after:content-[attr(data-after)] py-5 px-8 bg-white leading-none text-blue-500 transition-all duration-[1000ms] ring-1 ring-white rounded-full hover:text-blue-500 hover:ring-blue-200 hover:bg-blue-200;
+
+        &--outline {
+            @apply bg-transparent text-white hover:bg-blue-200 hover:text-blue-500 hover:ring-blue-200;
+        }
+
+        &--small {
+            @apply py-3 px-6;
+        }
+    }
+
+    .btn-black {
+        @apply inline-block text-center text-md text-nowrap relative lg:after:content-[attr(data-after)] py-3 px-6 bg-grey-900 leading-6 text-white transition-all duration-[1000ms] ring-1 ring-grey-900 rounded-lg ;
+
+        &--outline {
+            @apply bg-transparent ring-blue-500/20 text-grey-800 hover:bg-grey-900/50 hover:text-white hover:ring-grey-900;
+        }
+    }
+
+    .btn-arrow {
+        @apply rounded-full w-14 flex items-center justify-center aspect-square border border-blue-500 mt-auto text-blue-500 transition-all duration-[1000ms] hover:bg-blue-500 hover:text-white;
+    }
+
+    .h1 {
+        @apply font-bold rfs:text-6xl rfs:leading-[4.25rem] mb-4 font-PPPangram;
+
+        span {
+            @apply text-blue-500 inline
+        }
+    }
+
+    .h2 {
+        @apply rfs:text-4xl rfs:leading-[3rem] font-bold font-PPPangram;
+
+        span {
+            @apply text-blue-500 inline;
+        }
+    }
+
+    .h3 {
+        @apply rfs:text-lg rfs:leading-[1.5rem] font-bold font-PPPangram;
+
+        span {
+            @apply text-blue-500 inline;
+        }
+    }
+
+    .h4 {
+        @apply rfs:text-base rfs:leading-[1.5rem] font-bold font-PPPangram;
+
+        span {
+            @apply text-blue-500 inline;
+        }
+    }
+
+    .faqs {
+        counter-reset: element;
+
+        details {
+            @apply border border-grey-400 rounded-[16px] overflow-hidden;
+            counter-increment: element;
+
+            & > summary {
+                @apply marker:content-none marker:hidden cursor-pointer px-8 py-6 flex justify-between list-none ;
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+                &:first-of-type {
+                    list-style: none;
+                    @apply list-none;
+                }
+
+                .faqs__title {
+                    @apply pr-4 font-bold rfs:text-lg font-PPPangram;
+
+                    &:before {
+                        content: counter(element) '. ';
+                    }
+                }
+
+                &:after {
+                    @apply content-['\002B'] text-blue-500 rfs:text-2xl leading-none;
+                }
+            }
+
+            &[open] {
+                summary::after {
+                    @apply content-['\2212'];
+                }
+            }
+        }
+
+        .content {
+            content-visibility: visible;
+
+            &:not(:last-child) {
+                @apply mb-2;
+            }
+
+            @apply px-8 max-h-0 overflow-hidden opacity-0 origin-top transition-all rounded-[16px] rounded-t-none ;
+
+            & > * {
+                @apply mb-6
+            }
+        }
+
+        details[open] {
+            @apply rounded-b-none border-b-0;
+
+            & + .content {
+                @apply max-h-[800px] opacity-100 border border-t-0 border-grey-400;
+            }
+        }
+    }
+    .article-content{
+        @apply text-grey-800 leading-6;
+        h2{
+            @apply !mt-14 mb-8 rfs:text-xl rfs:leading-8 font-bold font-PPPangram text-grey-900;
+        }
+        h3{
+            @apply rfs:text-lg rfs:leading-6 font-bold font-PPPangram text-grey-900 mb-2;
+        }
+        p{
+            @apply mb-4;
+        }
+        ul{
+            @apply list-disc list-outside ml-4 space-y-2;
+        }
+        ul + p {
+            @apply mt-4;
+        }
+        ul + h3{
+            @apply mt-8;
+        }
+        ol{
+            @apply list-decimal list-outside ml-4 marker:font-bold ;
+        }
+        ol > li::marker{
+            @apply font-PPPangram text-grey-900;
+        }
+        ol.inside{
+            @apply ml-auto list-inside space-y-8;
+        }
+        ol.inside h3{
+            @apply  inline-block;
+        }
+        img{
+            @apply rounded-3xl my-8;
+        }
+    }
+}
+
+:root {
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*a {*/
+/*    @apply font-medium text-[#646cff];*/
+/*}*/
+
+/*a:hover {*/
+/*    @apply text-[#535bf2];*/
+/*}*/
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-recycle:before {
+    content: "\e919";
+}
+.icon-mobile-check:before {
+    content: "\e91a";
+}
+.icon-laptop-search:before {
+    content: "\e91b";
+}
+.icon-search-stats:before {
+    content: "\e91c";
+}
+.icon-eye:before {
+    content: "\e91d";
+}
+
+.icon-check-simple {
+    @apply before:content-['\e919'];
+}
+
+.icon-arrow-left {
+    @apply before:content-['\e918'];
+}
+
+.icon-stars {
+    @apply before:content-['\e917'];
+}
+
+.icon-innovation {
+    @apply before:content-['\e914'];
+}
+
+.icon-simplicity {
+    @apply before:content-['\e915'];
+}
+
+.icon-global-local {
+    @apply before:content-['\e916'];
+}
+
+.icon-pc-mobile {
+    @apply before:content-['\e913'];
+}
+
+.icon-squares-plus {
+    @apply before:content-['\e912'];
+}
+
+.icon-arrow {
+    @apply before:content-['\e911'];
+}
+
+.icon-linkedIn {
+    @apply before:content-['\e910'];
+}
+
+.icon-lines {
+    @apply before:content-['\e90a'];
+}
+
+.icon-clock {
+    @apply before:content-['\e90b'];
+}
+
+.icon-target {
+    @apply before:content-['\e90c'];
+}
+
+.icon-lamp {
+    @apply before:content-['\e90d'];
+}
+
+.icon-check {
+    @apply before:content-['\e90e'];
+}
+
+.icon-pin {
+    @apply before:content-['\e90f'];
+}
+
+.icon-metrics-1 {
+    @apply before:content-['\e900'];
+}
+
+.icon-metrics-2 {
+    @apply before:content-['\e901'];
+}
+
+.icon-folder-star {
+    @apply before:content-['\e902'];
+}
+
+.icon-calendar {
+    @apply before:content-['\e903'];
+}
+
+.icon-bell {
+    @apply before:content-['\e904'];
+}
+
+.icon-bed {
+    @apply before:content-['\e905'];
+}
+
+.icon-robot {
+    @apply before:content-['\e906'];
+}
+
+.icon-pc-search {
+    @apply before:content-['\e907'];
+}
+
+.icon-messages {
+    @apply before:content-['\e908'];
+}
+
+.icon-inbox {
+    @apply before:content-['\e909'];
+}

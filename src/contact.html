@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:before="http://www.w3.org/1999/xhtml" xmlns:>
+<head>
+    <meta charset="UTF-8"/>
+    <link href="/roompulse.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Simplify rate shopping with actionable insights, intelligent alerts, and automated room pricing to maximize your revenue growth." />
+    <link as="style" rel="preload" href="/style.css" />
+    <link rel="stylesheet" href="/style.css"/>
+    <title>roompulse</title>
+</head>
+
+<body class="m-0 bg-white text-base font-normal text-grey-900">
+<!--nav data-bg values: none / blue / light-blue-->
+<nav data-bg="none" class="group animate-delay-0 fixed start-0 top-0 z-20 w-full px-4 py-4 bg-blue-100 data-[bg=blue]:bg-blue-500 data-[bg=light-blue]:bg-blue-400">
+    <div class="max-w-screen-2xl mx-auto flex flex-wrap items-center">
+        <a aria-label="roompulse" class="flex items-center lg:mr-10 z-10 text-blue-500 group-data-[bg=blue]:text-white" href="/">
+            <svg fill="none" height="32" width="199" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                    <path d="M4.395 15.74c0-1.25-.984-2.264-2.197-2.264C.984 13.476 0 14.489 0 15.739v.663c0 1.25.984 2.264 2.198 2.264 1.213 0 2.197-1.014 2.197-2.264v-.663Z"
+                          fill="#000"/>
+                    <path d="M36.42 15.74c0-1.25-.983-2.264-2.197-2.264s-2.197 1.013-2.197 2.263v.663c0 1.25.983 2.264 2.197 2.264s2.197-1.014 2.197-2.264v-.663Z"
+                          fill="currentColor"/>
+                    <path d="M10.801 13.146c0-1.25-.983-2.263-2.197-2.263s-2.198 1.013-2.198 2.263v5.856c0 1.25.984 2.263 2.198 2.263s2.197-1.013 2.197-2.263v-5.856Z"
+                          fill="#000"/>
+                    <path d="M30.017 13.146c0-1.25-.983-2.263-2.197-2.263s-2.198 1.013-2.198 2.263v5.856c0 1.25.984 2.263 2.198 2.263 1.213 0 2.197-1.013 2.197-2.263v-5.856Z"
+                          fill="currentColor"/>
+                    <path d="M17.204 2.764c0-1.25-.983-2.264-2.197-2.264S12.81 1.513 12.81 2.764v16.238c0 1.25.983 2.263 2.197 2.263s2.197-1.013 2.197-2.263V2.764ZM23.585 2.764C23.585 1.514 22.6.5 21.387.5c-1.213 0-2.197 1.013-2.197 2.264v.662c0 1.25.984 2.264 2.197 2.264 1.214 0 2.198-1.014 2.198-2.264v-.662Z"
+                          fill="#000"/>
+                    <path d="M23.585 12.998c0-1.25-.984-2.264-2.198-2.264-1.213 0-2.197 1.014-2.197 2.264v16.238c0 1.25.984 2.264 2.197 2.264 1.214 0 2.198-1.014 2.198-2.264V12.998Z"
+                          fill="currentColor"/>
+                    <path d="M57.73 10.163c0-1.476 1.133-2.213 2.207-2.213 1.162 0 2.086.4 2.086 1.843h.059c.806-1.227 1.669-1.843 3.01-1.843 1.045 0 2.087.77 2.087 2.365 0 1.473-1.28 1.506-2.563 2.149-1.28.585-2.593 1.227-2.593 2.95v6.79c0 1.473-.865 2.459-2.145 2.459s-2.145-.986-2.145-2.459v-12.04h-.004ZM82.957 16.338c0 4.608-3.07 8.513-7.69 8.513-4.62 0-7.69-3.902-7.69-8.513s3.158-8.573 7.69-8.573 7.69 4.056 7.69 8.573Zm-11.09 0c0 2.122 1.105 4.453 3.397 4.453s3.396-2.334 3.396-4.453-1.013-4.514-3.396-4.514c-2.384 0-3.396 2.425-3.396 4.514ZM100.083 16.338c0 4.608-3.07 8.513-7.69 8.513-4.62 0-7.69-3.902-7.69-8.513s3.158-8.573 7.69-8.573 7.69 4.056 7.69 8.573Zm-11.089 0c0 2.122 1.104 4.453 3.396 4.453s3.396-2.334 3.396-4.453-1.012-4.514-3.396-4.514-3.396 2.425-3.396 4.514ZM102.515 10.409c0-1.474.866-2.46 2.146-2.46 1.103 0 1.818.586 1.965 1.659 1.045-1.197 2.413-1.843 3.994-1.843 1.819 0 3.278.74 4.441 2.243 1.191-1.443 3.069-2.243 4.528-2.243 3.488 0 5.871 2.058 5.871 5.96v8.479c0 1.473-.865 2.458-2.145 2.458s-2.145-.985-2.145-2.458v-7.709c0-1.813-.954-3.044-2.505-3.044s-2.533 1.228-2.533 3.044v7.709c0 1.473-.866 2.458-2.146 2.458-1.28 0-2.145-.985-2.145-2.458v-7.709c0-1.813-.953-3.044-2.504-3.044-1.79 0-2.534 1.228-2.534 3.044v7.709c0 1.473-.866 2.458-2.146 2.458-1.28 0-2.145-.985-2.145-2.458V10.408h.003Z"
+                          fill="#000"/>
+                    <path d="M128.673 10.409c0-1.474.866-2.46 2.146-2.46 1.191 0 1.877.647 2.145 1.844.806-1.352 2.442-2.028 4.085-2.028 4.617 0 6.912 4.456 6.912 8.755 0 4.298-2.743 8.327-7.063 8.327-1.342 0-2.772-.521-3.934-1.537v5.409c0 1.473-.865 2.458-2.145 2.458s-2.146-.985-2.146-2.458v-18.31Zm7.657 10.382c2.234 0 3.337-2.364 3.337-4.453 0-2.089-1.103-4.514-3.337-4.514-2.233 0-3.366 2.24-3.366 4.363 0 2.122 1.015 4.607 3.366 4.607v-.003ZM146.394 10.409c0-1.473.865-2.459 2.145-2.459s2.145.986 2.145 2.459v7.894c0 1.843 1.342 2.858 2.772 2.858 1.431 0 2.773-1.015 2.773-2.858v-7.894c0-1.473.865-2.459 2.148-2.459 1.283 0 2.145.986 2.145 2.459v7.988c0 3.965-2.504 6.45-7.062 6.45-4.559 0-7.063-2.488-7.063-6.45v-7.988h-.003ZM163.647 3.282c0-1.473.866-2.459 2.146-2.459 1.28 0 2.145.986 2.145 2.459v18.925c0 1.474-.865 2.459-2.145 2.459s-2.146-.985-2.146-2.459V3.282ZM180.117 12.928c-.836 0-2.413-1.288-3.846-1.288-.804 0-1.46.366-1.46 1.227 0 2.089 7.451 1.753 7.451 6.787 0 2.95-2.413 5.194-6.109 5.194-2.413 0-5.988-1.413-5.988-3.41 0-.647.656-1.968 1.848-1.968 1.668 0 2.413 1.503 4.441 1.503 1.312 0 1.697-.43 1.697-1.258 0-2.028-7.451-1.722-7.451-6.79 0-3.071 2.413-5.163 5.812-5.163 2.146 0 5.365 1.015 5.365 3.195 0 1.016-.715 1.967-1.757 1.967l-.003.004ZM187.973 17.781c.327 2.213 2.028 3.195 4.052 3.195 2.208 0 3.726-1.782 4.859-1.782.924 0 1.76.952 1.76 1.903 0 1.874-3.784 3.75-7.004 3.75-4.829 0-8.045-3.625-8.045-8.512 0-4.514 3.16-8.573 7.689-8.573s7.719 4.362 7.719 8.048c0 1.322-.565 1.968-1.877 1.968h-9.149l-.004.003Zm6.736-2.946c-.238-1.968-1.4-3.38-3.428-3.38-1.907 0-3.19 1.506-3.396 3.38h6.824Z"
+                          fill="currentColor"/>
+                </g>
+                <defs>
+                    <clipPath id="a">
+                        <path d="M0 0h199v31H0z" fill="#fff" transform="translate(0 .5)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </a>
+        <div class="flex space-x-3 lg:order-2 ml-auto rtl:space-x-reverse relative z-20">
+            <button
+                    aria-controls="navbar-sticky"
+                    aria-expanded="false"
+                    class="group relative z-20 inline-flex flex-col gap-1 justify-center h-8 w-8 items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
+                    data-collapse-toggle="navbar-sticky"
+                    type="button"
+            >
+                <span class="sr-only">Open main menu</span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:opacity-0"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
+            </button>
+        </div>
+        <div class="bg-white lg:bg-transparent w-full px-4 pt-[73px] lg:pt-0 lg:px-0 lg:items-center justify-between lg:order-1 lg:grow flex flex-col lg:flex-row lg:w-auto h-full lg:h-auto top-0 transition-transform translate-x-0 lg:translate-x-0 [&.active]:-translate-x-full [&.active]:lg:translate-x-0 lg:transition-none left-full lg:left-0 fixed lg:relative group-data-[bg=blue]:max-lg:before:block group-data-[bg=blue]:max-lg:before:bg-blue-500 group-data-[bg=blue]:max-lg:before:w-full group-data-[bg=blue]:max-lg:before:absolute group-data-[bg=blue]:max-lg:before:top-0 group-data-[bg=blue]:max-lg:before:left-0 group-data-[bg=blue]:max-lg:before:h-[64px]"
+             id="navbar-sticky">
+
+            <ul class="mt-4 flex flex-col px-0 py-4 text-base lg:mt-0 lg:flex-row lg:p-0 rtl:space-x-reverse">
+                <li class="lg:mx-6">
+                    <a class="nav-text-link" href="./features.html">
+                        Features
+                    </a>
+
+                </li>
+                <li class="lg:mx-6">
+                    <a class="nav-text-link"
+                       href="./company.html">Company</a>
+                </li>
+                <li class="lg:mx-6">
+                    <a class="nav-text-link"
+                       href="./contact.html">Contact us</a>
+                </li>
+            </ul>
+            <ul class=" max-lg:mt-18 flex flex-col px-0 py-4 text-base lg:items-center lg:text-md base lg:mt-0 lg:grow lg:flex-row lg:p-0 rtl:space-x-reverse">
+                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link text-blue-500 max-lg:text-center"
+                       href="#">Sign In</a>
+                </li>
+                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
+                    <button class="btn-primary group-data-[bg=blue]:lg:btn-white btn-primary--outline group-data-[bg=blue]:lg:btn-white--outline btn-primary--small group-data-[bg=blue]:lg:btn-white--small w-full lg:w-auto"
+                            type="button">Talk to an expert
+                    </button>
+                </li>
+                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
+                    <button class="w-full lg:w-auto btn-primary btn-primary--small group-data-[bg=blue]:lg:btn-white group-data-[bg=blue]:lg:btn-white--small"
+                            type="button">Start free
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="pt-60 bg-blue-100">
+    <div class="relative" >
+        <div class="flex flex-col items-center gap-4 max-w-[910px] mx-auto px-4 xl:px-0 mb-20">
+            <h1 class="h1 text-center rfs:text-[3.625rem] rfs:leading-[3rem]">Contact <span>us</span></h1>
+            <p class="rfs:text-xl">Get in touch and let us know how we can help.</p>
+        </div>
+        <div data-animation="fadeInUp" class="mt-6 mb-6 animate-delay-0 after:absolute after:block after:w-full after:bottom-0 after:left-0 after:bg-white after:h-1/2">
+            <div class="max-w-[910px] mx-auto px-4 xl:px-0 z-10 relative">
+                <div class="grid lg:grid-cols-2 bg-blue-500 text-white rounded-3xl">
+                    <div data-animation="fadeInUp" class="max-lg:16 px-8 py-8 [&>p:not(:last-child)]:mb-8 flex flex-col justify-center">
+                        <h2 class="h2 font-PPPangram mb-6">Talk to an expert</h2>
+                        <p>Are you interested in learning more about how Roompulse can help you? Book a call with our team.</p>
+                        <div>
+                            <a href="#" class="btn-white">Book Now</a>
+                        </div>
+                    </div>
+                    <div data-animation="fadeInUp" class="flex justify-center lg:justify-end lg:items-end p-8 lg:pl-0">
+                        <picture>
+                            <!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
+                            <img alt="" height="288" src="/img/contact.png" width="399">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-6 mb-20" data-animation="fadeInUp">
+    <div class="max-w-[910px] mx-auto px-4 xl:px-0">
+        <div class="p-8 bg-light-grey-bg  rounded-3xl flex max-lg:flex-col gap-12">
+            <div class="lg:basis-1/2">
+                <h2 class="h2 font-PPPangram mb-6">Customer<br>support</h2>
+                <p>Do you have a question?<br> Fill in the form and we’ll get back to you.</p>
+            </div>
+            <form class="lg:basis-1/2">
+                <div class="mb-8">
+                    <label class="block uppercase tracking-wide text-gray-800 text-lg leading-8 font-bold mb-2 font-PPPangram" for="grid-name">
+                        Your name
+                    </label>
+                    <input class="appearance-none block w-full bg-white text-grey-800 border rounded-lg placeholder:text-grey-800 p-2 min-h-10 mb-3 leading-6 focus:outline-none focus:bg-white" id="grid-name" type="text" placeholder="Enter your name">
+                </div>
+                <div class="mb-8">
+                    <label class="block uppercase tracking-wide text-gray-800 text-lg leading-8 font-bold mb-2 font-PPPangram" for="grid-email">
+                        Your email address
+                    </label>
+                    <input class="appearance-none block w-full bg-white text-grey-800 border rounded-lg placeholder:text-grey-800 p-2 min-h-10 mb-3 leading-6 focus:outline-none focus:bg-white" id="grid-email" type="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-8">
+                    <label class="block uppercase tracking-wide text-gray-800 text-lg leading-8 font-bold mb-2 font-PPPangram" for="grid-email">
+                        Choose a topic
+                    </label>
+                    <div class="flex justify-start flex-wrap gap-4">
+                        <button type="button" class="btn-black btn-black--outline">BILLING</button>
+                        <button type="button" class="btn-black btn-black--outline">MY ACCOUNT</button>
+                        <button type="button" class="btn-black btn-black--outline">ACCOUNT</button>
+                        <button type="button" class="btn-black btn-black--outline">ACCOUNT</button>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <label class="block uppercase tracking-wide text-gray-800 text-lg leading-8 font-bold mb-2 font-PPPangram" for="grid-text">
+                        Or give us a short description
+                    </label>
+                    <textarea class="appearance-none block w-full bg-white text-grey-800 border rounded-lg placeholder:text-grey-800 p-2 min-h-24 mb-3 leading-6 focus:outline-none focus:bg-white" id="grid-text" placeholder="Enter your message"></textarea>
+                </div>
+                <button class="btn-primary btn-primary--outline btn-primary--small" type="submit">Submit question</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="mt-20 mb-30" data-animation="fadeInUp">
+    <div class="max-w-[910px] mx-auto px-4 xl:px-0">
+        <div class="flex flex-col items-center space-y-4 max-w-[209px] mx-auto text-center">
+            <span class="icon-pin text-blue-500 text-2xl"></span>
+            <h3 class="h3">Mailing address</h3>
+            <a class="text-gray-800" href="https://maps.app.goo.gl/Kmi28cu4zb5RGkYdA" target="_blank">
+                Kifissias Avenue 123<br>
+                Marousi, 12345<br>
+                Greece
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="mt-40 px-4 py-4 lg:py-6 bg-black">
+    <div class="max-w-screen-2xl mx-auto flex flex-col items-center md:items-start md:flex-row md:items-start gap-4">
+        <div class="flex-auto md:flex-[280px] md:grow-0 md:shrink"><a href="/" alt="Roompulse "><img src="/img/logo-white.svg" loading="lazy" width="153" height="24" alt="Roompulse "></a> </div>
+        <nav class="text-md flex-auto flex flex-wrap gap-2 md:gap-6 whitespace-nowrap flex-auto max-md:justify-center justify-start text-gray-200">
+            <a href="./features.html" aria-label="Features">Features </a>
+            <a href="./company.html" aria-label="Company">Company</a>
+            <a href="./contact.html" aria-label="Contact us">Contact us</a>
+            <a href="./terms.html" aria-label="Contact us">Terms of Use</a>
+            <a href="./terms.html" aria-label="Contact us">Privacy Policy</a>
+            <a href="./terms.html" aria-label="Contact us">Cookie Policy</a>
+        </nav>
+        <div>
+            <form class="mb-6">
+                <div class="flex flex-col">
+                    <label for="email" class="text-md mb-3.5 text-gray-400">Sign up for our newsletter</label>
+                    <div class="flex flex-row gap-2">
+                        <input id="email" type="email" placeholder="Type your email" class="rounded-2xl bg-gray-200 border border-grey-800 bg-opacity-10 text-gray-400 text-base h-14 px-4 lg:px-8">
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </div>
+
+                </div>
+            </form>
+            <div class="flex flex-row text-gray-400 items-center gap-6 justify-center md:justify-start">
+                <div class="text-[.75rem]">Follow us:</div>
+                <nav class="text-2xl leading-none flex gap-4">
+                    <a href="/" aria-label="Facebook" class="icon-linkedIn"></a>
+                    <!--                    <a href="/" aria-label="Instagram" class="icon-instagram"></a>-->
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <div class="max-w-screen-2xl mx-auto mt-4 text-[.75rem] text-gray-400 text-center md:text-left md:mt-16">2024©Roompulse  All rights reserved</div>
+</footer>
+</body>
+<script src="./main.js" type="module"></script>
+<!--<script src="/js/index-animation.js" type="module"></script>-->
+
+</html>

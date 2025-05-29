@@ -1,26 +1,23 @@
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+
 export default defineConfig({
-    server: {
-        open: "/index.html",
+  server: {
+    open: "/index.html",
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: "src/index.html",
+        features: "src/features.html",
+        company: "src/company.html",
+        contact: "src/contact.html",
+        terms: "src/terms.html",
+        blog: "src/blog.html",
+        article: "src/article.html",
+      },
     },
-    build: {
-        rollupOptions: {
-            input: {
-                main: "src/index.html",
-                // features: "src/features.html",
-                // company: "src/company.html",
-                // contact: "src/contact.html",
-                // terms: "src/terms.html",
-                // blog: "src/blog.html",
-                // article: "src/article.html",
-            },
-        },
-        outDir: "../dist",
-        emptyOutDir: true,
-    },
-    root: "src",
-    plugins: [
-        tailwindcss(),
-    ],
-})
+    outDir: "../dist",
+    emptyOutDir: true,
+  },
+  root: "src",
+});
