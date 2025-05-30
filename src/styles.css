@@ -13,7 +13,7 @@
     --breakpoint-tablet: 48rem  /* 768/16 */;
     --breakpoint-desktop: 64rem  /* 1024/16 */;
     --breakpoint-large: 80rem  /* 1280/16 */;
-    --breakpoint-xlarge: 90rem  /* 1440/16 */
+    --breakpoint-xLarge: 90rem  /* 1440/16 */
 ;
 
     --container-*: initial;
@@ -21,7 +21,7 @@
     --container-tablet: 46rem;
     --container-desktop: 62rem;
     --container-large: 78rem;
-    --container-xlarge: 88rem;
+    --container-xLarge: 88rem;
 
     --font-ppMori: "PPMori", sans-serif;
     --font-ppPangram: "PPPangram", sans-serif;
