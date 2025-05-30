@@ -182,7 +182,7 @@ h6 {
     @apply before:content-['\e902'];
 }
 
-section:not(:last-child) {
+section:not(:last-of-type) {
     margin-bottom: var(--section-margin);
 }
 
