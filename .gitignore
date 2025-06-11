@@ -8,16 +8,19 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+#dist
 dist-ssr
 *.local
 public
 !src/public
+src/public/.htaccess
+dist/.htaccess
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
+.vite
 .DS_Store
 *.suo
 *.ntvs*

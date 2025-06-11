@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="./favicon.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Streamline your working capital with wocap."/>
+    <link as="style" rel="preload" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>wocap - working capital</title>
+</head>
+
+<body class="m-0 bg-(--wocap-gray-100) text-base font-normal font-geologica text-(--wocap-gray-800)">
+<!--nav data-bg values: none / blue / light-blue-->
+<nav class="animate-delay-0 sticky start-0 top-0 z-20 w-full px-4 py-4 max-h-(--nav-height) bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-wrap items-center">
+        <a aria-label="wocap" class="flex items-center desktop:mr-10 z-10" href="./">
+            <img src="/img/logo-white.svg" width="177" height="36" alt="wocap" class="h-[36px]">
+        </a>
+        <div class="flex space-x-3 desktop:order-2 ml-auto rtl:space-x-reverse relative z-20">
+            <button
+                    aria-controls="navbar-sticky"
+                    aria-expanded="false"
+                    class="group relative z-20 inline-flex flex-col cursor-pointer gap-1 justify-center h-8 w-8 items-center rounded-lg p-2 text-sm  desktop:hidden"
+                    data-collapse-toggle="navbar-sticky"
+                    type="button"
+            >
+                <span class="sr-only">Open main menu</span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:opacity-0"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
+            </button>
+        </div>
+        <div class="bg-(--wocap-gray-900) desktop:bg-transparent w-full px-4 pt-[73px] desktop:pt-0 desktop:px-0 desktop:items-center justify-between desktop:order-1 desktop:grow flex flex-col desktop:flex-row desktop:w-auto h-full desktop:h-auto top-0 transition-transform translate-x-0 desktop:translate-x-0 [&.active]:-translate-x-full [&.active]:desktop:translate-x-0 desktop:transition-none left-full desktop:left-0 fixed desktop:relative"
+             id="navbar-sticky">
+
+            <a class="nav-text-link nav-text-link--no-border nav-text-link--dark-bg max-desktop:text-center desktop:ml-auto desktop:mr-[2vw] large:mr-[3vw]" href="/seller">
+                I ‘m a seller <span
+                    class="icon-arrow-up-right ml-4 desktop:max-large:ml-1 text-(--wocap-primary)"></span>
+            </a>
+            <ul class=" max-desktop:mt-18 flex flex-col px-0 py-4 text-base desktop:items-center desktop:text-md base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse">
+                <li class="desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border nav-text-link--dark-bg nav-text-link--no-border max-desktop:text-center"
+                       href="#">Sign Up</a>
+                </li>
+                <li class="max-desktop:hidden text-(--wocap-gray-900)/25">|</li>
+                <li class="desktop:ml-2 desktop:mr-[2vw] large:mr-[3vw] desktop:first:ml-auto  [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border nav-text-link--dark-bg max-desktop:text-center"
+                       href="#">Sign In</a>
+                </li>
+                <li class="inline-flex desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a href="#" class="w-full desktop:w-auto btn-primary desktop:max-large:text-sm"
+                       type="button">Request a Demo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="min-h-[calc(100vh-var(--nav-height)+100px)] flex items-center px-4 pb-[100px] bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xLarge mx-auto">
+        <div class="flex flex-col desktop:flex-row desktop:items-start gap-20 desktop:gap-[114px]">
+            <div class="flex desktop:basis-1/2 flex-col justify-center max-desktop:text-center desktop:items-start desktop:mt-[50px]">
+                <span class="text-(--wocap-primary) text-sm flex items-center font-semibold mb-4"><i class="icon-tag text-sm mr-2"></i>FOR BUYERS</span>
+                <h1 class="h1 text-(--wocap-primary) text-balance mb-4">Built for the Modern CFO</h1>
+                <p class="font-bold text-(--wocap-white) text-2xl mb-4">Unlock Value. Empower Suppliers. Lead with Clarity.</p>
+                <p class="text-xl text-(--wocap-white)">WoCap empowers Buyers to turn their payables into a strategic tool—maximizing returns, streamlining operations, and supporting the health of their supply chain.</p>
+            </div>
+            <picture class="block max-desktop:mx-auto">
+                <img src="/img/buyer-header.png" width="720" height="552" alt="Buyer Header Image">
+            </picture>
+        </div>
+    </div>
+</header>
+
+<section class="colorful px-4 bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xxLarge mx-auto bg-(--wocap-gray-300) rounded-tl-[120px] px-6 py-6 desktop:px-[70px] desktop:py-[80px]">
+        <div class="grid tablet:grid-cols-2 gap-8 desktop:gap-[150px] items-center">
+            <div data-animation="animate-fade-right">
+                <picture class="block max-w-[660px] rounded-tl-[100px] rounded-br-[100px] overflow-hidden">
+                    <source srcset="/img/boost-return-image.webp" type="image/webp">
+                    <img src="/img/boost-return-image.png" width="660" height="580" alt="Boost Returns. Strengthen Margins.">
+                </picture>
+            </div>
+            <div class="animate-delay-120 [&>p:not(:last-child)]:mb-2" data-animation="animate-fade">
+                <span class="inline-block bg-(--wocap-primary) px-4 py-1 text-(--wocap-primary-darker) text-sm rounded-tl-[8px] rounded-br-[8px] font-semibold mb-4">Idle liquidity can do more</span>
+                <h2 class="h4 text-(--wocap-gray-900) text-wrap mb-4">Boost Returns. Strengthen Margins.</h2>
+                <p>WoCap helps you deploy unused cash to generate better returns—consistently above traditional short-term instruments.</p>
+
+                <p>By automating early payments at your preferred yield, you enhance your <strong>net income margin</strong> while giving suppliers the liquidity they need to thrive.</p>
+
+                <p>It’s a win-win model.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="colorful px-4 bg-(--wocap-primary)">
+    <div class="max-w-screen-xxLarge mx-auto bg-(--wocap-gray-300) rounded-br-[120px] px-6 py-6 desktop:px-[70px] desktop:py-[80px]">
+        <div class="grid tablet:grid-cols-2 gap-8 desktop:gap-[150px] items-center tablet:[&>*:first-child]:order-2">
+            <div  data-animation="animate-fade-right">
+                <picture class="block max-w-[660px] rounded-tl-[100px] rounded-br-[100px] overflow-hidden">
+                    <source srcset="/img/end-to-end.webp" type="image/webp">
+                    <img src="/img/end-to-end.png" width="660" height="580" alt="Boost Returns. Strengthen Margins.">
+                </picture>
+            </div>
+            <div class="animate-delay-120 [&>p:not(:last-child)]:mb-2" data-animation="animate-fade">
+                <span class="inline-block bg-(--wocap-primary) px-4 py-1 text-(--wocap-primary-darker) text-sm rounded-tl-[8px] rounded-br-[8px] font-semibold mb-4">Supplier engagement is frictionless</span>
+                <h2 class="h4 text-(--wocap-gray-900) text-wrap mb-4">We Support Your Suppliers—End to End</h2>
+                <p>Our in-house Client Success team works closely with your supplier network to educate, onboard, and train them—no burden on your internal teams.</p>
+                <p>We handle helpdesk, guidance, and technical support for your suppliers, ensuring smooth participation and a fully managed experience from start to finish.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="colorful px-4 bg-(--wocap-primary) pt-(--section-margin-mobile) desktop:pt-[165px]">
+    <div class="max-w-screen-desktop mx-auto text-center">
+        <h2 class="h3 text-(--wocap-gray-900) mb-6 animate-delay-150" data-animation="animate-fade-up">WoCap vs. Traditional Financing</h2>
+        <p class="mb-12 animate-delay-150 text-xl" data-animation="animate-fade">The future of working capital isn’t managed by banks.</p>
+        <picture class="max-desktop:hidden animate-delay-150"  data-animation="animate-fade-up">
+            <source srcset="/img/wocap-vs-traditional.webp" type="image/webp">
+            <img src="/img/wocap-vs-traditional.png" width="1024" height="480" alt="WoCap vs Traditional Financing" class="mx-auto ">
+        </picture>
+        <picture class="desktop:hidden animate-delay-150" data-animation="animate-fade-up">
+            <source srcset="/img/wocap-vs-traditional-mobile.webp" type="image/webp">
+            <img src="/img/wocap-vs-traditional-mobile.png" width="360" height="450" alt="WoCap vs Traditional Financing" class="mx-auto ">
+        </picture>
+    </div>
+</section>
+
+<section class="colorful px-4 bg-(--wocap-primary) py-(--section-margin-mobile) desktop:py-(--section-margin-desktop)">
+    <div class="max-w-screen-xLarge mx-auto">
+        <div class="grid grid-cols-12 items-center">
+            <div class="col-span-12 tablet:col-start-1 tablet:col-end-6 animate-delay-150 max-tablet:mb-6" data-animation="animate-fade-left">
+                <picture class="block max-w-[600px] mx-auto rounded-tl-[120px] rounded-br-[120px] overflow-hidden">
+                    <source srcset="/img/progressive-analysis.webp" type="image/webp">
+                    <img src="/img/progressive-analysis.png" width="600" height="522" alt="Support economies">
+                </picture>
+            </div>
+            <div class="col-span-12 tablet:col-start-7 tablet:col-end-13 animate-delay-150 [&>p:not(:last-child)]:mb-4" data-animation="animate-fade-right">
+                <span class="flex items-center mb-2"><img src="/img/seamless-erp-icon.svg" width="60" height="60" alt="Seamless ERP Integration"> Seamless ERP Integration</span>
+                <h2 class="h4 mb-6">Connect WoCap to your existing ERP with minimal disruption.</h2>
+                <p>Our platform supports common file formats and integration protocols per latest technologies, allowing you to upload invoice data directly, receive automated payment instructions, and sync updated payment terms—without the need for complex IT projects.</p>
+
+                <p>We’re fast, secure, and flexible—so you can <strong>stay focused on strategic finance, not system migrations.</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="colorful flex items-center px-4 pb-[100px] bg-(--wocap-primary)">
+    <div class="max-w-screen-xLarge mx-auto">
+        <div class="flex flex-col desktop:flex-row gap-20 desktop:gap-[114px]">
+            <div class="flex desktop:basis-1/2 flex-col justify-center max-desktop:text-center desktop:items-start desktop:mt-[50px] [&>p:not(:last-child)]:mb-4" data-animation="animate-fade-left">
+                <span class="flex items-center mb-2"><img src="/img/supply-chain-icon.svg" width="60" height="60" alt="Healthy Supply Chain"> Healthy Supply Chain</span>
+                <h2 class="h4 text-(--wocap-gray-900) text-balance mb-4">Enable a healthier Supply Chain</h2>
+                <p class="">WoCap helps you contribute to a more resilient and equitable business environment.</p>
+
+                <p>By giving even your smallest suppliers access to fast, affordable capital—on their terms—you support supply chain performance, ESG goals, and long-term partner sustainability.</p>
+
+                <p><strong>Smarter liquidity means stronger partnerships.</strong></p>
+            </div>
+            <picture class="block max-desktop:mx-auto" data-animation="animate-fade-right">
+                <img src="/img/supply-chain.png" width="660" height="580" alt="Enable a healthier Supply Chain">
+            </picture>
+        </div>
+    </div>
+</section>
+
+<section class="colorful px-4 py-[160px] bg-(--wocap-gray-900)">
+    <div class="max-w-screen-tablet mx-auto text-center">
+        <h2 class="h2 text-(--wocap-white) mb-6 animate-delay-150" data-animation="animate-fade-up">Ready to explore how WoCap can help your company?</h2>
+        <div class="flex justify-center items-center gap-6">
+            <a href="#" class="btn-primary animate-delay-150" data-animation="animate-fade-right">Request a Demo</a>
+            <a href="#" class="btn-outline btn-outline--primaryText animate-delay-150" data-animation="animate-fade-left">Contact us</a>
+        </div>
+    </div>
+</section>
+
+<footer class="px-4 py-4 desktop:py-10 bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-col items-center desktop:items-start desktop:flex-row gap-4 desktop:mb-[110px]">
+        <div class="basis-auto desktop:basis-[200px] desktop:grow-0">
+            <a href="/">
+                <img src="/img/footer-logo.svg" loading="lazy" width="72" height="72" alt="wocap ">
+            </a>
+        </div>
+        <nav class="basis-auto flex desktop:grow-0 max-desktop:items-center desktop:flex-col gap-2 desktop:gap-4 text-(--wocap-white) font-bold">
+            <a href="/how-it-works" aria-label="Features">About us</a>
+            <a href="#" aria-label="Platform">Platform</a>
+            <a href="/contact" aria-label="Contact us">How it works</a>
+            <a href="/" aria-label="Facebook" class="icon-linkedIn desktop:mt-6 text-3xl"></a>
+        </nav>
+        <nav class="max-desktop:my-8 desktop:flex-auto justify-center flex gap-[40px] flex-wrap">
+            <a href="#" class="">
+                <img src="/img/elevate-logo.svg" width="110" height="59" alt="elevate greece">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+        </nav>
+        <div class="basis-auto desktop:basis-[445px] desktop:grow-0 desktop:shrink-0 flex flex-col gap-4">
+            <form class="mb-6">
+                <div class="flex flex-col">
+                    <label for="email" class="mb-4 text-(--wocap-white) font-bold">Stay in touch</label>
+                    <p class="text-(--wocap-white) mb-4 text-balance">Subscribe to our newsletter to get the latest news, articles, and resources, sent to your inbox weekly.</p>
+                    <div class="flex flex-row gap-2">
+                        <input id="email" type="email" placeholder="Your email" class="basis-auto rounded-full bg-(--wocap-gray-800) border border-(--wocap-primary)/21 text-(--wocap-white) placeholder:text-(--wocap-white) text-base h-12 px-4 desktop:px-8 outline-0">
+                        <button type="submit" class="btn btn-primary btn-primary--small">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="max-w-screen-xxLarge mx-auto text-xs text-(--wocap-white) desktop:mt-16">
+        <div class="flex max-desktop:flex-col w-full gap-4">
+            <div class="desktop:flex-[280px] desktop:grow-0 desktop:shrink">© Wocap 2024, All Rights Reserved</div>
+            <nav class="basis-auto grow shrink flex gap-12">
+                <a href="#">Terms of Use / Privacy</a>
+                <a href="#">Policies</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="./main.js" type="module"></script>
+<!--<script src="/js/index-animation.js" type="module"></script>-->
+
+</html>

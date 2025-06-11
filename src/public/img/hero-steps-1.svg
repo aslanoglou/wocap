@@ -1,0 +1,17 @@
+<svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="28" y="17" width="52" height="66" rx="8" fill="#00DF82"/>
+<rect x="25.75" y="13.75" width="50.5" height="64.5" rx="7.25" fill="white" stroke="#333333" stroke-width="1.5"/>
+<mask id="path-3-inside-1_4433_2269" fill="white">
+<rect x="49" y="64" width="23" height="8" rx="1"/>
+</mask>
+<rect x="49" y="64" width="23" height="8" rx="1" stroke="#333333" stroke-width="3" mask="url(#path-3-inside-1_4433_2269)"/>
+<path d="M46 46L35 46" stroke="#333333" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M70 46L64 46" stroke="#333333" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M51 36L35 36" stroke="#333333" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M70 36L64 36" stroke="#333333" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M49 26L35 26" stroke="#333333" stroke-width="1.5" stroke-linecap="square"/>
+<path d="M70 26L64 26" stroke="#333333" stroke-width="1.5" stroke-linecap="square"/>
+<circle cx="25" cy="21" r="16.25" fill="#00DF82" stroke="#333333" stroke-width="1.5"/>
+<path d="M25 30V13" stroke="#333333" stroke-width="1.5"/>
+<path d="M19 18L25 12L31 18" stroke="#333333" stroke-width="1.5"/>
+</svg>

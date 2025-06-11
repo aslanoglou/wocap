@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="./favicon.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Streamline your working capital with wocap."/>
+    <link as="style" rel="preload" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>wocap - working capital</title>
+</head>
+
+<body class="m-0 bg-(--wocap-gray-100) text-base font-normal font-geologica text-(--wocap-gray-800)">
+<!--nav data-bg values: none / blue / light-blue-->
+<nav class="animate-delay-0 sticky start-0 top-0 z-20 w-full px-4 py-4 max-h-(--nav-height) bg-(--wocap-gray-100)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-wrap items-center">
+        <a aria-label="wocap" class="flex items-center desktop:mr-10 z-10" href="./">
+            <img src="/img/logo.svg" width="177" height="36" alt="wocap" class="h-[36px]">
+        </a>
+        <div class="flex space-x-3 desktop:order-2 ml-auto rtl:space-x-reverse relative z-20">
+            <button
+                    aria-controls="navbar-sticky"
+                    aria-expanded="false"
+                    class="group relative z-20 inline-flex flex-col cursor-pointer gap-1 justify-center h-8 w-8 items-center rounded-lg p-2 text-sm  desktop:hidden"
+                    data-collapse-toggle="navbar-sticky"
+                    type="button"
+            >
+                <span class="sr-only">Open main menu</span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:opacity-0"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
+            </button>
+        </div>
+        <div class="bg-(--wocap-white) desktop:bg-transparent w-full px-4 pt-[73px] desktop:pt-0 desktop:px-0 desktop:items-center justify-between desktop:order-1 desktop:grow flex flex-col desktop:flex-row desktop:w-auto h-full desktop:h-auto top-0 transition-transform translate-x-0 desktop:translate-x-0 [&.active]:-translate-x-full [&.active]:desktop:translate-x-0 desktop:transition-none left-full desktop:left-0 fixed desktop:relative"
+             id="navbar-sticky">
+
+            <ul class="mt-4 flex flex-col px-0 py-4 text-base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse [&>li]:desktop:mx-2 [&>li]:large:mx-6">
+                <li>
+                    <a class="nav-text-link" href="/how-it-works">How it works</a>
+                </li>
+                <li>
+                    <a class="nav-text-link" href="/our-mission">Our mission</a>
+                </li>
+                <li>
+                    <a class="nav-text-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+            <a class="nav-text-link nav-text-link--no-border max-desktop:text-center desktop:ml-auto desktop:mr-[2vw] large:mr-[3vw]" href="/buyer">
+                I ‘m a buyer <span
+                    class="icon-arrow-up-right ml-4 desktop:max-large:ml-1 text-(--wocap-primary)"></span>
+            </a>
+            <ul class=" max-desktop:mt-18 flex flex-col px-0 py-4 text-base desktop:items-center desktop:text-md base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse">
+                <li class="desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border max-desktop:text-center"
+                       href="#">Sign Up</a>
+                </li>
+                <li class="max-desktop:hidden text-(--wocap-gray-900)/25">|</li>
+                <li class="desktop:ml-2 desktop:mr-[2vw] large:mr-[3vw] desktop:first:ml-auto  [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border  max-desktop:text-center"
+                       href="#">Sign In</a>
+                </li>
+                <li class="inline-flex desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a href="#" class="w-full desktop:w-auto btn-primary desktop:max-large:text-sm"
+                       type="button">Request a Demo
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="min-h-[calc(100vh-var(--nav-height))] flex items-center px-4 mb-[60px] desktop:mb-[120px]!">
+    <div class="max-w-screen-xxLarge mx-auto px-8 mobile:px-12 tablet:px-18 pt-16 pb-22 desktop:pt-35 desktop:pb-40 bg-(--wocap-primary) rounded-tl-[120px] rounded-br-[120px]">
+        <div class="grid desktop:grid-cols-2">
+            <div class="flex desktop:flex-1 flex-col justify-center items-start">
+                <h1 class="h1 text-(--wocap-gray-900) text-balance mb-4">Crafting the future of Working Capital</h1>
+                <p class="text-xl text-balance">Our mission is simple: to transform every invoice into an opportunity for growth, liquidity, and resilience-at scale"</p>
+            </div>
+        </div>
+        <hr class="my-12 border-(--wocap-gray-900)"/>
+        <div class="grid grid-col-1 desktop:grid-cols-3 gap-6 desktop:gap-22">
+            <div class="[&>p:not(:last-child)]:mb-6">
+                <p>WoCap is reimagining the future of corporate finance by unlocking the untapped power of working capital. Our mission is simple: to transform every invoice into an opportunity for growth, liquidity, and resilience—at scale.</p>
+                <p>Through our intelligent dynamic discounting platform, we enable enterprises to optimize early payments in a way that benefits both buyers and suppliers. By creating smart, real-time incentives across the supply chain, WoCap helps businesses unlock value hidden in plain sight—fueling healthier cash flow and stronger partnerships.</p>
+            </div>
+            <div class="[&>p:not(:last-child)]:mb-6">
+                <p>WoCap is the go-to platform addressing Working Capital challenges for all Suppliers, irrespective of company size or volume of invoices. It is available to all and eliminates uncomfortable negotiations, high prices dictated by financial institutions, complicated onboarding requirements and paperwork. We have a deep understanding of all corporate needs and our vision is to always be one step ahead, before they arise.</p>
+            </div>
+            <div class="[&>p:not(:last-child)]:mb-6">
+                <p>Through our digital platform, fostering an automated Working Capital solution, we strive to make your company’s financial planning easier and powerful, enabling you to address market headwinds. Built for the modern CFO, WoCap brings clarity, control, and automation to a space long overdue for innovation. We are redefining working capital as a strategic lever—not just a line item—helping companies shift from reactive cash management to proactive financial leadership.</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto bg-(--wocap-gray-300) rounded-tl-[120px] rounded-br-[120px]">
+        <div class="grid desktop:grid-cols-2 items-center">
+            <div  data-animation="animate-fade-right">
+                <picture>
+                    <source srcset="/img/revolutionizing-buyer.webp" type="image/webp">
+                    <img src="/img/revolutionizing-buyer.png" width="800" height="760" alt="Revolutionizing Buyer-Supplier Relationships">
+                </picture>
+            </div>
+            <div class="px-4 desktop:px-20 py-8 animate-delay-150" data-animation="animate-fade">
+                <span class="text-(--wocap-primary) text-sm flex items-center font-semibold mb-4"><i class="icon-tag text-base mr-2"></i> OUR MISSION</span>
+                <h2 class="h4 text-(--wocap-gray-900) mb-4">Revolutionizing Buyer-Supplier Relationships</h2>
+                <h3 class="h5 text-base mb-8">Our mission is simple.</h3>
+                <ul class="list-disc pl-6 [&>li:not(:last-child)]:mb-2">
+                    <li><strong>Streamline the relationship</strong> between Buyers and their Suppliers and unlock Working Capital for companies that really need it.</li>
+                    <li><strong>Help companies grow</strong> and create a healthier economy for everyone.</li>
+                    <li>Use the <strong>latest sophisticated technological tools</strong> and together with full transparency provide all companies with the most fair capital allocation.</li>
+                    <li>Retain our <strong>flexibility, innovate</strong> and always adopt latest market trends in our client approach and product spectrum.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-xLarge mx-auto">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 desktop:col-start-1 desktop:col-end-6 animate-delay-150 max-desktop:mb-6" data-animation="animate-fade-right">
+                <h2 class="h4">We believe in creating win-win solutions for Buyers and their Suppliers</h2>
+                <p>Our platform empowers Buyers to reduce costs while enabling Suppliers access Working Capital faster. By running competitive auctions, we ensure transparency, fairness and maximum value for all parties.</p>
+                <ul class="swiper-vision-nav flex flex-col gap-2 mt-12">
+                    <li data-slide="0" class="group active flex flex-cols bg-(--wocap-white)/40 [&.active]:bg-(--wocap-white) items-start relative rounded-[8px] cursor-pointer p-4 desktop:px-8 desktop:py-6 border border-transparent [&.active]:border-(--wocap-primary) transition-all duration-300 ease-in-out">
+                        <div class="flex-0 group-[.active]:flex-[32px] group-[.active]:shrink-0 mr-0 group-[.active]:mr-6 transition-all duration-300 ease-in-out">
+                            <img class="w-8 h-8" src="/img/arrow-right-icon.svg" width="32" height="32" alt="">
+                        </div>
+                        <div class="flex-initial">
+                            <h3 class="h5 mb-2 text-(--wocap-gray-900) transition-all duration-300 ease-in-out">Support economies</h3>
+                            <p class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-[.active]:max-h-[200px]">Enable circulation of idle cash back to the economy ensuring a more fair capital allocation for all companies.</p>
+                        </div>
+                    </li>
+                    <li data-slide="1" class="group flex flex-cols bg-(--wocap-white)/40 [&.active]:bg-(--wocap-white) items-start relative rounded-[8px] cursor-pointer p-4 desktop:px-8 desktop:py-6 border border-transparent [&.active]:border-(--wocap-primary) transition-all duration-300 ease-in-out">
+                        <div class="flex-0 group-[.active]:flex-[32px] group-[.active]:shrink-0 mr-0 group-[.active]:mr-6 transition-all duration-300 ease-in-out">
+                            <img class="w-8 h-8" src="/img/arrow-right-icon.svg" width="32" height="32" alt="">
+                        </div>
+                        <div class="flex-initial">
+                            <h3 class="h5 mb-2 text-(--wocap-gray-900) transition-all duration-300 ease-in-out">Stay ahead of the curve</h3>
+                            <p class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-[.active]:max-h-[200px]">Enable circulation of idle cash back to the economy ensuring a more fair capital allocation for all companies.</p>
+                        </div>
+                    </li>
+                    <li data-slide="2" class="group flex flex-cols bg-(--wocap-white)/40 [&.active]:bg-(--wocap-white) items-start relative rounded-[8px] cursor-pointer p-4 desktop:px-8 desktop:py-6 border border-transparent [&.active]:border-(--wocap-primary) transition-all duration-300 ease-in-out">
+                        <div class="flex-0 group-[.active]:flex-[32px] group-[.active]:shrink-0 mr-0 group-[.active]:mr-6 transition-all duration-300 ease-in-out">
+                            <img class="w-8 h-8" src="/img/arrow-right-icon.svg" width="32" height="32" alt="">
+                        </div>
+                        <div class="flex-initial">
+                            <h3 class="h5 mb-2 text-(--wocap-gray-900) transition-all duration-300 ease-in-out">Go-to platform for Working Capital</h3>
+                            <p class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-[.active]:max-h-[200px]">Enable circulation of idle cash back to the economy ensuring a more fair capital allocation for all companies.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-12 desktop:col-start-7 desktop:col-end-13 animate-delay-150" data-animation="animate-fade-left">
+                <div class="swiper swiper--vision">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper items-stretch">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture class="block max-w-[652px] mx-auto rounded-tl-[120px] rounded-br-[120px] overflow-hidden">
+                                <source srcset="/img/our-vision-slider-img1.webp" type="image/webp">
+                                <img src="/img/our-vision-slider-img1.png" width="652" height="580" alt="Support economies">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="block max-w-[652px] mx-auto rounded-tl-[120px] rounded-br-[120px] overflow-hidden">
+                                <source srcset="/img/our-vision-slider-img1.webp" type="image/webp">
+                                <img src="/img/our-vision-slider-img1.png" width="652" height="580" alt="Stay ahead of the curve">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="block max-w-[652px] mx-auto rounded-tl-[120px] rounded-br-[120px] overflow-hidden">
+                                <source srcset="/img/our-vision-slider-img1.webp" type="image/webp">
+                                <img src="/img/our-vision-slider-img1.png" width="652" height="580" alt="Go-to platform for Working Capital">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-desktop mx-auto text-center animate-delay-150" data-animation="animate-fade">
+        <picture>
+            <img src="/img/building-better-financial-system-icon.svg" width="80" height="80" alt="Building a better financial system" class="mx-auto mb-6">
+        </picture>
+        <h2 class="h2 text-(--wocap-gray-900) mb-6">Building better financial systems</h2>
+        <p class="text-balance" >As we build, we’re embedding ESG principles into our model—empowering companies to support supplier diversity, sustainability, and equitable access to capital through smarter financial flows.</p>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto bg-(--wocap-gray-300) rounded-tl-[120px] rounded-br-[120px] pl-8 tablet:pl-20 py-16 tablet:py-24">
+        <span class="text-(--wocap-primary) text-sm flex items-center font-semibold mb-4"><i class="icon-tag text-base mr-2"></i> OUR PRINCIPLES</span>
+        <div class="grid desktop:grid-cols-2 mb-12 pr-8 tablet:pr-20">
+            <div class="">
+                <h2 class=" h4 mb-4">Our principles are the core of who we are</h2>
+                <p>They reflect our beliefs, define our values, and guide our actions. They are the foundation of our identity and the way we operate.</p>
+            </div>
+            <div class="flex gap-4 justify-end items-end">
+                <button role="button" class="swiper--principles__swiper-arrowLeft flex items-center justify-center text-xs w-8 h-8 [&:not(.swiper-button-disabled)]:cursor-pointer [&:not(.swiper-button-disabled)]:bg-(--wocap-white) [.swiper-button-disabled]:opacity-50 rounded-full border-2 border-(--wocap-gray-900) hover:[&:not(.swiper-button-disabled)]:border-(--wocap-primary) hover:[&:not(.swiper-button-disabled)]:text-(--wocap-primary)">
+                    <span class="icon-arrowLeft"><i class="sr-only">Previous</i></span>
+                </button>
+                <button role="button" class="swiper--principles__swiper-arrowRight flex items-center justify-center text-xs w-8 h-8 [&:not(.swiper-button-disabled)]:cursor-pointer [&:not(.swiper-button-disabled)]:bg-(--wocap-white) [.swiper-button-disabled]:opacity-50 rounded-full border-2 border-(--wocap-gray-900) hover:[&:not(.swiper-button-disabled)]:border-(--wocap-primary) hover:[&:not(.swiper-button-disabled)]:text-(--wocap-primary)">
+                    <span class="icon-arrowRight"><i class="sr-only">Next</i></span>
+                </button>
+            </div>
+        </div>
+        <div class="swiper swiper--principles">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mb-6 items-stretch">
+                <!-- Slides -->
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="grid desktop:grid-cols-2 gap-6 bg-(--wocap-white) p-8 animate-delay-150" data-animation="animate-fade">
+                        <h3 class="h2 text-(--wocap-primary)">Trust and commitment</h3>
+                        <div class="[&>p:not(:last-child)]:mb-6 desktop:[&>p:not(:last-child)]:mb-8">
+                            <p>We are here to stay and take our positive impact on any single company very seriously.</p>
+                            <p>Economies may be cyclical, seasonal or simply volatile, yet our partnership with every single company will always be stable and guaranteed, while our services are inelastic to market challenges.</p>
+                            <p>Become your trusted partner, especially during the downside. While we simultaneously engage with very large Buyers or very small Suppliers, we commit that our service is top notch across the board and guarantee each company’s safety and prosperity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="grid desktop:grid-cols-2 gap-6 bg-(--wocap-white) p-8 animate-delay-150" data-animation="animate-fade">
+                        <h3 class="h2 text-(--wocap-primary)">Fair and Equitable</h3>
+                        <div class="[&>p:not(:last-child)]:mb-6 desktop:[&>p:not(:last-child)]:mb-8">
+                            <p>We are here to stay and take our positive impact on any single company very seriously.</p>
+                            <p>Economies may be cyclical, seasonal or simply volatile, yet our partnership with every single company will always be stable and guaranteed, while our services are inelastic to market challenges.</p>
+                            <p>Become your trusted partner, especially during the downside. While we simultaneously engage with very large Buyers or very small Suppliers, we commit that our service is top notch across the board and guarantee each company’s safety and prosperity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="grid desktop:grid-cols-2 gap-6 bg-(--wocap-white) p-8 animate-delay-150" data-animation="animate-fade">
+                        <h3 class="h2 text-(--wocap-primary)">Trust and commitment</h3>
+                        <div class="[&>p:not(:last-child)]:mb-6 desktop:[&>p:not(:last-child)]:mb-8">
+                            <p>We are here to stay and take our positive impact on any single company very seriously.</p>
+                            <p>Economies may be cyclical, seasonal or simply volatile, yet our partnership with every single company will always be stable and guaranteed, while our services are inelastic to market challenges.</p>
+                            <p>Become your trusted partner, especially during the downside. While we simultaneously engage with very large Buyers or very small Suppliers, we commit that our service is top notch across the board and guarantee each company’s safety and prosperity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <h2 class="h2 text-center mb-12 delay-150" data-animation="animate-fade">
+            Leadership Team
+        </h2>
+        <div class="grid grid-cols-1 gap-4 desktop:gap-7 desktop:grid-cols-2">
+            <article class="@container relative overflow-hidden flex items-start XLarge:min-h-[500px] bg-(--wocap-gray-900) rounded-tl-[48px] rounded-br-[48px] ">
+                <div class="mt-auto pt-6 desktop:pt-12 pl-6 desktop:pl-12 pb-6 desktop:pb-12 z-10 basis-auto grow">
+                    <h3 class="h5 text-(--wocap-primary)">Petros Patronis</h3>
+                    <p class="text-lg font-semibold mb-2 text-(--wocap-primary)">CEO & Founder</p>
+                    <ul class="list-disc ml-6 text-(--wocap-white)">
+                        <li>Citibank alumnus with 16 years of service</li>
+                        <li>Corporate Banking & Capital Markets</li>
+                        <li>Team Lead of Shipping Banking in Greece</li>
+                    </ul>
+                </div>
+                <picture class="transform z-10 animate-delay-150 basis-1/2 shrink-0 grow-0 tablet:basis-[330px] desktop:max-large:basis-[250px] xLarge:basis-[460px] translate-x-[6cqw] xLarge:translate-x-[7.5cqw] translate-y-[-3.5cqh] tablet:translate-y-[-2cqh] xLarge:translate-y-[-5cqh]  aspect-square  rounded-full rounded-tr-none overflow-hidden" data-animation="animate-fade-up">
+                    <source srcset="/img/patronis-avatar.webp" type="image/webp">
+                    <img src="/img/patronis-avatar.png" width="460" height="460" alt="Suppliers">
+                </picture>
+            </article>
+            <article class="@container relative overflow-hidden flex items-start xLarge:min-h-[500px]  bg-(--wocap-primary) rounded-tl-[48px] rounded-br-[48px] ">
+                <div class="mt-auto pt-6 desktop:pt-12 pl-6 desktop:pl-12 pb-6 desktop:pb-12 z-10 basis-auto grow">
+                    <h3 class="h5 text-(--wocap-gray-900)">Stauros Triantafyllos</h3>
+                    <p class="text-lg font-semibold mb-2 text-(--wocap-gray-900)">CTO</p>
+                    <ul class="list-disc ml-6 text-(--wocap-gray-900)">
+                        <li>Principal Software Engineer and Architect</li>
+                        <li>Over 10 years of experience in product oriented companies</li>
+                    </ul>
+                </div>
+                <picture class="transform z-10 animate-delay-150 basis-1/2 shrink-0 grow-0 tablet:basis-[330px] desktop:max-large:basis-[250px] xLarge:basis-[460px] translate-x-[6cqw] xLarge:translate-x-[7.5cqw] translate-y-[-3.5cqh] tablet:translate-y-[-2cqh] xLarge:translate-y-[-5cqh]  aspect-square  rounded-full rounded-tr-none overflow-hidden" data-animation="animate-fade-up">
+                    <source srcset="/img/triantafyllos-avatar.webp" type="image/webp">
+                    <img src="/img/triantafyllos-avatar.png" width="460" height="460" alt="Suppliers">
+                </picture>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <h2 class="h2 text-center mb-12" data-animation="animate-fade-up">
+        Strategic Partners
+    </h2>
+    <div class="max-w-screen-xxLarge mx-auto grid tablet:grid-cols-12 gap-4">
+        <article class="grid tablet:grid-cols-2 col-span-12 desktop:col-span-7 gap-12 p-4 desktop:p-12 items-center bg-(--wocap-gray-300) animate-delay-150" data-animation="animate-fade-right">
+            <p class="desktop:text-xl">Backed by Genesis Ventures as our lead investor, we are currently co-developing the platform with early pilot partners and strategic advisors.</p>
+            <picture class="flex items-center justify-center rounded-tl-[48px] rounded-br-[48px] bg-(--wocap-white) p-10">
+                <img src="/img/genesis-ventures.svg" width="240" height="70" alt="Genesis Ventures">
+            </picture>
+        </article>
+        <article class="col-span-12 desktop:col-span-5 flex justify-between items-center gap-12 p-4 desktop:p-12 items-center bg-(--wocap-primary) animate-delay-150" data-animation="animate-fade-left">
+            <picture class="flex items-center justify-center basis-[88px] shrink-0 grow-0">
+                <img src="/img/angel-investor-icon.svg" width="88" height="88" alt="Genesis Ventures" >
+            </picture>
+            <p class="desktop:text-xl">We are also thankful for the support of our angel investors, for backing our vision and believing in the impact Wocap can have.</p>
+        </article>
+    </div>
+</section>
+
+<section class="px-4">
+    <h2 class="h2 text-center mb-12" data-animation="animate-fade-up">
+        Strategic Partners
+    </h2>
+    <div class="max-w-screen-xxLarge mx-auto grid tablet:grid-cols-2 gap-4 mb-4">
+        <article class="grid tablet:grid-cols-2 gap-12 p-4 desktop:p-12 items-center bg-(--wocap-gray-300) animate-delay-150" data-animation="animate-fade-right">
+            <p class="desktop:text-xl">Backed by Genesis Ventures as our lead investor, we are currently co-developing the platform with early pilot partners and strategic advisors.</p>
+            <picture class="flex items-center justify-center rounded-tl-[48px] rounded-br-[48px] bg-(--wocap-white) p-10">
+                <img src="/img/genesis-ventures.svg" width="240" height="70" alt="Genesis Ventures">
+            </picture>
+        </article>
+        <article class="grid tablet:grid-cols-2 gap-12 p-4 desktop:p-12 items-center bg-(--wocap-gray-300) animate-delay-150" data-animation="animate-fade-left">
+            <p class="desktop:text-xl">Backed by Point Nine Capital as our lead investor, we are currently co-developing the platform with early pilot partners and strategic advisors.</p>
+            <picture class="flex items-center justify-center rounded-tl-[48px] rounded-br-[48px] bg-(--wocap-white) p-10">
+                <img src="/img/point-nine-capital.svg" width="117" height="117" alt="Genesis Ventures">
+            </picture>
+        </article>
+    </div>
+    <div class="max-w-screen-xxLarge mx-auto text-center p-6 desktop:p-12 bg-(--wocap-primary)">
+        <div class="max-w-screen-tablet mx-auto text-center">
+            <img class="mb-4 mx-auto" src="/img/angel-investor-icon.svg" width="88" height="88" alt="Angel Investor">
+
+            <p class="mb-8 desktop:animate-delay-150 text-xl" data-animation="animate-fade">We are also thankful for the support of our angel investors, for backing our vision and believing in the impact Wocap can have.</p>
+            <div class="grid grid-cols-2 tablet:grid-cols-4 gap-4 tablet:gap-12 mt-10">
+                <a href="#" data-animation="animate-fade" class="animate-delay-0">
+                    <img src="/img/logo-placeholder.svg" width="200" height="80" alt="Kos Hotel">
+                </a>
+                <a href="#" data-animation="animate-fade" class="animate-delay-150">
+                    <img src="/img/logo-placeholder.svg" width="200" height="80" alt="San Antonio">
+                </a>
+                <a href="#" data-animation="animate-fade" class="animate-delay-300">
+                    <img src="/img/logo-placeholder.svg" width="200" height="80" alt="Kos Hotel">
+                </a>
+                <a href="#" data-animation="animate-fade" class="animate-delay-450">
+                    <img src="/img/logo-placeholder.svg" width="200" height="80" alt="San Antonio">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-large mx-auto">
+        <h2 class="h2 text-center mb-12" data-animation="animate-fade">
+            Advisors
+        </h2>
+        <div class="grid grid-cols-1 gap-4 desktop:gap-7 desktop:grid-cols-2">
+            <article class="@container relative overflow-hidden flex items-start large:min-h-[340px] bg-(--wocap-gray-300) rounded-tl-[48px] rounded-br-[48px]"  data-animation="animate-fade-right">
+                <picture class="transform z-10 basis-1/2 shrink-0 grow-0 tablet:basis-[280px]  translate-x-[-3cqw] translate-y-[-1cqh] aspect-square rounded-full rounded-tl-none overflow-hidden">
+                    <source srcset="/img/patronis-avatar.webp" type="image/webp">
+                    <img src="/img/patronis-avatar.png" width="460" height="460" alt="Suppliers">
+                </picture>
+                <div class="mt-auto pt-6 desktop:pt-12 pr-6 desktop:pl-12 pb-6 desktop:pb-12 z-10 basis-auto grow">
+                    <h3 class="h5 text-(--wocap-gray-900)">Linos Lekkas</h3>
+                    <p class="mb-2 text-(--wocap-gray-900) text-balance">Managing Director and Vice Chairman at Citi until May 2024.</p>
+                </div>
+            </article>
+            <article class="@container relative overflow-hidden flex items-start large:min-h-[340px] bg-(--wocap-gray-300) rounded-tl-[48px] rounded-br-[48px]" data-animation="animate-fade-left">
+                <picture class="transform z-10 basis-1/2 shrink-0 grow-0 tablet:basis-[280px]  translate-x-[-3cqw] translate-y-[-1cqh] aspect-square rounded-full rounded-tl-none overflow-hidden">
+                    <source srcset="/img/triantafyllos-avatar.webp" type="image/webp">
+                    <img src="/img/triantafyllos-avatar.png" width="460" height="460" alt="Suppliers">
+                </picture>
+                <div class="mt-auto pt-6 desktop:pt-12 pr-6 desktop:pl-12 pb-6 desktop:pb-12 z-10 basis-auto grow">
+                    <h3 class="h5 text-(--wocap-gray-900)">Grigoris Lamprou</h3>
+                    <p class="mb-2 text-(--wocap-gray-900) text-balance">CEO of Procureship, a SaaS platform established in 2016.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <div class="grid grid-cols-2 mb-4">
+            <div class="">
+                <h2 class=" h4">In the Press</h2>
+            </div>
+            <div class="flex gap-4 justify-end items-end">
+                <button role="button" class="swiper--principles__swiper-arrowLeft flex items-center justify-center text-xs w-8 h-8 [&:not(.swiper-button-disabled)]:cursor-pointer [&:not(.swiper-button-disabled)]:bg-(--wocap-white) [.swiper-button-disabled]:opacity-50 rounded-full border-2 border-(--wocap-gray-900) hover:[&:not(.swiper-button-disabled)]:border-(--wocap-primary) hover:[&:not(.swiper-button-disabled)]:text-(--wocap-primary)">
+                    <span class="icon-arrowLeft"><i class="sr-only">Previous</i></span>
+                </button>
+                <button role="button" class="swiper--principles__swiper-arrowRight flex items-center justify-center text-xs w-8 h-8 [&:not(.swiper-button-disabled)]:cursor-pointer [&:not(.swiper-button-disabled)]:bg-(--wocap-white) [.swiper-button-disabled]:opacity-50 rounded-full border-2 border-(--wocap-gray-900) hover:[&:not(.swiper-button-disabled)]:border-(--wocap-primary) hover:[&:not(.swiper-button-disabled)]:text-(--wocap-primary)">
+                    <span class="icon-arrowRight"><i class="sr-only">Next</i></span>
+                </button>
+            </div>
+        </div>
+        <div class="swiper swiper--press">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mb-6 items-stretch">
+                <!-- Slides -->
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="bg-(--wocap-white) p-8 animate-delay-0" data-animation="animate-fade">
+                        <picture class="mb-6 block">
+                            <source srcset="/img/wocap-press1.webp" type="image/webp">
+                            <img src="/img/wocap-press1.png" width="367" height="190" alt="Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται">
+                        </picture>
+                        <div class="text-(--wocap-gray-800) text-xs mb-4"><span class="font-semibold">startupper.gr</span><i class="icon-tag text-(--wocap-primary) mx-2"></i><span>15/04/2025</span></div>
+                        <h3 class="text-base! text-(--wocap-gray-800)">Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="bg-(--wocap-white) p-8 animate-delay-150" data-animation="animate-fade">
+                        <picture class="mb-6 block">
+                            <source srcset="/img/wocap-press1.webp" type="image/webp">
+                            <img src="/img/wocap-press1.png" width="367" height="190" alt="Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται">
+                        </picture>
+                        <div class="text-(--wocap-gray-800) text-xs mb-4"><span class="font-semibold">startupper.gr</span><i class="icon-tag text-(--wocap-primary) mx-2"></i><span>15/04/2025</span></div>
+                        <h3 class="text-base! text-(--wocap-gray-800)">Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="bg-(--wocap-white) p-8 tablet:animate-delay-300" data-animation="animate-fade">
+                        <picture class="mb-6 block">
+                            <source srcset="/img/wocap-press1.webp" type="image/webp">
+                            <img src="/img/wocap-press1.png" width="367" height="190" alt="Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται">
+                        </picture>
+                        <div class="text-(--wocap-gray-800) text-xs mb-4"><span class="font-semibold">startupper.gr</span><i class="icon-tag text-(--wocap-primary) mx-2"></i><span>15/04/2025</span></div>
+                        <h3 class="text-base! text-(--wocap-gray-800)">Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="bg-(--wocap-white) p-8 desktop:animate-delay-400" data-animation="animate-fade">
+                        <picture class="mb-6 block">
+                            <source srcset="/img/wocap-press1.webp" type="image/webp">
+                            <img src="/img/wocap-press1.png" width="367" height="190" alt="Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται">
+                        </picture>
+                        <div class="text-(--wocap-gray-800) text-xs mb-4"><span class="font-semibold">startupper.gr</span><i class="icon-tag text-(--wocap-primary) mx-2"></i><span>15/04/2025</span></div>
+                        <h3 class="text-base! text-(--wocap-gray-800)">Wocap: 450.000 ευρώ για Β2Β κεφάλαια κίνησης με την Genesis Ventures να ηγείται</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination">
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-tablet mx-auto text-center">
+        <h2 class="h2 text-(--wocap-gray-900) mb-6 animate-delay-150" data-animation="animate-fade-up">Get in touch</h2>
+        <p class="mb-12 animate-delay-150" data-animation="animate-fade">Whether you're a buyer or supplier, our team is ready to show you how our intelligent platform can drive growth, liquidity, and resilience across your supply chain.</p>
+        <a href="#" class="btn-primary animate-delay-150" data-animation="animate-fade">Contact us</a>
+    </div>
+</section>
+
+<footer class="mt-40 px-4 py-4 desktop:py-10 bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-col items-center desktop:items-start desktop:flex-row gap-4 desktop:mb-[110px]">
+        <div class="basis-auto desktop:basis-[200px] desktop:grow-0">
+            <a href="/">
+                <img src="/img/footer-logo.svg" loading="lazy" width="72" height="72" alt="wocap ">
+            </a>
+        </div>
+        <nav class="basis-auto flex desktop:grow-0 max-desktop:items-center desktop:flex-col gap-2 desktop:gap-4 text-(--wocap-white) font-bold">
+            <a href="/how-it-works" aria-label="Features">About us</a>
+            <a href="#" aria-label="Platform">Platform</a>
+            <a href="/contact" aria-label="Contact us">How it works</a>
+            <a href="/" aria-label="Facebook" class="icon-linkedIn desktop:mt-6 text-3xl"></a>
+        </nav>
+        <nav class="max-desktop:my-8 desktop:flex-auto justify-center flex gap-[40px] flex-wrap">
+            <a href="#" class="">
+                <img src="/img/elevate-logo.svg" width="110" height="59" alt="elevate greece">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+        </nav>
+        <div class="basis-auto desktop:basis-[445px] desktop:grow-0 desktop:shrink-0 flex flex-col gap-4">
+            <form class="mb-6">
+                <div class="flex flex-col">
+                    <label for="email" class="mb-4 text-(--wocap-white) font-bold">Stay in touch</label>
+                    <p class="text-(--wocap-white) mb-4 text-balance">Subscribe to our newsletter to get the latest news, articles, and resources, sent to your inbox weekly.</p>
+                    <div class="flex flex-row gap-2">
+                        <input id="email" type="email" placeholder="Your email" class="basis-auto rounded-full bg-(--wocap-gray-800) border border-(--wocap-primary)/21 text-(--wocap-white) placeholder:text-(--wocap-white) text-base h-12 px-4 desktop:px-8 outline-0">
+                        <button type="submit" class="btn btn-primary btn-primary--small">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="max-w-screen-xxLarge mx-auto text-xs text-(--wocap-white) desktop:mt-16">
+        <div class="flex max-desktop:flex-col w-full gap-4">
+            <div class="desktop:flex-[280px] desktop:grow-0 desktop:shrink">© Wocap 2024, All Rights Reserved</div>
+            <nav class="basis-auto grow shrink flex gap-12">
+                <a href="#">Terms of Use / Privacy</a>
+                <a href="#">Policies</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="./main.js" type="module"></script>
+<!--<script src="/js/index-animation.js" type="module"></script>-->
+
+</html>

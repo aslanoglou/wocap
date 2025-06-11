@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link href="/roompulse.svg" rel="icon" type="image/svg+xml"/>
+    <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta name="description" content="Simplify rate shopping with actionable insights, intelligent alerts, and automated room pricing to maximize your revenue growth." />
-    <link as="style" rel="preload" href="/style.css" />
-    <link rel="stylesheet" href="/style.css"/>
-    <title>roompulse</title>
+    <meta name="description" content="Streamline your working capital with wocap."/>
+    <link as="style" rel="preload" href="style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>wocap - working capital</title>
 </head>
 
-<body class="m-0 bg-(--wocap-gray-100) text-base font-normal text-(--wocap-gray-800)">
+<body class="m-0 bg-(--wocap-gray-100) text-base font-normal font-geologica text-(--wocap-gray-800)">
 <!--nav data-bg values: none / blue / light-blue-->
-<nav class="animate-delay-0 fixed start-0 top-0 z-20 w-full px-4 py-4 max-h-(--nav-height) bg-(--wocap-gray-100)">
-    <div class="max-w-screen-xLarge mx-auto flex flex-wrap items-center">
-        <a aria-label="wocap" class="flex items-center desktop:mr-10 z-10" href="/">
-            <img src="/img/logo.svg" alt="wocap" class="h-[36px]">
+<nav class="animate-delay-0 sticky start-0 top-0 z-20 w-full px-4 py-4 max-h-(--nav-height) bg-(--wocap-gray-100)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-wrap items-center">
+        <a aria-label="wocap" class="flex items-center desktop:mr-10 z-10" href="./">
+            <img src="/img/logo.svg" width="177" height="36" alt="wocap" class="h-[36px]">
         </a>
         <div class="flex space-x-3 desktop:order-2 ml-auto rtl:space-x-reverse relative z-20">
             <button
@@ -26,44 +26,42 @@
                     type="button"
             >
                 <span class="sr-only">Open main menu</span>
-                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-white group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
-                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-white group-[.active]:opacity-0"></span>
-                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-white group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:opacity-0"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
             </button>
         </div>
-        <div class="bg-white desktop:bg-transparent w-full px-4 pt-[73px] desktop:pt-0 desktop:px-0 desktop:items-center justify-between desktop:order-1 desktop:grow flex flex-col desktop:flex-row desktop:w-auto h-full desktop:h-auto top-0 transition-transform translate-x-0 desktop:translate-x-0 [&.active]:-translate-x-full [&.active]:desktop:translate-x-0 desktop:transition-none left-full desktop:left-0 fixed desktop:relative"
+        <div class="bg-(--wocap-white) desktop:bg-transparent w-full px-4 pt-[73px] desktop:pt-0 desktop:px-0 desktop:items-center justify-between desktop:order-1 desktop:grow flex flex-col desktop:flex-row desktop:w-auto h-full desktop:h-auto top-0 transition-transform translate-x-0 desktop:translate-x-0 [&.active]:-translate-x-full [&.active]:desktop:translate-x-0 desktop:transition-none left-full desktop:left-0 fixed desktop:relative"
              id="navbar-sticky">
 
             <ul class="mt-4 flex flex-col px-0 py-4 text-base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse [&>li]:desktop:mx-2 [&>li]:large:mx-6">
                 <li>
-                    <a class="nav-text-link" href="./how-it-works">How it works</a>
+                    <a class="nav-text-link" href="/how-it-works">How it works</a>
                 </li>
                 <li>
-                    <a class="nav-text-link" href="./company">Our mission</a>
+                    <a class="nav-text-link" href="/our-mission">Our mission</a>
                 </li>
                 <li>
-                    <a class="nav-text-link" href="./contact">Solutions</a>
-                </li>
-                <li>
-                    <a class="nav-text-link" href="./contact">Contact</a>
+                    <a class="nav-text-link" href="/contact">Contact</a>
                 </li>
             </ul>
-            <a class="nav-text-link  max-desktop:text-center desktop:ml-auto desktop:mr-[2vw] large:mr-[3vw]" href="#">
-                I ‘m a buyer <span class="icon-arrow-up-right ml-4 desktop:max-large:ml-1 text-(--wocap-primary)"></span>
+            <a class="nav-text-link nav-text-link--no-border max-desktop:text-center desktop:ml-auto desktop:mr-[2vw] large:mr-[3vw]" href="/buyer">
+                I ‘m a buyer <span
+                    class="icon-arrow-up-right ml-4 desktop:max-large:ml-1 text-(--wocap-primary)"></span>
             </a>
             <ul class=" max-desktop:mt-18 flex flex-col px-0 py-4 text-base desktop:items-center desktop:text-md base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse">
-                <li class="desktop:mx-2 desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
-                    <a class="nav-text-link max-desktop:text-center"
+                <li class="desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border max-desktop:text-center"
                        href="#">Sign Up</a>
                 </li>
                 <li class="max-desktop:hidden text-(--wocap-gray-900)/25">|</li>
                 <li class="desktop:ml-2 desktop:mr-[2vw] large:mr-[3vw] desktop:first:ml-auto  [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
-                    <a class="nav-text-link  max-desktop:text-center"
+                    <a class="nav-text-link nav-text-link--no-border  max-desktop:text-center"
                        href="#">Sign In</a>
                 </li>
-                <li class="desktop:mx-2 desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                <li class="inline-flex desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
                     <a href="#" class="w-full desktop:w-auto btn-primary desktop:max-large:text-sm"
-                            type="button">Request a Demo
+                       type="button">Request a Demo
                     </a>
                 </li>
             </ul>
@@ -71,442 +69,407 @@
     </div>
 </nav>
 
-<section class="pt-(--nav-height) min-h-[100vh] flex items-center">
-    <div class="container max-w-xLarge mx-auto px-4 xLarge:px-0">
+<header class="min-h-[calc(100vh-var(--nav-height))] flex items-center px-4 mb-[100px]">
+    <div class="max-w-screen-xxLarge mx-auto">
         <div class="flex flex-col desktop:flex-row gap-20">
-            <div class="flex desktop:flex-1 flex-col justify-center items-start">
-                <h1 class="h1 text-(--wocap-gray-900)">Streamline your working capital with wocap</h1>
-                <p class="font-semibold">Get paid what you are owed faster by entering the most innovative Working Capital tool in the market with a few clicks</p>
+            <div class="flex desktop:flex-1 flex-col justify-center desktop:items-start max-desktop:text-center">
+                <h1 class="h1 text-(--wocap-gray-900) text-balance">Streamline your working capital with wocap</h1>
+                <p class="font-semibold">Get paid what you are owed faster by entering the most innovative Working
+                    Capital tool in the market with a few clicks</p>
                 <p class="mb-8 text-(--wocap-primary) font-semibold">no hidden or extra fees</p>
-                <div class="flex flex-wrap gap-4 w-full items-center">
+                <div class="flex flex-wrap gap-4 w-full justify-center desktop:justify-start items-center">
                     <div class="text-center">
                         <a class="btn-primary w-full" href="">Request a Demo</a>
                     </div>
                 </div>
             </div>
             <div id="lottie" class="flex-1 aspect-square">
-                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                <dotlottie-player src="https://lottie.host/243f6229-dd38-4d21-9d40-8dbbbfda4199/yqH58tlPQa.lottie" background="transparent" speed="1" style="width: 100%; height: 100%" loop autoplay></dotlottie-player>
-<!--                <img loading="eager" alt="" class="mx-auto" height="560" src="/img/home-hero-img.png" width="560">-->
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                        type="module"></script>
+                <dotlottie-player src="https://lottie.host/243f6229-dd38-4d21-9d40-8dbbbfda4199/yqH58tlPQa.lottie"
+                                  background="transparent" speed="1" style="width: 100%; height: 100%" loop
+                                  autoplay></dotlottie-player>
+                <!--                <img loading="eager" alt="" class="mx-auto" height="560" src="/img/home-hero-img.png" width="560">-->
             </div>
+        </div>
+    </div>
+</header>
+
+<section class="px-4">
+    <div class="max-w-screen-desktop mx-auto flex flex-col items-center">
+        <h2 class="h6 text-center" data-animation="animate-fade">TRUSTED BY</h2>
+        <div class="grid grid-cols-2 tablet:grid-cols-4 gap-4 tablet:gap-12 mt-10">
+            <a href="#" data-animation="animate-fade" class="animate-delay-0">
+                <img src="/img/logo-placeholder.svg" width="200" height="80" alt="Kos Hotel">
+            </a>
+            <a href="#" data-animation="animate-fade" class="animate-delay-150">
+                <img src="/img/logo-placeholder.svg" width="200" height="80" alt="San Antonio">
+            </a>
+            <a href="#" data-animation="animate-fade" class="animate-delay-300">
+                <img src="/img/logo-placeholder.svg" width="200" height="80" alt="Kos Hotel">
+            </a>
+            <a href="#" data-animation="animate-fade" class="animate-delay-450">
+                <img src="/img/logo-placeholder.svg" width="200" height="80" alt="San Antonio">
+            </a>
         </div>
     </div>
 </section>
 
-<section class="pt-20 text-center" >
-    <div class="max-w-[900px] mx-auto px-4" data-animation="fadeInUp">
-        <h2 class="h2 mb-4"><span>Simplify</span> Your Pricing Decisions</h2>
-        <p class="mb-20">Roompulse .io is a SaaS platform that helps hoteliers make smarter pricing decisions and maximize revenue by
-            effortlessly tracking competitor pricing and predicting market trends</p>
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto aspect-16/9 relative overflow-hidden rounded-3xl animate-delay-300" data-animation="animate-fade-up">
+        <iframe
+                class="absolute inset-0 bg-[var(--wocap-gray-300)]"
+                title="A video reel with the portfolio of ignota.io"
+                src="https://player.vimeo.com/video/836512442?h=fce1e11985&autoplay=1&loop=1&background=1"
+                width="100%" height="100%" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen>
+        </iframe>
     </div>
-    <picture class=" block relative w-full px-4 after:absolute after:block after:w-full after:bottom-0 after:left-0 after:bg-white after:h-1/2" data-animation="fadeInUp">
-        <img
-                alt=""
-                class="mx-auto relative z-10 shadow-xl rounded-3xl bg-white" width="794" height="493"
-                src="/img/price-decisions.png">
-    </picture>
 </section>
 
-<section class="bg-white">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <div class="grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-3 gap-2">
-            <article data-animation="fadeInUp" class="animate-delay-0 relative aspect-square desktop:aspect-auto 2xl:aspect-square flex flex-col content-between justify-between p-6 text-grey-200 rounded-2xl bg-blue-500 overflow-hidden">
-                <picture>
-<!--                    <source media="(max-width: 639px)" srcset="https://placehold.co/607x607/2463EB/FFF">-->
-                    <img
-                            alt=""
-                            class="absolute object-cover h-full w-full top-0 left-0"
-                            width="376"
-                            height="360"
-                            src="/img/metrics.png">
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto px-4 desktop:px-32 pt-27 pb-15 rounded-tl-[120px] rounded-br-[120px] bg-(--wocap-gray-300)">
+        <h2 class="h3 text-center mb-12" data-animation="animate-fade">Why use WoCap?</h2>
+        <div class="grid grid-flow-row grid-cols-1 tablet:grid-cols-5 gap-4">
+            <div class="tablet:col-span-2 p-6 bg-(--wocap-white) flex flex-col animate-delay-0" data-animation="animate-fade">
+                <img src="/img/automated-solution-icon.svg" width="60" height="60" alt="Automated solution" class="mb-4">
+                <h3 class="h5 mb-2">Automated solution</h3>
+                <p class="mb-6">Save time and money with our top notch technology</p>
+                <picture class="mt-auto">
+                    <source srcset="/img/automated-solution-image.webp" type="image/webp" />
+                    <img src="/img/automated-solution-image.png" width="472" height="240" alt="Automated solution">
                 </picture>
-
-                <span class="icon-metrics-1 z-10 text-3xl"></span>
-                <h3 class="z-10 mt-auto  text-grey-200 font-bold font-PPPangram">
-                    20M+
-                </h3>
-                <p class="z-10 text-base desktop:text-2xl ">Competitor Rates Analyzed Daily</p>
-            </article>
-            <article data-animation="fadeInUp" class="animate-delay-200 relative aspect-auto desktop:aspect-auto 2xl:aspect-square flex flex-col content-between justify-between p-6 text-grey-200 rounded-2xl bg-blue-500 overflow-hidden">
-                <span class="icon-metrics-2 z-10 text-3xl"></span>
-                <h3 class="z-10 mt-auto  text-grey-200 font-bold font-PPPangram">
-                    <p>50M+</p>
-                </h3>
-                <p class="z-10 text-base desktop:text-2xl ">Countries with Localized Market Data</p>
-            </article>
-            <div data-animation="fadeInUp" class="animate-delay-400 grid grid-cols-2 desktop:grid-cols-none desktop:grid-rows-2 gap-2 sm:col-span-2 desktop:col-span-1">
-                <article
-                        class="relative flex flex-col justify-center p-6 text-grey-200 rounded-2xl bg-grey-900 overflow-hidden">
-                    <h3 class="z-10  text-grey-200 font-bold font-PPPangram">
-                        5 minute
-                    </h3>
-                    <p class="z-10 text-base desktop:text-2xl ">Setup Time for Hotels</p>
-                </article>
-                <article
-                        class="relative flex flex-col justify-center p-6 text-grey-800 rounded-2xl bg-grey-500 overflow-hidden">
-                    <h3 class="z-10  text-blue-500 font-bold font-PPPangram">
-                        100.000
-                    </h3>
-                    <p class="z-10 text-base desktop:text-2xl text-grey-800 ">Competitor Pricing Strategies Tracked</p>
-                </article>
             </div>
-        </div>
-    </div>
-</section>
+            <div class="tablet:col-span-3 p-6 bg-(--wocap-white) flex flex-col animate-delay-150" data-animation="animate-fade">
+                <img src="/img/customizable-discounts-icon.svg" width="60" height="60" alt="Customizable Discounts" class="mb-4">
+                <h3 class="h5 mb-2">Customizable discounts</h3>
+                <p class="mb-6">Forget about pricings dictated to you by financial institutions and set your own discount terms</p>
 
-<section class="">
-    <div class="xl:container mx-auto px-4 xl:px-0 flex flex-col items-center">
-        <h2 class="h3 text-center">Trusted by leading hotels</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-10 desktop:gap-20 my-10">
-            <a href="#">
-                <img src="/img/koshotel_white.png" width="88" height="45" alt="Kos Hotel">
-            </a>
-            <a href="#">
-                <img src="/img/san-antonio.png" width="117" height="53" alt="San Antonio">
-            </a>
-            <a href="#">
-                <img src="/img/koshotel_white.png" width="88" height="45" alt="Kos Hotel">
-            </a>
-            <a href="#">
-                <img src="/img/san-antonio.png" width="117" height="53" alt="San Antonio">
-            </a>
-        </div>
-        <a href="" class="btn-primary btn-primary--outline mx-auto">Talk to an expert</a>
-    </div>
-</section>
-
-<section class="">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <h2 class="h2 mb-8 text-center"><span>Explore</span> Our Features</h2>
-        <div data-animation="fadeInUp" class="grid desktop:grid-cols-2 bg-blue-500 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-bottom rounded-t-3xl">
-            <div class="pt-16 desktop:pt-32 max-desktop:px-8 desktop:pl-16 pb-16">
-                <h3 class="h2 text-grey-200 font-PPPangram mb-6">Advanced Pricing Suite</h3>
-                <div class="flex flex-wrap gap-4">
-                    <a href="" class="btn-white">Start free</a>
-                    <a href="" class="btn-white btn-white--outline">Learn more</a>
+                <picture class="mt-auto">
+                    <source srcset="/img/customizable-discounts-image.webp" type="image/webp" />
+                    <img src="/img/customizable-discounts-image.png" width="747" height="240" alt="Customizable Discounts">
+                </picture>
+            </div>
+            <div class="tablet:col-span-3 p-6 bg-(--wocap-white) flex flex-col animate-delay-0" data-animation="animate-fade">
+                <img src="/img/seamless-integrations-icon.svg" width="60" height="60" alt="Seamless integrations" class="mb-4">
+                <h3 class="h5 mb-2">Seamless integrations</h3>
+                <p class="mb-6">Buyers get to connect with their favorite tools while Suppliers can just sign up in seconds</p>
+                <div class="grid grid-cols-3 items-center tablet:grid-cols-5 gap-4 tablet:gap-6 my-auto">
+                    <a href="#" class="inline-block border border-(--wocap-gray-200)">
+                        <img src="/img/logo-placeholder.svg" width="200" height="80" alt="Kos Hotel">
+                    </a>
+                    <a href="#" class="inline-block border border-(--wocap-gray-200)">
+                        <img src="/img/logo-placeholder.svg" width="200" height="80" alt="San Antonio">
+                    </a>
+                    <a href="#" class="inline-block border border-(--wocap-gray-200)">
+                        <img src="/img/logo-placeholder.svg" width="200" height="80" alt="Kos Hotel">
+                    </a>
+                    <a href="#" class="inline-block border border-(--wocap-gray-200)">
+                        <img src="/img/logo-placeholder.svg" width="200" height="80" alt="San Antonio">
+                    </a>
+                    <a href="#" class="flex flex-col items-center">
+                        <span class="flex items-center justify-center w-[32px] h-[32px] rounded-full bg-(--wocap-gray-500) icon-plus text-(--wocap-gray-900) text-[10px]">
+                        </span>
+                        <p class="text-[10px] text-(--wocap-gray-600)">many more</p>
+                    </a>
                 </div>
             </div>
-            <div class="flex max-desktop:pl-8 justify-end desktop:pt-16 desktop:items-end">
-                <picture>
-<!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
-                    <img alt="" width="590" height="403" src="/img/features.png">
+            <div class="tablet:col-span-2 p-6 bg-(--wocap-white)  flex flex-col animate-delay-150" data-animation="animate-fade">
+                <img src="/img/industry-specific-solutions-icon.svg" width="60" height="60" alt="Industry specific solutions" class="mb-4">
+                <h3 class="h5 mb-2">Industry specific solutions</h3>
+                <p class="mb-6">Optimize cash flow through solutions tailored to your sector’s needs</p>
+                <picture class="mt-auto">
+                    <source srcset="/img/industry-specific-solutions-image.webp" type="image/webp" />
+                    <img src="/img/industry-specific-solutions-image.png" width="472" height="240" alt="Industry specific solutions">
                 </picture>
             </div>
         </div>
-
-        <div class="px-8 py-8 desktop:px-16 desktop:py-16  grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-3 gap-8 desktop:gap-16 rounded-b-3xl border border-grey-400 border-t-0">
-            <article data-animation="fadeInUp" class="desktop:animate-delay-0">
-                <span class="icon-pc-search text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Advanced Rate Shopping</h4>
-                <p>Monitor real-time prices across multiple booking platforms to stay competitive.</p>
-            </article>
-            <article data-animation="fadeInUp" class="desktop:animate-delay-150">
-                <span class="icon-bell text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Intelligent Alerts System</h4>
-                <p>Never miss a market shift—get instant alerts so you can adjust your prices proactively.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-300">
-                <span class="icon-squares-plus text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Flexisets</h4>
-                <p>Build flexible sets of hotels, Airbnbs, or mixed portfolios to analyze price changes, occupancy patterns, and competitive performance. Unlock deeper market insights to optimize pricing strategies.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-0">
-                <span class="icon-check text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Competitor Pace Analysis</h4>
-                <p>Understand booking trends by analyzing competitors' occupancy rates to make proactive decisions.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-150">
-                <span class="icon-calendar text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Event Impact Analysis</h4>
-                <p>Track local events that influence accommodation demand, allowing you to anticipate market fluctuations and optimize your pricing strategy.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-300">
-                <span class="icon-lamp text-2xl text-blue-500 mb-2"></span>
-                <span class="bg-light-violet text-dark-violet text-mb px-2 py-1.5 font-bold rounded leading-none align-super">BETA</span>
-                <h4 class="h3 mb-2">Price Recommendations and Integration</h4>
-                <p>Receive smart price recommendations and seamlessly update rates through your Channel Manager or PMS.</p>
-            </article>
-        </div>
     </div>
 </section>
 
-<section class="">
-    <div data-animation="fadeInUp" class="xl:container mx-auto px-4 xl:px-0">
-        <div class="grid desktop:grid-cols-2 bg-grey-900 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-bottom rounded-t-3xl">
-            <div class="pt-16 desktop:pt-32 max-desktop:px-8 desktop:pl-16 pb-8 desktop:pb-16">
-                <span class="inline-block bg-green-bg text-grey-900 text-mb px-2 py-1.5 mb-2 font-bold rounded leading-none">COMING SOON</span>
-                <h3 class="h2 text-grey-200 font-PPPangram mb-6">Guest Feedback Management</h3>
-<!--                <div class="flex flex-wrap gap-2">-->
-<!--                    <a href="" class="btn-white btn-white&#45;&#45;outline">Request early access</a>-->
-<!--                </div>-->
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 desktop:col-start-1 desktop:col-end-5 animate-delay-150" data-animation="animate-fade-right">
+                <ul class="flex flex-col gap-2 swiper-steps-nav desktop:mt-[100px]">
+                    <li data-slide="0" class="group active relative cursor-pointer p-4 border-b border-(--wocap-gray-400) [&.active]:border-(--wocap-primary)">
+                        <div class="flex items-center leading-0 mb-2 text-xs font-bold text-(--wocap-gray-900)/50 group-[.active]:text-(--wocap-primary) [&:after]:content-[''] [&:after]:absolute [&:after]:h-full [&:after]:w-full [&:after]:top-0 [&:after]:left-0 ">
+                            <span class="icon-tag mr-2 text-xxs group-[.active]:scale-125 group-[.active]:mr-3 transition-all duration-300"></span>STEP 1
+                        </div>
+                        <h3 class="h5 mb-2 text-(--wocap-gray-900)/50 group-[.active]:text-(--wocap-gray-900) transition-all duration-300 ease-in-out">Invoices’ upload and review</h3>
+                        <p class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-[.active]:max-h-[200px]">Suppliers sign up and view the invoices that have been posted in WoCap by their Buyers for prepayment</p>
+                    </li>
+                    <li data-slide="1" class="group relative cursor-pointer p-4 border-b border-(--wocap-gray-400) [&.active]:border-(--wocap-primary)">
+                        <div class="flex items-center leading-0 mb-2 text-xs font-bold text-(--wocap-gray-900)/50 group-[.active]:text-(--wocap-primary) [&:after]:content-[''] [&:after]:absolute [&:after]:h-full [&:after]:w-full [&:after]:top-0 [&:after]:left-0 ">
+                            <span class="icon-tag mr-2 text-xxs group-[.active]:scale-125 group-[.active]:mr-3 transition-all duration-300"></span>STEP 2
+                        </div>
+                        <h3 class="h5 mb-2 text-(--wocap-gray-900)/50 group-[.active]:text-(--wocap-gray-900) transition-all duration-300 ease-in-out">Invoices’ upload and review</h3>
+                        <p class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-[.active]:max-h-[200px]">Suppliers sign up and view the invoices that have been posted in WoCap by their Buyers for prepayment</p>
+                    </li>
+                    <li data-slide="2" class="group relative cursor-pointer p-4 border-b border-(--wocap-gray-400) [&.active]:border-(--wocap-primary)">
+                        <div class="flex items-center leading-0 mb-2 text-xs font-bold text-(--wocap-gray-900)/50 group-[.active]:text-(--wocap-primary) [&:after]:content-[''] [&:after]:absolute [&:after]:h-full [&:after]:w-full [&:after]:top-0 [&:after]:left-0 ">
+                            <span class="icon-tag mr-2 text-xxs group-[.active]:scale-125 group-[.active]:mr-3 transition-all duration-300"></span>STEP 3
+                        </div>
+                        <h3 class="h5 mb-2 text-(--wocap-gray-900)/50 group-[.active]:text-(--wocap-gray-900) transition-all duration-300 ease-in-out">Invoices’ upload and review</h3>
+                        <p class="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-[.active]:max-h-[200px]">Suppliers sign up and view the invoices that have been posted in WoCap by their Buyers for prepayment</p>
+                    </li>
+                </ul>
             </div>
-            <div class="flex justify-end max-desktop:pl-8 desktop:pt-16 desktop:items-end">
-                <picture>
-<!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
-                    <img alt="" width="575" height="428" src="/img/feedback-management.png">
-                </picture>
+            <div class="col-span-12 desktop:col-start-6 desktop:col-end-13 animate-delay-150" data-animation="animate-fade-left">
+                <div class="swiper swiper--steps">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper mb-12 items-stretch">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="/img/step-1.webp" type="image/webp">
+                                <img src="/img/step-1.png" width="994" height="649" alt="step 1">
+                            </picture>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="/img/step-2.webp" type="image/webp">
+                                <img src="/img/step-2.png" width="994" height="649" alt="step 2">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="/img/step-3.webp" type="image/webp">
+                                <img src="/img/step-3.png" width="994" height="649" alt="step 3">
+                            </picture>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
             </div>
         </div>
-
-        <div class="px-8 py-8 desktop:px-16 desktop:py-16 bg-grey-300 grid grid-cols-1 sm:grid-cols-2 desktop:grid-cols-3 gap-8 desktop:gap-16 rounded-b-3xl">
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-0">
-                <span class="icon-messages text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Review Management Module</h4>
-                <p>Analyze and categorize guest feedback from multiple platforms to uncover key trends and actionable insights. Enhance your online reputation by proactively addressing concerns and celebrating positive reviews.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-150">
-                <span class="icon-inbox text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Unified Review Inbox</h4>
-                <p>Manage and respond to customer reviews from multiple platforms in one place, streamlining your workflow and saving time.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-300">
-                <span class="icon-robot text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">AI-Powered Review Responses</h4>
-                <p>Generate personalized, on-brand replies to reviews with just one click, enhancing customer engagement without the extra effort.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-0">
-                <span class="icon-folder-star text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Multi-Channel Feedback Collection</h4>
-                <p>Collect customer feedback through online reviews, email surveys, QR code surveys, and website surveys to gain comprehensive insights.</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-150">
-                <span class="icon-target text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Actionable Satisfaction Metrics</h4>
-                <p>Measure performance effortlessly with built-in metrics like Net Promoter Score (NPS), Customer Satisfaction Score (CSAT), and Customer Effort Score (CES).</p>
-            </article>
-            <article data-animation="fadeInUp"  class="desktop:animate-delay-300">
-                <span class="icon-clock text-2xl text-blue-500 mb-2"></span>
-                <h4 class="h3 mb-2">Real-Time Alerts and Notifications</h4>
-                <p>Stay updated with instant alerts for new reviews and feedback, enabling you to address customer concerns promptly.</p>
-            </article>
-        </div>
     </div>
 </section>
 
-<section class="bg-lighter-blue-bg">
-    <div class="xl:container mx-auto px-4 xl:px-0 py-20">
-        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-10 text-center"><span>What sets us</span> apart</h2>
-        <div class="grid md:grid-cols-2 desktop:grid-cols-3 gap-6">
-            <article data-animation="fadeInUp" class="desktop:animate-delay-0 flex flex-col bg-grey-200 p-6 rounded-2xl">
-                <span class="icon-bell text-blue-500 text-2xl mb-6"></span>
-                <h3 class="h3 mb-2 text-blue-500">Real-time customized alerts</h3>
-                <p class="mb-4">Get notified in real-time and make smarter pricing decisions.</p>
-                <picture class="flex justify-center">
-                    <img src="/img/customized-alerts.png" width="317" height="200" alt="Real-time customized alerts">
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <h2 class="h2 text-center mb-12" data-animation="animate-fade">What you will achieve</h2>
+        <div class="grid grid-cols-1 gap-4 desktop:gap-7 desktop:grid-cols-2">
+            <article class="relative overflow-hidden flex items-end gap-4 bg-(--wocap-primary) rounded-tl-[48px] rounded-br-[48px] [&:before]:content-[''] [&:before]:absolute [&:before]:bottom-0 [&:before]:right-0 [&:before]:w-[650px] [&:before]:h-[650px] [&:before]:translate-x-[25%] [&:before]:translate-y-[-15%] [&:before]:bg-(--wocap-white) [&:before]:rounded-full">
+                <div class="pl-4 desktop:pl-12 z-10 basis-1/2 max-tablet:grow-0 max-tablet:shrink-0">
+                    <img src="/img/supplier-icon-1.svg" width="60" height="60" alt="Supplier Icon 1" class="mb-4">
+                    <p class="pb-4 desktop:pb-12 h5 basis-1/2 max-tablet:grow-0 max-tablet:shrink-0 animate-delay-150" data-animation="animate-fade-right"><strong>Buyers get to strengthen their relationship</strong> with their Suppliers</p>
+                </div>
+                <picture class="transform z-10 animate-delay-150" data-animation="animate-fade-up">
+                    <source srcset="/img/suppliers-1.webp" type="image/webp">
+                    <img src="/img/suppliers-1.png" width="488" height="460" alt="Suppliers">
                 </picture>
             </article>
-            <article data-animation="fadeInUp" class="desktop:animate-delay-150 flex flex-col bg-beige p-6 rounded-2xl">
-                <span class="icon-eye text-blue-500 text-2xl mb-6"></span>
-                <h3 class="h3 mb-2 text-blue-500">Unified view</h3>
-                <p class="mb-4">Have control of member, mobile, and all rate types in a glance.</p>
-                <picture class="flex justify-center">
-                    <img src="/img/unified-view.png" width="318" height="200" alt="Real-time customized alerts">
-                </picture>
-            </article>
-            <article data-animation="fadeInUp" class="desktop:animate-delay-300 flex flex-col bg-blue-500 p-6 rounded-2xl">
-                <span class="icon-search-stats text-white text-2xl mb-6"></span>
-                <h3 class="h3 mb-2 text-white">Market insights</h3>
-                <p class="mb-4 text-white">Gain real-time insights into competitor availability and pace trends</p>
-                <picture class="flex justify-center">
-                    <img src="/img/markets-insights.png"  width="317" height="200" alt="Real-time customized alerts">
-                </picture>
-            </article>
-            <article data-animation="fadeInUp" class="desktop:animate-delay-0 flex flex-col bg-pink p-6 rounded-2xl">
-                <span class="icon-mobile-check text-blue-500 text-2xl mb-6"></span>
-                <h3 class="h3 mb-2 text-blue-500">Mobile-friendly design</h3>
-                <p class="mb-4">Use your mobile and stay connected anywhere.</p>
-                <picture class="flex justify-center">
-                    <img src="/img/mobile-friendly-design.png" width="317" height="200" alt="Real-time customized alerts">
-                </picture>
-            </article>
-            <article data-animation="fadeInUp" class="desktop:animate-delay-150 flex flex-col bg-grey-900 p-6 rounded-2xl">
-                <span class="icon-laptop-search text-white text-2xl mb-6"></span>
-                <h3 class="h3 mb-2 text-white">Competitor data</h3>
-                <p class="mb-4 text-white">Instantly access competitor data on your booking engine screen.</p>
-                <picture class="flex justify-center">
-                    <img src="/img/competitor-data.png" width="318" height="200" alt="Real-time customized alerts">
-                </picture>
-            </article>
-            <article data-animation="fadeInUp" class="desktop:animate-delay-300 flex flex-col bg-blue-bg p-6 rounded-2xl">
-                <span class="icon-recycle text-blue-500 text-2xl mb-6"></span>
-                <h3 class="h3 mb-2 text-blue-500">Scheduled refresh engine</h3>
-                <p class="mb-4">Stop worrying about handling various length-of-stays, channels and rates.</p>
-                <picture class="flex justify-center">
-                    <img src="/img/schedule-refresh-engine.png" width="317" height="200" alt="Real-time customized alerts">
+            <article class="relative overflow-hidden flex items-end gap-4 bg-(--wocap-primary) rounded-tl-[48px] rounded-br-[48px] [&:before]:content-[''] [&:before]:absolute [&:before]:bottom-0 [&:before]:right-0 [&:before]:w-[650px] [&:before]:h-[650px] [&:before]:translate-x-[25%] [&:before]:translate-y-[-15%] [&:before]:bg-(--wocap-white) [&:before]:rounded-full">
+                <div class="pl-4 desktop:pl-12 z-10 basis-1/2 max-tablet:grow-0 max-tablet:shrink-0">
+                    <img src="/img/supplier-icon-2.svg" width="60" height="60" alt="Supplier Icon 1" class="mb-4">
+                    <p class="pb-4 desktop:pb-12 h5 basis-1/2 max-tablet:grow-0 max-tablet:shrink-0 animate-delay-150" data-animation="animate-fade-right">Suppliers get access to Working Capital</strong> faster than traditional financing, without taking on debt</p>
+                </div>
+                <picture class="transform z-10 animate-delay-150" data-animation="animate-fade-up">
+                    <source srcset="/img/suppliers-2.webp" type="image/webp">
+                    <img src="/img/suppliers-2.png" width="488" height="460" alt="Suppliers">
                 </picture>
             </article>
         </div>
     </div>
 </section>
 
-<section class="py-20 px-4">
-    <div class="xl:container mx-auto px-4 xl:px-30 rounded-3xl bg-white bg-opacity-50 py-20">
-        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-4 text-center"><span>Seamless Integration</span> with Your Systems</h2>
-        <p data-animation="fadeInUp" class="animate-delay-150 text-center mb-20 ">Roompulse  integrates effortlessly with all PMS and hotel systems</p>
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <div class="flex items-center mb-6">
+            <h2 class="h2 text-center basis-auto mx-auto" data-animation="animate-fade">Real Stories. Real Results.</h2>
+            <div class="flex gap-4 basis-[80px] grow-0 shrink-0">
+                <button role="button" class="swiper--stories__swiper-arrowLeft flex items-center justify-center text-xs w-8 h-8 [&:not(.swiper-button-disabled)]:cursor-pointer [&:not(.swiper-button-disabled)]:bg-(--wocap-white) [.swiper-button-disabled]:opacity-50 rounded-full border-2 border-(--wocap-gray-900) hover:[&:not(.swiper-button-disabled)]:border-(--wocap-primary) hover:[&:not(.swiper-button-disabled)]:text-(--wocap-primary)">
+                    <span class="icon-arrowLeft"><i class="sr-only">Previous</i></span>
+                </button>
+                <button role="button" class="swiper--stories__swiper-arrowRight flex items-center justify-center text-xs w-8 h-8 [&:not(.swiper-button-disabled)]:cursor-pointer [&:not(.swiper-button-disabled)]:bg-(--wocap-white) [.swiper-button-disabled]:opacity-50 rounded-full border-2 border-(--wocap-gray-900) hover:[&:not(.swiper-button-disabled)]:border-(--wocap-primary) hover:[&:not(.swiper-button-disabled)]:text-(--wocap-primary)">
+                    <span class="icon-arrowRight"><i class="sr-only">Next</i></span>
+                </button>
+            </div>
+        </div>
+        <div class="swiper swiper--stories">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mb-12 items-stretch">
+                <!-- Slides -->
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="flex flex-col bg-(--wocap-white) p-8 animate-delay-150" data-animation="animate-fade">
+                        <blockquote class="mb-20">“I’m always looking for secure and efficient ways to manage our cash flow. Using WoCap to access working capital was a game-changer. The process was incredibly easy, safe, and reliable from start to finish. It gave us the flexibility we needed to seize growth opportunities without disrupting our operations. Highly recommended for any business looking for a smart financing solution.”</blockquote>
+                        <picture class="block w-16 h-16 mb-2 rounded-full mt-auto">
+                            <source srcset="/img/avatar-1.webp" type="image/webp">
+                            <img src="/img/avatar-1.png" width="64" height="64" alt="avatar" class="rounded-full mb-2">
+                        </picture>
+                        <h3 class="h6 mb-2 text-(--wocap-gray-900)">Anastasia Papadopoulou</h3>
+                        <p class="mb-4">CFO of Company</p>
+                        <a href="#">
+                            <img src="/img/logo-placeholder-2.svg" width="108" height="51" alt="Logo Placeholder">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="flex flex-col bg-(--wocap-white) p-8 animate-delay-150 desktop:animate-delay-300" data-animation="animate-fade">
+                        <blockquote class="mb-20">“WoCap allowed us to earn additional income by purchasing vetted invoices—an opportunity we hadn’t fully tapped into before. The process was seamless, transparent, and gave us confidence in every transaction. It’s a smart, low-risk way to put idle funds to work. I’d highly recommend it to any finance team looking to diversify and enhance returns.”</blockquote>
+                        <picture class="block w-16 h-16 mb-2 rounded-full mt-auto">
+                            <source srcset="/img/avatar-2.webp" type="image/webp">
+                            <img src="/img/avatar-2.png" width="64" height="64" alt="avatar" class="rounded-full mb-2">
+                        </picture>
+                        <h3 class="h6 mb-2 text-(--wocap-gray-900)">Anastasia Papadopoulou</h3>
+                        <p class="mb-4">CFO of Company</p>
+                        <a href="#">
+                            <img src="/img/logo-placeholder-2.svg" width="108" height="51" alt="Logo Placeholder">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide flex! h-auto!">
+                    <div class="flex flex-col bg-(--wocap-white) p-8 animate-delay-150" data-animation="animate-fade">
+                        <blockquote class="mb-20">“WoCap allowed us to earn additional income by purchasing vetted invoices—an opportunity we hadn’t fully tapped into before. The process was seamless, transparent, and gave us confidence in every transaction. It’s a smart, low-risk way to put idle funds to work. I’d highly recommend it to any finance team looking to diversify and enhance returns.”</blockquote>
+                        <picture class="block w-16 h-16 mb-2 rounded-full bg-(--wocap-primary) mt-auto">
+                            <source srcset="/img/avatar.webp" type="image/webp">
+                            <img src="/img/avatar.png" width="64" height="64" alt="avatar" class="rounded-full mb-2">
+                        </picture>
+                        <h3 class="h6 mb-2 text-(--wocap-gray-900)">Anastasia Papadopoulou</h3>
+                        <p class="mb-4">CFO of Company</p>
+                        <a href="#">
+                            <img src="/img/logo-placeholder-2.svg" width="108" height="51" alt="Logo Placeholder">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination">
 
-        <div class="flex items-center justify-center max-md:flex-col max-md:space-y-9 md:space-x-18 md:rtl:space-x-reverse">
-            <figure data-animation="fadeInUp" class="md:animate-delay-0 aspect-square bg-white rounded-xl shadow-[0px_8.205px_24.615px_0px_rgba(48,61,91,0.15)] w-full max-w-[180px] flex z-10">
-                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/webhoteliers-logo.png" width="178" height="38" alt="Webhoteliers"></a>
-            </figure>
-            <figure data-animation="fadeInUp" class="md:animate-delay-150 aspect-square bg-white rounded-xl shadow-[0px_8.205px_24.615px_0px_rgba(48,61,91,0.15)] w-full max-w-[180px] flex z-10">
-                <a href="" class="w-full flex items-center justify-center p-6"><img loading="lazy" src="/img/sabeeapp-logo.png" width="146" height="36" alt="Webhoteliers"></a>
-            </figure>
-            <figure data-animation="fadeInUp" class="md:animate-delay-300 aspect-square bg-white rounded-xl border border-grey-400 w-full max-w-[180px] flex flex-col items-center justify-center text-center text-grey-800 px-6 translate-x-3 text-md">
-                <span class="icon-calendar text-blue-500 text-2xl mb-2"></span>
-                <p>Many more integrations are coming soon</p>
-            </figure>
+            </div>
+
         </div>
     </div>
 </section>
 
-<section class="bg-white px-4 faqs">
-    <div class="max-w-[900px] mx-auto">
-        <h2 data-animation="fadeInUp" class="animate-delay-0 h2 mb-20 text-center"><span>Frequently Asked</span> Questions</h2>
-        <div data-animation="fadeInUp" class="grid grid-rows-1 gap-0">
-            <details>
+<section class="px-4 faqs">
+    <div class="max-w-screen-desktop mx-auto">
+        <h2 data-animation="animate-fade" class="animate-delay-0 h2 mb-20 text-center">Get all the answers</h2>
+        <div class="grid grid-rows-1 gap-0">
+            <details  data-animation="animate-fade-up">
                 <summary>
                     <h3 class="faqs__title">What is WoCap and how can it help my company as a Supplier?</h3>
                 </summary>
             </details>
             <div role="definition" class="content">
-                <ul class="">
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam animi aspernatur consectetur consequuntur culpa debitis, fugiat laboriosam laborum laudantium molestias nostrum officiis quas quod sint vel voluptatibus. Sequi, vitae?
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam animi aspernatur consectetur consequuntur culpa debitis, fugiat laboriosam laborum laudantium molestias nostrum officiis quas quod sint vel voluptatibus. Sequi, vitae?
-                    </li>
-                </ul>
+                <p class="mb-4">
+                        WoCap is a marketplace that will help you unlock your working capital today. With a few clicks you can sign up, select your outstanding invoices that you would like to accelerate today and…. get paid!
+                    </p>
+                    <p>
+                        WoCap connects Buyers with their existing Suppliers enabling mutually beneficial transactions.
+                    </p>
             </div>
 
-            <details>
+            <details data-animation="animate-fade-up">
                 <summary>
-                    <h3 class="faqs__title">How do I get started with Roompulse ?</h3>
+                    <h3 class="faqs__title">How do I get started?</h3>
                 </summary>
             </details>
             <div role="definition" class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa
-                    massa ultricies. Congue nisi vitae suscipit tellus. Mollis aliquam ut porttitor leo a diam
-                    sollicitudin tempor. Nam aliquam sem et tortor consequat id porta. Quam quisque id diam vel. Donec
-                    massa sapien faucibus et molestie. Sed odio morbi quis commodo odio aenean sed. Amet est placerat in
-                    egestas erat.</p>
+                    <p class="mb-4">
+                        Super simple! Click on the “Join now” button on our website and create your account hassle free. Alternatively, you can simply click on the smart invitation link you have received from your respective Buyer.
+                    </p>
+                    <p>
+                        If you need further assistance, you can schedule a meeting with one of our agents.
+                    </p>
             </div>
 
-            <details>
+            <details data-animation="animate-fade-up">
                 <summary>
-                    <h3 class="faqs__title">Is Roompulse  suitable for small and medium-sized hotels?</h3>
+                    <h3 class="faqs__title">What does it cost to use WoCap?</h3>
                 </summary>
             </details>
             <div role="definition" class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Enim sed faucibus
-                    turpis in eu mi. Nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat
-                    vivamus at augue eget arcu.</p>
+                <p>There is zero cost for Suppliers to use WoCap, it is simply a tool that you can use voluntarily according to your company’s needs.</p>
             </div>
 
-            <details>
+            <details data-animation="animate-fade-up">
                 <summary>
-                    <h3 class="faqs__title">Do you offer a free trial or demo of Roompulse ?</h3>
+                    <h3 class="faqs__title">Is there a demo?</h3>
                 </summary>
             </details>
             <div role="definition" class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa
-                    massa ultricies. Congue nisi vitae suscipit tellus. Mollis aliquam ut porttitor leo a diam
-                    sollicitudin tempor. Nam aliquam sem et tortor consequat id porta. Quam quisque id diam vel. Donec
-                    massa sapien faucibus et molestie. Sed odio morbi quis commodo odio aenean sed. Amet est placerat in
-                    egestas erat.</p>
-            </div>
-
-            <details>
-                <summary>
-                    <h3 class="faqs__title">How much does Roompulse  cost?</h3>
-                </summary>
-            </details>
-            <div role="definition" class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames. Et pharetra
-                    pharetra massa massa ultricies mi quis hendrerit. Leo in vitae turpis massa sed elementum. Platea
-                    dictumst vestibulum rhoncus est pellentesque elit. A arcu cursus vitae congue mauris rhoncus aenean
-                    vel elit. Morbi tristique senectus et netus et malesuada. Libero volutpat sed cras ornare arcu dui.
-                    Nunc sed blandit libero volutpat. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.
-                    Morbi tristique senectus et netus et. Eu consequat ac felis donec et odio pellentesque diam. Eget
-                    egestas purus viverra accumsan in nisl. Neque volutpat ac tincidunt vitae. Vel orci porta non
-                    pulvinar neque laoreet suspendisse. Amet commodo nulla facilisi nullam vehicula ipsum. Vitae
-                    elementum curabitur vitae nunc sed velit dignissim. Pharetra diam sit amet nisl suscipit adipiscing
-                    bibendum est ultricies. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Augue
-                    eget arcu dictum varius.</p>
-            </div>
-
-            <details>
-                <summary>
-                    <h3 class="faqs__title">How does Roompulse  collect and update competitor pricing data?</h3>
-                </summary>
-            </details>
-            <div role="definition" class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada. Pharetra pharetra massa
-                    massa ultricies. Congue nisi vitae suscipit tellus. Mollis aliquam ut porttitor leo a diam
-                    sollicitudin tempor. Nam aliquam sem et tortor consequat id porta. Quam quisque id diam vel. Donec
-                    massa sapien faucibus et molestie. Sed odio morbi quis commodo odio aenean sed. Amet est placerat in
-                    egestas erat.</p>
+                <p>For sure there is! We can provide you with a taste of the WoCap experience and if you wish to go through this with one of our experts, we can arrange that for you!</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <div class="flex text-center flex-col justify-center py-20 px-8 md:px-20 items-center bg-blue-500 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-right-bottom rounded-3xl">
-            <h3 data-animation="fadeInUp" class="animate-delay-0 h2 text-grey-200 font-PPPangram mb-6">Unlock your potential</h3>
-            <p data-animation="fadeInUp" class="animate-delay-150 mb-20 text-white ">Start now with Roompulse and stay ahead of the competition</p>
-            <div data-animation="fadeInUp" class="flex justify-center flex-wrap gap-4">
-                <a href="" class="btn-white">Start free</a>
-                <a href="" class="btn-white btn-white--outline">Talk to an expert</a>
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <div class="flex flex-col gap-6 desktop:flex-row justify-between py-20 px-8 desktop:py-[130px] desktop:px-[130px] bg-(--wocap-primary) rounded-tl-[120px] rounded-br-[120px]">
+            <div class="desktop:w-[460px] flex flex-col items-center desktop:items-start animate-delay-150" data-animation="animate-fade-right">
+                <h2 class="h1 max-desktop:text-center text-(--wocap-gray-900) mb-6">Unlock your Working Capital today</h2>
+                <p class="mb-4 max-desktop:text-center">Join WoCap and explore the new smart way of releasing cash flow in a few clicks</p>
+                <a href="" class="btn btn-white mt-auto">Request a Demo</a>
+            </div>
+            <div class="desktop:w-[590px] flex justify-center flex-wrap gap-4 animate-delay-150" data-animation="animate-fade-left">
+                <img class="rounded-[10px] shadow-2xl shadow-(--wocap-black)/50" src="/img/working-capital-today.png" width="590" height="385" alt="Working Capital today">
             </div>
         </div>
 
     </div>
 </section>
 
-<footer class="mt-40 px-4 py-4 desktop:py-6 bg-black">
-    <div class="max-w-screen-2xl mx-auto flex flex-col items-center md:items-start md:flex-row md:items-start gap-4">
-        <div class="flex-auto md:flex-[280px] md:grow-0 md:shrink"><a href="/" alt="Roompulse "><img src="/img/logo-white.svg" loading="lazy" width="153" height="24" alt="Roompulse "></a> </div>
-        <nav class="text-md flex-auto flex flex-wrap gap-2 md:gap-6 whitespace-nowrap flex-auto max-md:justify-center justify-start text-gray-200">
-            <a href="how-it-works.html" aria-label="Features">Features </a>
-            <a href="./company.html" aria-label="Company">Company</a>
-            <a href="./contact.html" aria-label="Contact us">Contact us</a>
-            <a href="./terms.html" aria-label="Contact us">Terms of Use</a>
-            <a href="./terms.html" aria-label="Contact us">Privacy Policy</a>
-            <a href="./terms.html" aria-label="Contact us">Cookie Policy</a>
+<footer class="mt-40 px-4 py-4 desktop:py-10 bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-col items-center desktop:items-start desktop:flex-row gap-4 desktop:mb-[110px]">
+        <div class="basis-auto desktop:basis-[200px] desktop:grow-0">
+            <a href="/">
+                <img src="/img/footer-logo.svg" loading="lazy" width="72" height="72" alt="wocap ">
+            </a>
+        </div>
+        <nav class="basis-auto flex desktop:grow-0 max-desktop:items-center desktop:flex-col gap-2 desktop:gap-4 text-(--wocap-white) font-bold">
+            <a href="/how-it-works" aria-label="Features">About us</a>
+            <a href="#" aria-label="Platform">Platform</a>
+            <a href="/contact" aria-label="Contact us">How it works</a>
+            <a href="/" aria-label="Facebook" class="icon-linkedIn desktop:mt-6 text-3xl"></a>
         </nav>
-        <div>
+        <nav class="max-desktop:my-8 desktop:flex-auto justify-center flex gap-[40px] flex-wrap">
+            <a href="#" class="">
+                <img src="/img/elevate-logo.svg" width="110" height="59" alt="elevate greece">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+        </nav>
+        <div class="basis-auto desktop:basis-[445px] desktop:grow-0 desktop:shrink-0 flex flex-col gap-4">
             <form class="mb-6">
                 <div class="flex flex-col">
-                    <label for="email" class="text-md mb-3.5 text-gray-400">Sign up for our newsletter</label>
+                    <label for="email" class="mb-4 text-(--wocap-white) font-bold">Stay in touch</label>
+                    <p class="text-(--wocap-white) mb-4 text-balance">Subscribe to our newsletter to get the latest news, articles, and resources, sent to your inbox weekly.</p>
                     <div class="flex flex-row gap-2">
-                        <input id="email" type="email" placeholder="Type your email" class="rounded-2xl bg-gray-200 border border-grey-800 bg-opacity-10 text-gray-400 text-base h-14 px-4 desktop:px-8">
-                        <button type="submit" class="btn-primary">Submit</button>
+                        <input id="email" type="email" placeholder="Your email" class="basis-auto rounded-full bg-(--wocap-gray-800) border border-(--wocap-primary)/21 text-(--wocap-white) placeholder:text-(--wocap-white) text-base h-12 px-4 desktop:px-8 outline-0">
+                        <button type="submit" class="btn btn-primary btn-primary--small">Subscribe</button>
                     </div>
-
                 </div>
             </form>
-            <div class="flex flex-row text-gray-400 items-center gap-6 justify-center md:justify-start">
-                <div class="text-[.75rem]">Follow us:</div>
-                <nav class="text-2xl leading-none flex gap-4">
-                    <a href="/" aria-label="Facebook" class="icon-linkedIn"></a>
-<!--                    <a href="/" aria-label="Instagram" class="icon-instagram"></a>-->
-                </nav>
-            </div>
         </div>
 
     </div>
-    <div class="max-w-screen-2xl mx-auto mt-4 text-[.75rem] text-gray-400 text-center md:text-left md:mt-16">2024©Roompulse  All rights reserved</div>
+    <div class="max-w-screen-xxLarge mx-auto text-xs text-(--wocap-white) desktop:mt-16">
+        <div class="flex max-desktop:flex-col w-full gap-4">
+            <div class="desktop:flex-[280px] desktop:grow-0 desktop:shrink">© Wocap 2024, All Rights Reserved</div>
+            <nav class="basis-auto grow shrink flex gap-12">
+                <a href="#">Terms of Use / Privacy</a>
+                <a href="#">Policies</a>
+            </nav>
+        </div>
+    </div>
 </footer>
 
 </body>
-<script src="./main.js" type="module"></script>
+<script src="main.js" type="module"></script>
 <!--<script src="/js/index-animation.js" type="module"></script>-->
 
 </html>
