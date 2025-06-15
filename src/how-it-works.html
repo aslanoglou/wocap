@@ -2,254 +2,276 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <link href="/roompulse.svg" rel="icon" type="image/svg+xml"/>
+    <link href="./favicon.svg" rel="icon" type="image/svg+xml"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="Simplify rate shopping with actionable insights, intelligent alerts, and automated room pricing to maximize your revenue growth."
-          name="description"/>
-    <link as="style" href="/style.css" rel="preload"/>
-    <link href="/style.css" rel="stylesheet"/>
-    <title>roompulse</title>
+    <meta name="description" content="Streamline your working capital with wocap."/>
+    <link as="style" rel="preload" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <title>wocap - working capital</title>
 </head>
 
-<body class="m-0 bg-white text-base font-normal text-grey-900">
+<body class="m-0 bg-(--wocap-gray-100) text-base font-normal font-geologica text-(--wocap-gray-800)">
 <!--nav data-bg values: none / blue / light-blue-->
-<nav data-bg="blue" class="group animate-delay-0 fixed start-0 top-0 z-20 w-full px-4 py-4 bg-blue-100 data-[bg=blue]:bg-blue-500 data-[bg=light-blue]:bg-blue-400">
-    <div class="max-w-screen-2xl mx-auto flex flex-wrap items-center">
-        <a aria-label="roompulse" class="flex items-center lg:mr-10 z-10 text-blue-500 group-data-[bg=blue]:text-white" href="/">
-            <svg fill="none" height="32" width="199" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#a)">
-                    <path d="M4.395 15.74c0-1.25-.984-2.264-2.197-2.264C.984 13.476 0 14.489 0 15.739v.663c0 1.25.984 2.264 2.198 2.264 1.213 0 2.197-1.014 2.197-2.264v-.663Z"
-                          fill="#000"/>
-                    <path d="M36.42 15.74c0-1.25-.983-2.264-2.197-2.264s-2.197 1.013-2.197 2.263v.663c0 1.25.983 2.264 2.197 2.264s2.197-1.014 2.197-2.264v-.663Z"
-                          fill="currentColor"/>
-                    <path d="M10.801 13.146c0-1.25-.983-2.263-2.197-2.263s-2.198 1.013-2.198 2.263v5.856c0 1.25.984 2.263 2.198 2.263s2.197-1.013 2.197-2.263v-5.856Z"
-                          fill="#000"/>
-                    <path d="M30.017 13.146c0-1.25-.983-2.263-2.197-2.263s-2.198 1.013-2.198 2.263v5.856c0 1.25.984 2.263 2.198 2.263 1.213 0 2.197-1.013 2.197-2.263v-5.856Z"
-                          fill="currentColor"/>
-                    <path d="M17.204 2.764c0-1.25-.983-2.264-2.197-2.264S12.81 1.513 12.81 2.764v16.238c0 1.25.983 2.263 2.197 2.263s2.197-1.013 2.197-2.263V2.764ZM23.585 2.764C23.585 1.514 22.6.5 21.387.5c-1.213 0-2.197 1.013-2.197 2.264v.662c0 1.25.984 2.264 2.197 2.264 1.214 0 2.198-1.014 2.198-2.264v-.662Z"
-                          fill="#000"/>
-                    <path d="M23.585 12.998c0-1.25-.984-2.264-2.198-2.264-1.213 0-2.197 1.014-2.197 2.264v16.238c0 1.25.984 2.264 2.197 2.264 1.214 0 2.198-1.014 2.198-2.264V12.998Z"
-                          fill="currentColor"/>
-                    <path d="M57.73 10.163c0-1.476 1.133-2.213 2.207-2.213 1.162 0 2.086.4 2.086 1.843h.059c.806-1.227 1.669-1.843 3.01-1.843 1.045 0 2.087.77 2.087 2.365 0 1.473-1.28 1.506-2.563 2.149-1.28.585-2.593 1.227-2.593 2.95v6.79c0 1.473-.865 2.459-2.145 2.459s-2.145-.986-2.145-2.459v-12.04h-.004ZM82.957 16.338c0 4.608-3.07 8.513-7.69 8.513-4.62 0-7.69-3.902-7.69-8.513s3.158-8.573 7.69-8.573 7.69 4.056 7.69 8.573Zm-11.09 0c0 2.122 1.105 4.453 3.397 4.453s3.396-2.334 3.396-4.453-1.013-4.514-3.396-4.514c-2.384 0-3.396 2.425-3.396 4.514ZM100.083 16.338c0 4.608-3.07 8.513-7.69 8.513-4.62 0-7.69-3.902-7.69-8.513s3.158-8.573 7.69-8.573 7.69 4.056 7.69 8.573Zm-11.089 0c0 2.122 1.104 4.453 3.396 4.453s3.396-2.334 3.396-4.453-1.012-4.514-3.396-4.514-3.396 2.425-3.396 4.514ZM102.515 10.409c0-1.474.866-2.46 2.146-2.46 1.103 0 1.818.586 1.965 1.659 1.045-1.197 2.413-1.843 3.994-1.843 1.819 0 3.278.74 4.441 2.243 1.191-1.443 3.069-2.243 4.528-2.243 3.488 0 5.871 2.058 5.871 5.96v8.479c0 1.473-.865 2.458-2.145 2.458s-2.145-.985-2.145-2.458v-7.709c0-1.813-.954-3.044-2.505-3.044s-2.533 1.228-2.533 3.044v7.709c0 1.473-.866 2.458-2.146 2.458-1.28 0-2.145-.985-2.145-2.458v-7.709c0-1.813-.953-3.044-2.504-3.044-1.79 0-2.534 1.228-2.534 3.044v7.709c0 1.473-.866 2.458-2.146 2.458-1.28 0-2.145-.985-2.145-2.458V10.408h.003Z"
-                          fill="#000"/>
-                    <path d="M128.673 10.409c0-1.474.866-2.46 2.146-2.46 1.191 0 1.877.647 2.145 1.844.806-1.352 2.442-2.028 4.085-2.028 4.617 0 6.912 4.456 6.912 8.755 0 4.298-2.743 8.327-7.063 8.327-1.342 0-2.772-.521-3.934-1.537v5.409c0 1.473-.865 2.458-2.145 2.458s-2.146-.985-2.146-2.458v-18.31Zm7.657 10.382c2.234 0 3.337-2.364 3.337-4.453 0-2.089-1.103-4.514-3.337-4.514-2.233 0-3.366 2.24-3.366 4.363 0 2.122 1.015 4.607 3.366 4.607v-.003ZM146.394 10.409c0-1.473.865-2.459 2.145-2.459s2.145.986 2.145 2.459v7.894c0 1.843 1.342 2.858 2.772 2.858 1.431 0 2.773-1.015 2.773-2.858v-7.894c0-1.473.865-2.459 2.148-2.459 1.283 0 2.145.986 2.145 2.459v7.988c0 3.965-2.504 6.45-7.062 6.45-4.559 0-7.063-2.488-7.063-6.45v-7.988h-.003ZM163.647 3.282c0-1.473.866-2.459 2.146-2.459 1.28 0 2.145.986 2.145 2.459v18.925c0 1.474-.865 2.459-2.145 2.459s-2.146-.985-2.146-2.459V3.282ZM180.117 12.928c-.836 0-2.413-1.288-3.846-1.288-.804 0-1.46.366-1.46 1.227 0 2.089 7.451 1.753 7.451 6.787 0 2.95-2.413 5.194-6.109 5.194-2.413 0-5.988-1.413-5.988-3.41 0-.647.656-1.968 1.848-1.968 1.668 0 2.413 1.503 4.441 1.503 1.312 0 1.697-.43 1.697-1.258 0-2.028-7.451-1.722-7.451-6.79 0-3.071 2.413-5.163 5.812-5.163 2.146 0 5.365 1.015 5.365 3.195 0 1.016-.715 1.967-1.757 1.967l-.003.004ZM187.973 17.781c.327 2.213 2.028 3.195 4.052 3.195 2.208 0 3.726-1.782 4.859-1.782.924 0 1.76.952 1.76 1.903 0 1.874-3.784 3.75-7.004 3.75-4.829 0-8.045-3.625-8.045-8.512 0-4.514 3.16-8.573 7.689-8.573s7.719 4.362 7.719 8.048c0 1.322-.565 1.968-1.877 1.968h-9.149l-.004.003Zm6.736-2.946c-.238-1.968-1.4-3.38-3.428-3.38-1.907 0-3.19 1.506-3.396 3.38h6.824Z"
-                          fill="currentColor"/>
-                </g>
-                <defs>
-                    <clipPath id="a">
-                        <path d="M0 0h199v31H0z" fill="#fff" transform="translate(0 .5)"/>
-                    </clipPath>
-                </defs>
-            </svg>
+<nav class="animate-delay-0 sticky start-0 top-0 z-20 w-full px-4 py-4 max-h-(--nav-height) bg-(--wocap-gray-100)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-wrap items-center">
+        <a aria-label="wocap" class="flex items-center desktop:mr-10 z-10" href="./">
+            <img src="/img/logo.svg" width="177" height="36" alt="wocap" class="h-[36px]">
         </a>
-        <div class="flex space-x-3 lg:order-2 ml-auto rtl:space-x-reverse relative z-20">
+        <div class="flex space-x-3 desktop:order-2 ml-auto rtl:space-x-reverse relative z-20">
             <button
                     aria-controls="navbar-sticky"
                     aria-expanded="false"
-                    class="group relative z-20 inline-flex flex-col gap-1 justify-center h-8 w-8 items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
+                    class="group relative z-20 inline-flex flex-col cursor-pointer gap-1 justify-center h-8 w-8 items-center rounded-lg p-2 text-sm  desktop:hidden"
                     data-collapse-toggle="navbar-sticky"
                     type="button"
             >
                 <span class="sr-only">Open main menu</span>
-                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
-                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:opacity-0"></span>
-                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-blue-500 group-data-[bg=blue]:bg-white group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:rotate-45 group-[.active]:translate-y-[.365rem]"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:opacity-0"></span>
+                <span class="transition-all rounded block origin-center duration-300 w-5 h-0.5 bg-green-500 group-data-[bg=blue]:bg-(--wocap-white) group-[.active]:-rotate-45 group-[.active]:-translate-y-[.365rem]"></span>
             </button>
         </div>
-        <div class="bg-white lg:bg-transparent w-full px-4 pt-[73px] lg:pt-0 lg:px-0 lg:items-center justify-between lg:order-1 lg:grow flex flex-col lg:flex-row lg:w-auto h-full lg:h-auto top-0 transition-transform translate-x-0 lg:translate-x-0 [&.active]:-translate-x-full [&.active]:lg:translate-x-0 lg:transition-none left-full lg:left-0 fixed lg:relative group-data-[bg=blue]:max-lg:before:block group-data-[bg=blue]:max-lg:before:bg-blue-500 group-data-[bg=blue]:max-lg:before:w-full group-data-[bg=blue]:max-lg:before:absolute group-data-[bg=blue]:max-lg:before:top-0 group-data-[bg=blue]:max-lg:before:left-0 group-data-[bg=blue]:max-lg:before:h-[64px]"
+        <div class="bg-(--wocap-white) desktop:bg-transparent w-full px-4 pt-[73px] desktop:pt-0 desktop:px-0 desktop:items-center justify-between desktop:order-1 desktop:grow flex flex-col desktop:flex-row desktop:w-auto h-full desktop:h-auto top-0 transition-transform translate-x-0 desktop:translate-x-0 [&.active]:-translate-x-full [&.active]:desktop:translate-x-0 desktop:transition-none left-full desktop:left-0 fixed desktop:relative duration-1000"
              id="navbar-sticky">
 
-            <ul class="mt-4 flex flex-col px-0 py-4 text-base lg:mt-0 lg:flex-row lg:p-0 rtl:space-x-reverse">
-                <li class="lg:mx-6">
-                    <a class="nav-text-link" href="./how-it-works.html">
-                        Features
-                    </a>
-
+            <ul class="mt-4 flex flex-col px-0 py-4 text-base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse [&>li]:desktop:mx-2 [&>li]:large:mx-6">
+                <li>
+                    <a class="nav-text-link" href="/how-it-works">How it works</a>
                 </li>
-                <li class="lg:mx-6">
-                    <a class="nav-text-link"
-                       href="./company.html">Company</a>
+                <li>
+                    <a class="nav-text-link" href="/our-mission">Our mission</a>
                 </li>
-                <li class="lg:mx-6">
-                    <a class="nav-text-link"
-                       href="./contact.html">Contact us</a>
+                <li>
+                    <a class="nav-text-link" href="/contact">Contact</a>
                 </li>
             </ul>
-            <ul class=" max-lg:mt-18 flex flex-col px-0 py-4 text-base lg:items-center lg:text-md base lg:mt-0 lg:grow lg:flex-row lg:p-0 rtl:space-x-reverse">
-                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
-                    <a class="nav-text-link text-blue-500 max-lg:text-center"
+            <ul class=" max-desktop:mt-18 flex flex-col desktop:ml-auto px-0 py-4 text-base desktop:items-center desktop:text-md base desktop:mt-0 desktop:flex-row desktop:p-0 rtl:space-x-reverse">
+                <li class="desktop:mx-2 desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border max-desktop:text-center desktop:mr-[1vw] large:mr-[2vw]" href="/buyer">
+                        I ‘m a buyer <span class="icon-arrow-up-right ml-4 desktop:max-large:ml-1 text-(--wocap-primary)"></span>
+                    </a>
+                </li>
+                <li class="desktop:mx-2 desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border max-desktop:text-center"
+                       href="#">Sign Up</a>
+                </li>
+                <li class="max-desktop:hidden text-(--wocap-gray-900)/25">|</li>
+                <li class="desktop:ml-2 desktop:mr-[2vw] large:mr-[3vw] desktop:first:ml-auto  [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a class="nav-text-link nav-text-link--no-border  max-desktop:text-center"
                        href="#">Sign In</a>
                 </li>
-                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
-                    <button class="btn-primary group-data-[bg=blue]:lg:btn-white btn-primary--outline group-data-[bg=blue]:lg:btn-white--outline btn-primary--small group-data-[bg=blue]:lg:btn-white--small w-full lg:w-auto"
-                            type="button">Talk to an expert
-                    </button>
-                </li>
-                <li class="lg:mx-2 lg:mx-2 lg:first:ml-auto lg:last:mr-0 [&:not(:last-child)]:mb-4 lg:[&:not(:last-child)]:mb-0">
-                    <button class="w-full lg:w-auto btn-primary btn-primary--small group-data-[bg=blue]:lg:btn-white group-data-[bg=blue]:lg:btn-white--small"
-                            type="button">Start free
-                    </button>
+                <li class="inline-flex desktop:mx-2 desktop:first:ml-auto desktop:last:mr-0 [&:not(:last-child)]:mb-4 desktop:[&:not(:last-child)]:mb-0">
+                    <a href="#" class="w-full desktop:w-auto btn-primary desktop:max-large:text-sm"
+                       type="button">Request a Demo
+                    </a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<section data-animation="fadeIn" class="pt-40 mb-20 bg-blue-500">
-    <div class="2xl:container mx-auto px-4 xl:px-0">
-        <div class="grid lg:grid-cols-2 bg-blue-500 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-bottom rounded-t-3xl">
-            <div data-animation="fadeInUp" class="pt-4 lg:pl-8 pb-16 text-center lg:text-left lg:flex lg:flex-col lg:justify-center lg:items-start">
-                <h1 class="h1 text-grey-200 font-PPPangram mb-6">Advanced Pricing Suite</h1>
-                <div class="flex justify-center lg:justify-start gap-2">
-                    <a class="btn-white" href="">Start free</a>
-                    <a class="btn-white btn-white--outline" href="">Learn more</a>
+<header class="min-h-[calc(100vh-var(--nav-height))] flex items-center px-4 mb-[100px] desktop:mb-[120px]!">
+    <div class="max-w-screen-xxLarge mx-auto px-8 mobile:px-12 tablet:px-[80px] pt-[60px] pb-0 bg-(--wocap-primary) rounded-tl-[120px] rounded-br-[120px]">
+        <div class="flex flex-col desktop:flex-row gap-4 desktop:gap-20 mb-12 desktop:mb-19">
+            <div class="flex desktop:basis-1/2 flex-col justify-center items-start">
+<!--                <span class="text-(&#45;&#45;wocap-primary-darker) text-sm flex items-center font-semibold mb-4"><i class="icon-tag text-base mr-2"></i> WE ARE WOCAP</span>-->
+                <h1 class="text-(--wocap-gray-900) mb-4">We help companies get paid, what they are owed, faster!</h1>
+                <p class="text-xl text-balance">With a few clicks, select the invoices you are willing to accelerate, bid a discount rate and collect your funds within 48 hours!</p>
+                <p class="mb-8 text-(--wocap-white)">NO HIDDEN OR EXTRA FEES</p>
+            </div>
+            <picture class="desktop:basis-1/2">
+                <source srcset="/img/how-it-work-hero-img.webp" type="image/webp">
+                <img loading="eager" alt="" class="mx-auto" width="600" height="521" src="/img/how-it-work-hero-img.png">
+            </picture>
+        </div>
+        <h2 class="text-center h3 mb-8 text-(--wocap-gray-900)">Three steps to cash</h2>
+        <div class="grid grid-col-1 justify-center desktop:grid-cols-3 gap-6">
+            <div class="relative px-10 py-8 tablet:py-16 max-w-[420px]">
+                <h3 class="text-[60px]! mobile:text-[64px]! text-(--wocap-primary-dark)/40 absolute top-6 left-6">Step1</h3>
+                <div class="flex items-end relative z-10">
+                    <picture class="basis-[88px] shrink-0"><img src="/img/hero-steps-1.svg" width="88" height="88" alt="Step 1" class="mx-auto"></picture>
+                    <p class="text-xl text-balance"><strong>Invoices uploaded</strong> by your Buyer</p>
                 </div>
             </div>
-            <div data-animation="fadeInUp" class="flex lg:justify-end lg:pt-4 lg:items-end">
-                <picture>
-                    <!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
-                    <img alt="" height="428" src="/img/features-main.png" width="705">
+            <div class="relative px-10 py-8 tablet:py-16 max-w-[420px]">
+                <h3 class="text-[60px]! mobile:text-[64px]! text-(--wocap-primary-dark)/40 absolute top-6 left-6">Step2</h3>
+                <div class="flex items-end relative z-10">
+                    <picture class="basis-[88px] shrink-0"><img src="/img/hero-steps-2.svg" width="88" height="88" alt="Step 1" class="mx-auto"></picture>
+                    <p class="text-xl text-balance"><strong>Bid a discount</strong> to invoices you wish to get paid early</p>
+                </div>
+            </div>
+            <div class="relative px-10 py-8 tablet:py-16  max-w-[420px]">
+                <h3 class="text-[60px]! mobile:text-[64px]! text-(--wocap-primary-dark)/40 absolute top-6 left-6">Step3</h3>
+                <div class="flex items-end relative z-10">
+                    <picture class="basis-[88px] shrink-0"><img src="/img/hero-steps-3.svg" width="88" height="88" alt="Step 1" class="mx-auto"></picture>
+                    <p class="text-xl text-balance"><strong>Get paid</strong> within 48 hours by your Buyer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto px-8 large:px-[168px] py-[80px] tablet:py-[120px] bg-(--wocap-gray-300) rounded-tl-[120px] rounded-br-[120px]">
+        <h2 class="h3 text-center text-(--wocap-gray-900)" data-animation="animate-fade">Hassle free!</h2>
+        <p class="mx-auto text-xl max-w-[800px] text-balance text-center mb-12" data-animation="animate-fade">We enable <strong>mutually beneficial transactions</strong> amongst Buyers and their existing Suppliers, while addressing the creation of Working Capital right from its source.</p>
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 mobile:grid-cols-2 desktop:grid-cols-3 gap-x-8 gap-y-4">
+
+            <a href="#" class="group block relative overflow-hidden p-10 bg-[var(--wocap-white)] border-t-4 border-t-[var(--wocap-primary)] min-h-[180px] desktop:animate-delay-0" data-animation="animate-fade">
+                <picture class="block relative z-10 mb-4 text-(--wocap-primary) group-hover:text-(--wocap-white)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" class="fill-[var(--wocap-primary)] group-hover:fill-[var(--wocap-white)] transition-all duration-600"/>
+                        <path d="M11 16.3911L14.9919 19.5847L20.9798 12" stroke="var(--wocap-gray-900)" stroke-width="1.59677"/>
+                    </svg>
                 </picture>
-            </div>
-        </div>
-    </div>
-</section>
+                <h3  class="relative z-10 h6 font-normal!">No banks</h3>
+                <span class="block z-0 absolute top-[-500px] left-[-500px] w-[500px] h-[500px] bg-(--wocap-primary) rounded-full transition-all duration-1000 group-hover:translate-y-[380px] group-hover:translate-x-[450px]"></span>
+            </a>
 
-<section class="pt-20 mb-40 text-center text-gray-800">
-    <div data-animation="fadeInUp" class="max-w-[900px] mx-auto px-4">
-        <h2 class="h2 mb-8">Features</h2>
-        <p class="mb-20 text-opacity-20">Stay ahead of the competition with the unique features of our Advanced Pricing Suite. Monitor real-time data, gain strategic insights and get instant notifications for events, trends and pricing changes of your competitors. All in one place, accessible from your computer or your mobile.</p>
-    </div>
-</section>
-
-<section class="mt-20 mb-6 animate-delay-0" data-animation="fadeInUp">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <div class="grid lg:grid-cols-2 bg-grey-bg bg-[url('/img/logo-bg-2.svg')] bg-no-repeat bg-right-bottom rounded-3xl">
-            <div data-animation="fadeInUp" class="max-lg:16 px-12 py-12 lg:pl-16 [&>p:not(:last-child)]:mb-8 flex flex-col justify-center">
-                <h3 class="h2 font-PPPangram mb-6"><span>Advanced</span> Rate Shopping</h3>
-                <p>Stay ahead of the competition with our Advanced Rate Shopping tool. Monitor real-time prices and availability across multiple booking platforms, including Booking.com, Expedia, and more—all from one intuitive dashboard. </p>
-                <h6 class="text-blue-500 font-bold text-mb"><span class="icon-stars"></span>YOUR BENEFIT</h6>
-                <p>By keeping a constant eye on the market, you can adjust your rates dynamically to remain competitive and attract more guests.</p>
-            </div>
-            <div data-animation="fadeInUp" class="flex justify-center lg:justify-end lg:pt-16 lg:items-end">
-                <picture>
-                    <!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
-                    <img alt="" height="492" src="/img/rate-shopping.png" width="522">
+            <a href="#" class="group block relative overflow-hidden p-10 bg-[var(--wocap-white)] border-t-4 border-t-[var(--wocap-primary)] min-h-[180px] desktop:animate-delay-150" data-animation="animate-fade">
+                <picture class="block relative z-10 mb-4 text-(--wocap-primary) group-hover:text-(--wocap-white)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" class="fill-[var(--wocap-primary)] group-hover:fill-[var(--wocap-white)] transition-all duration-1000"/>
+                        <path d="M11 16.3911L14.9919 19.5847L20.9798 12" stroke="var(--wocap-gray-900)" stroke-width="1.59677"/>
+                    </svg>
                 </picture>
-            </div>
-        </div>
-    </div>
-</section>
+                <h3 class="relative z-10 h6 font-normal!">No borrowing, no factoring</h3>
+                <span class="block z-0 absolute top-[-500px] left-[-500px] w-[500px] h-[500px] bg-(--wocap-primary) rounded-full transition-all duration-1000 group-hover:translate-y-[380px] group-hover:translate-x-[450px]"></span>
+            </a>
 
-<section data-animation="fadeInUp" class="mt-6 mb-6 animate-delay-0">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <div class="grid lg:grid-cols-2 bg-sand-bg bg-[url('/img/logo-bg-3.svg')] bg-no-repeat bg-right-bottom rounded-3xl">
-            <div data-animation="fadeInUp" class="max-lg:16 px-12 py-12 lg:pl-16 [&>p:not(:last-child)]:mb-8 flex flex-col justify-center">
-                <h3 class="h2 font-PPPangram mb-6"><span>Flexisets</span></h3>
-                <p>Build personalized sets of hotels and Airbnbs to track pricing changes and occupancy rates in real time. Easily adapt to evolving market conditions with unmatched flexibility. </p>
-                <h6 class="text-blue-500 font-bold text-mb"><span class="icon-stars"></span>YOUR BENEFIT</h6>
-                <p>Unlock deeper insights and optimize your portfolio’s performance with tailored benchmarks.</p>
-            </div>
-            <div data-animation="fadeInUp" class="flex justify-center lg:justify-end lg:pt-16 lg:items-end">
-                <picture>
-                    <!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
-                    <img alt="" height="394" src="/img/flexisets.png" width="504">
+            <a href="#" class="group block relative overflow-hidden p-10 bg-[var(--wocap-white)] border-t-4 border-t-[var(--wocap-primary)] min-h-[180px] desktop:animate-delay-300" data-animation="animate-fade">
+                <picture class="block relative z-10 mb-4 text-(--wocap-primary) group-hover:text-(--wocap-white)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" class="fill-[var(--wocap-primary)] group-hover:fill-[var(--wocap-white)] transition-all duration-1000"/>
+                        <path d="M11 16.3911L14.9919 19.5847L20.9798 12" stroke="var(--wocap-gray-900)" stroke-width="1.59677"/>
+                    </svg>
                 </picture>
-            </div>
-        </div>
-    </div>
-</section>
+                <h3 class="relative z-10 h6 font-normal!">No fees</h3>
+                <span class="block z-0 absolute top-[-500px] left-[-500px] w-[500px] h-[500px] bg-(--wocap-primary) rounded-full transition-all duration-1000 group-hover:translate-y-[380px] group-hover:translate-x-[450px]"></span>
+            </a>
 
-<section class="mt-6 mb-6">
-    <div class="xl:container px-4 mx-auto xl:px-0">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <article data-animation="fadeInUp" class="lg:animate-delay-100 p-8 rounded-3xl bg-grey-400 flex flex-col items-center text-center">
-                <span class="icon-calendar text-blue-500 text-[2.5rem]"></span>
-                <h3 class="font-PPPangram rfs:text-2xl rfs:leading-8 mb-7">Event Impact Analysis</h3>
-                <p class="">We help you identify and analyze local happenings that can drive traveler influx to your area.</p>
-            </article>
-            <article data-animation="fadeInUp" class="lg:animate-delay-500 p-8 rounded-3xl bg-grey-400 flex flex-col items-center text-center">
-                <span class="icon-check text-blue-500 text-[2.5rem]"></span>
-                <h3 class="font-PPPangram rfs:text-2xl rfs:leading-8 mb-7">Intelligent Alerts System</h3>
-                <p class="">Receive instant notifications about significant changes in competitor pricing, market demand, or local events impacting your area. </p>
-            </article>
-            <article data-animation="fadeInUp" class="lg:animate-delay-1000 p-8 rounded-3xl bg-grey-400 flex flex-col items-center text-center">
-                <span class="icon-lamp text-blue-500 text-[2.5rem]"></span>
-                <h3 class="font-PPPangram rfs:text-2xl rfs:leading-8 mb-7">Price Recommendations and Integration</h3>
-                <p class="">Set your own parameters and preferences, and let our intelligent system provide recommendations based on extensive market data. </p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<section data-animation="fadeInUp" class="animate-delay-0 mt-6 mb-6">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <div class="grid lg:grid-cols-2 bg-light-violet bg-[url('/img/logo-bg-4.svg')] bg-no-repeat bg-right-bottom rounded-3xl">
-            <div data-animation="fadeInUp" class="max-lg:16 px-12 py-12 lg:pl-16 [&>p:not(:last-child)]:mb-8 flex flex-col justify-center">
-                <h3 class="h2 font-PPPangram mb-6"><span>Competitor</span> Pace Analysis</h3>
-                <p>Gain strategic insights with Competitor Pace Analysis. Understand booking trends by analyzing your competitors' occupancy rates and booking velocity. </p>
-                <h6 class="text-blue-500 font-bold text-mb"><span class="icon-stars"></span>YOUR BENEFIT</h6>
-                <p>This knowledge allows you to anticipate market movements and make proactive decisions to adjust your pricing and availability.</p>
-            </div>
-            <div data-animation="fadeInUp" class="flex justify-center lg:justify-end lg:pt-16 lg:items-end">
-                <picture>
-                    <!--                    <source media="(max-width: 1023px)" srcset="https://placehold.co/991x677/pink/FFF">-->
-                    <img alt="" height="460" src="/img/competitor.png" width="515">
+            <a href="#" class="group block relative overflow-hidden p-10 bg-[var(--wocap-white)] border-t-4 border-t-[var(--wocap-primary)] min-h-[180px] desktop:animate-delay-0" data-animation="animate-fade">
+                <picture class="block relative z-10 mb-4 text-(--wocap-primary) group-hover:text-(--wocap-white)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" class="fill-[var(--wocap-primary)] group-hover:fill-[var(--wocap-white)] transition-all duration-1000"/>
+                        <path d="M11 16.3911L14.9919 19.5847L20.9798 12" stroke="var(--wocap-gray-900)" stroke-width="1.59677"/>
+                    </svg>
                 </picture>
+                <h3 class="relative z-10 h6 font-normal!">No complicated onboardings</h3>
+                <span class="block z-0 absolute top-[-500px] left-[-500px] w-[500px] h-[500px] bg-(--wocap-primary) rounded-full transition-all duration-1000 group-hover:translate-y-[380px] group-hover:translate-x-[450px]"></span>
+            </a>
+
+            <a href="#" class="group block relative overflow-hidden p-10 bg-[var(--wocap-white)] border-t-4 border-t-[var(--wocap-primary)] min-h-[180px] desktop:animate-delay-150" data-animation="animate-fade">
+                <picture class="block relative z-10 mb-4 text-(--wocap-primary) group-hover:text-(--wocap-white)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" class="fill-[var(--wocap-primary)] group-hover:fill-[var(--wocap-white)] transition-all duration-1000"/>
+                        <path d="M11 16.3911L14.9919 19.5847L20.9798 12" stroke="var(--wocap-gray-900)" stroke-width="1.59677"/>
+                    </svg>
+                </picture>
+                <h3 class="relative z-10 h6 font-normal!">No bureaucracy</h3>
+                <span class="block z-0 absolute top-[-500px] left-[-500px] w-[500px] h-[500px] bg-(--wocap-primary) rounded-full transition-all duration-1000 group-hover:translate-y-[380px] group-hover:translate-x-[450px]"></span>
+            </a>
+
+            <a href="#" class="group block relative overflow-hidden p-10 bg-[var(--wocap-white)] border-t-4 border-t-[var(--wocap-primary)] min-h-[180px] desktop:animate-delay-300" data-animation="animate-fade">
+                <picture class="block relative z-10 mb-4 text-(--wocap-primary) group-hover:text-(--wocap-white)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" class="fill-[var(--wocap-primary)] group-hover:fill-[var(--wocap-white)] transition-all duration-1000"/>
+                        <path d="M11 16.3911L14.9919 19.5847L20.9798 12" stroke="var(--wocap-gray-900)" stroke-width="1.59677"/>
+                    </svg>
+                </picture>
+                <h3 class="relative z-10 h6 font-normal!">No delays</h3>
+                <span class="block z-0 absolute top-[-500px] left-[-500px] w-[500px] h-[500px] bg-(--wocap-primary) rounded-full transition-all duration-1000 group-hover:translate-y-[380px] group-hover:translate-x-[450px]"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="px-4">
+    <div class="max-w-screen-xxLarge mx-auto">
+        <div class="grid grid-flow-row grid-cols-1 tablet:grid-cols-5 gap-4">
+            <div class="tablet:col-span-2 p-6 bg-(--wocap-white) flex flex-col justify-center desktop:animate-delay-150" data-animation="animate-fade">
+                <img src="/img/full-value-images.svg" width="238" height="88" alt="Automated solution" class="mb-4">
+                <p class="text-balance desktop:text-xl">Contrary to factoring, Suppliers get to collect the <strong>full value</strong> of the invoice amount minus the discount that they choose, <strong>no hidden or extra fees</strong>.</p>
+            </div>
+            <div class="tablet:col-span-3 p-6 bg-(--wocap-white) grid desktop:grid-cols-2 gap-6 desktop:gap-12 desktop:items-center desktop:animate-delay-300" data-animation="animate-fade">
+                <picture>
+                    <source srcset="/img/your-own-terms.webp" type="image/webp">
+                    <img src="/img/your-own-terms.png" width="394" height="240" alt="your own terms" class="mx-auto">
+                </picture>
+                <p class="text-balance desktop:text-xl">Digital platform helping you and guiding you to control your cash flow at <strong>your own terms</strong>. WoCap collects and efficiently stores important cash flow data assisting you to make educated cash management decisions.</p>
+            </div>
+            <div class="tablet:col-span-3 p-6 bg-(--wocap-white) grid desktop:grid-cols-2 gap-6 desktop:gap-12 desktop:items-center desktop:animate-delay-150" data-animation="animate-fade">
+                <picture>
+                    <source srcset="/img/easy-to-use.webp" type="image/webp">
+                    <img src="/img/easy-to-use.png" width="324" height="240" alt="Easy to use" class="mx-auto">
+                </picture>
+                <p class="text-balance desktop:text-xl"><strong>Easy to use</strong> platform with a dedicated Customer Service team to guide you at every step of the process.</p>
+            </div>
+            <div class="tablet:col-span-2 p-6 bg-(--wocap-gray-900) flex flex-col justify-center bg-[url(/img/dots-bg.webp)] bg-position-[bottom_left] bg-no-repeat desktop:animate-delay-300" data-animation="animate-fade">
+                <img src="/img/cornerstone.svg" width="200" height="88" alt="Automated solution" class="mb-4">
+                <p class="text-balance text-(--wocap-white) desktop:text-xl mb-1"><strong class="text-(--wocap-primary)">Security is our cornerstone</strong>, we use industry leading encryption and security protocols to protect your data.</p>
+                <p class="text-balance text-(--wocap-primary) desktop:text-sm font-semibold">ISO 27001 CERTIFIED</p>
             </div>
         </div>
     </div>
 </section>
 
-
-
-<section class="mt-6 mb-20">
-    <div class="xl:container mx-auto px-4 xl:px-0">
-        <div data-animation="fadeInUp" class="animate-delay-0 flex text-center flex-col justify-center py-20 px-8 md:px-20 items-center bg-blue-500 bg-[url('/img/logo-bg.svg')] bg-no-repeat bg-right-bottom rounded-3xl">
-            <h3 data-animation="fadeInUp" class="h2 text-grey-200 font-PPPangram mb-6">Get the Advanced Pricing Suite</h3>
-            <p data-animation="fadeInUp" class="mb-20 text-white rfs:text-xl">Start now with Roompulse and stay ahead of the competition</p>
-            <div data-animation="fadeInUp" class="flex justify-center flex-wrap gap-4">
-                <a class="btn-white" href="">Start free</a>
-            </div>
-        </div>
-
+<section class="px-4">
+    <div class="max-w-screen-tablet mx-auto text-center">
+        <h2 class="h2 text-(--wocap-gray-900) mb-6 animate-delay-150" data-animation="animate-fade-up">Get in touch</h2>
+        <p class="mb-12 animate-delay-150" data-animation="animate-fade">Whether you're a buyer or supplier, our team is ready to show you how our intelligent platform can drive growth, liquidity, and resilience across your supply chain.</p>
+        <a href="#" class="btn-primary animate-delay-150" data-animation="animate-fade">Contact us</a>
     </div>
 </section>
 
-<footer class="mt-40 px-4 py-4 lg:py-6 bg-black">
-    <div class="max-w-screen-2xl mx-auto flex flex-col items-center md:items-start md:flex-row md:items-start gap-4">
-        <div class="flex-auto md:flex-[280px] md:grow-0 md:shrink"><a href="/" alt="Roompulse "><img src="/img/logo-white.svg" loading="lazy" width="153" height="24" alt="Roompulse "></a> </div>
-        <nav class="text-md flex-auto flex flex-wrap gap-2 md:gap-6 whitespace-nowrap flex-auto max-md:justify-center justify-start text-gray-200">
-            <a href="./how-it-works.html" aria-label="Features">Features </a>
-            <a href="./company.html" aria-label="Company">Company</a>
-            <a href="./contact.html" aria-label="Contact us">Contact us</a>
-            <a href="./terms.html" aria-label="Contact us">Terms of Use</a>
-            <a href="./terms.html" aria-label="Contact us">Privacy Policy</a>
-            <a href="./terms.html" aria-label="Contact us">Cookie Policy</a>
+<footer class="mt-40 px-4 py-4 desktop:py-10 bg-(--wocap-gray-900)">
+    <div class="max-w-screen-xxLarge mx-auto flex flex-col items-center desktop:items-start desktop:flex-row gap-4 desktop:mb-[110px]">
+        <div class="basis-auto desktop:basis-[200px] desktop:grow-0">
+            <a href="/">
+                <img src="/img/footer-logo.svg" loading="lazy" width="72" height="72" alt="wocap ">
+            </a>
+        </div>
+        <nav class="basis-auto flex flex-wrap max-desktop:justify-center desktop:grow-0 max-desktop:items-center items-start flex-col gap-4 text-(--wocap-white) font-bold">
+            <a href="/how-it-works" aria-label="How it works" class="nav-text-link nav-text-link--white">How it works</a>
+            <a href="/our-mission" aria-label="Our mission" class="nav-text-link nav-text-link--white">Our mission</a>
+            <a href="/contact" aria-label="Contact us" class="nav-text-link nav-text-link--white">Contact</a>
+            <a href="/" aria-label="Facebook" class="icon-linkedIn desktop:mt-6 text-3xl"></a>
         </nav>
-        <div>
+        <nav class="max-desktop:my-8 desktop:flex-auto justify-center flex gap-[40px] flex-wrap">
+            <a href="#" class="">
+                <img src="/img/elevate-logo.svg" width="110" height="59" alt="elevate greece">
+            </a>
+            <a href="#">
+                <img src="/img/iso-logo.svg" width="59" height="59" alt="iso">
+            </a>
+        </nav>
+        <div class="basis-auto desktop:basis-[445px] desktop:grow-0 desktop:shrink-0 flex flex-col gap-4">
             <form class="mb-6">
-                <div class="flex flex-col">
-                    <label for="email" class="text-md mb-3.5 text-gray-400">Sign up for our newsletter</label>
+                <div class="flex flex-col max-desktop:text-center">
+                    <label for="newsletter" class="mb-4 text-(--wocap-white) font-bold">Stay in touch</label>
+                    <p class="text-(--wocap-white) mb-4 text-balance">Subscribe to our newsletter to get the latest news, articles, and resources, sent to your inbox weekly.</p>
                     <div class="flex flex-row gap-2">
-                        <input id="email" type="email" placeholder="Type your email" class="rounded-2xl bg-gray-200 border border-grey-800 bg-opacity-10 text-gray-400 text-base h-14 px-4 lg:px-8">
-                        <button type="submit" class="btn-primary">Submit</button>
+                        <input id="newsletter" type="email" placeholder="Your email" class="max-desktop:basis-auto max-desktop:w-full shrink grow rounded-full bg-(--wocap-gray-800) border border-(--wocap-primary)/21 [&:focus]:border-(--wocap-primary)/100 text-(--wocap-white) placeholder:text-(--wocap-white) text-base h-12 px-4 desktop:px-8 outline-0 transition-all duration-1000 [&:focus]:placeholder:text-transparent caret-(--wocap-primary)">
+                        <button type="submit" class="btn btn-primary btn-primary--small cursor-pointer shrink-0">Subscribe</button>
                     </div>
-
                 </div>
             </form>
-            <div class="flex flex-row text-gray-400 items-center gap-6 justify-center md:justify-start">
-                <div class="text-[.75rem]">Follow us:</div>
-                <nav class="text-2xl leading-none flex gap-4">
-                    <a href="/" aria-label="Facebook" class="icon-linkedIn"></a>
-                    <!--                    <a href="/" aria-label="Instagram" class="icon-instagram"></a>-->
-                </nav>
-            </div>
         </div>
 
     </div>
-    <div class="max-w-screen-2xl mx-auto mt-4 text-[.75rem] text-gray-400 text-center md:text-left md:mt-16">2024©Roompulse  All rights reserved</div>
+    <div class="max-w-screen-xxLarge mx-auto text-xs text-(--wocap-white) desktop:mt-16">
+        <div class="flex max-desktop:flex-col max-desktop:text-center w-full gap-4">
+            <div class="desktop:flex-[280px] desktop:grow-0 desktop:shrink">© Wocap 2024, All Rights Reserved</div>
+            <nav class="basis-auto grow shrink flex gap-12 max-desktop:justify-center">
+                <a href="/terms-and-conditions" class="nav-text-link nav-text-link--white">Terms and Conditions</a>
+                <a href="/privacy-policy" class="nav-text-link nav-text-link--white">Privacy Policy</a>
+            </nav>
+        </div>
+    </div>
 </footer>
+
 </body>
 <script src="./main.js" type="module"></script>
+<!--<script src="/js/index-animation.js" type="module"></script>-->
+
 </html>

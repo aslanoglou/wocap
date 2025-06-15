@@ -1,15 +1,19 @@
 @import "tailwindcss";
-
+@import "tailwindcss-animated";
 
 @theme {
-    --font-sans: var(--font-ppMori);
+    --text-xxs: 0.625rem  /* 10/16 */
+;
 
     --wocap-white: #FFFFFF;
     --wocap-black: #000000;
 
     --wocap-primary: #00DF82;
     --wocap-primary-light: #2BFDA5;
-    --wocap-primary-dark: #003721;
+    --wocap-primary-lightest: #EDFFF7;
+    --wocap-primary-dark: #009657;
+    --wocap-primary-darker: #067548;
+    --wocap-primary-extraDark: #003721;
 
     --wocap-gray-900: #333333;
     --wocap-gray-800: #414141;
@@ -18,15 +22,22 @@
     --wocap-gray-500: #E5EDEA;
     --wocap-gray-400: #E8E8E8;
     --wocap-gray-300: #F2F2F2;
+    --wocap-gray-200: #EEF2F0;
     --wocap-gray-100: #F7F7F7;
 
     --breakpoint-*: initial;
-    --breakpoint-mobile: 32.5rem  /* 520/16 */;
-    --breakpoint-tablet: 48rem  /* 768/16 */;
-    --breakpoint-desktop: 64rem  /* 1024/16 */;
-    --breakpoint-large: 80rem  /* 1280/16 */;
-    --breakpoint-xLarge: 90rem  /* 1440/16 */;
-    --breakpoint-xxLarge: 96.875rem  /* 1550/16 */;
+    --breakpoint-mobile: 32.5rem  /* 520/16 */
+;
+    --breakpoint-tablet: 48rem  /* 768/16 */
+;
+    --breakpoint-desktop: 64rem  /* 1024/16 */
+;
+    --breakpoint-large: 80rem  /* 1280/16 */
+;
+    --breakpoint-xLarge: 90rem  /* 1440/16 */
+;
+    --breakpoint-xxLarge: 96.875rem  /* 1600/16 */
+;
 
     --container-*: initial;
     --container-mobile: 30.5rem;
@@ -36,59 +47,38 @@
     --container-xLarge: 88rem;
     --container-xxLarge: 94.875rem;
 
-    --font-ppMori: "PPMori", sans-serif;
-    --font-ppPangram: "PPPangram", sans-serif;
+    --font-geologica: "Geologica", sans-serif;
     --font-icoMoon: "icomoon", sans-serif;
     --icon-stars: '\e917';
 
     --nav-height: 88px;
-    --section-margin: 200px;
+    --section-margin-desktop: 200px;
+    --section-margin-mobile: 100px;
+
+    --input-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+:root {
+    color-scheme: light dark;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --default-animation-duration: 1000ms;
+    --default-animation-delay: 150ms;
+    --default-animation-timing-function: ease-in-out;
 }
 
 @font-face {
-    font-family: PPMori;
-    src: url('/fonts/PPMori-Regular.otf');
-    src: url('/fonts/PPMori-Regular.otf#iefix') format('embedded-opentype'),
-    url('/fonts/PPMori-Regular.ttf') format('truetype'),
-    url('/fonts/PPMori-Regular.woff') format('woff'),
-    url('/fonts/PPMori-Regular.woff2') format('woff');
-    font-weight: normal;
+    font-family: 'Geologica';
+    src: url('/fonts/Geologica-Variable.ttf') format('truetype');
+    font-weight: 100 900; /* υποστηρίζει variable weights */
     font-style: normal;
     font-display: swap;
 }
-@font-face {
-    font-family: PPMori;
-    src: url('/fonts/PPMori-Bold.otf');
-    src: url('/fonts/PPMori-Bold.otf#iefix') format('embedded-opentype'),
-    url('/fonts/PPMori-Bold.ttf') format('truetype'),
-    url('/fonts/PPMori-Bold.woff') format('woff'),
-    url('/fonts/PPMori-Bold.woff2') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: PPMori;
-    src: url('/fonts/PPMori-RegularItalic.otf');
-    src: url('/fonts/PPMori-RegularItalic#iefix') format('embedded-opentype'),
-    url('/fonts/PPMori-RegularItalic.ttf') format('truetype'),
-    url('/fonts/PPMori-RegularItalic.woff') format('woff'),
-    url('/fonts/PPMori-RegularItalic.woff2') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: PPPangram;
-    src: url('/fonts/PPPangramSansRounded-Bold.otf');
-    src: url('/fonts/PPPangramSansRounded-Bold.otf#iefix') format('embedded-opentype'),
-    url('/fonts/PPPangramSansRounded-Bold.ttf') format('truetype'),
-    url('/fonts/PPPangramSansRounded-Bold.woff') format('woff'),
-    url('/fonts/PPPangramSansRounded-Bold.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+
 @font-face {
     font-family: 'icomoon';
     src: url('/fonts/icomoon.eot?f6idwg');
@@ -102,64 +92,136 @@
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-    --leading-tight: 1.2;
-    font-size: unset;
-    font-weight: var(--font-weight-bold);
-    @apply leading-tight;
+[data-animation] {
+    opacity: 0;
+    @apply invisible;
 }
 
-h1 {
+[data-inviewport] {
+    @apply visible;
+}
+
+a:not([class]){
+    @apply text-(--wocap-primary-dark) underline transition-all duration-300 ease-in-out;
+
+    &:hover {
+        @apply text-(--wocap-primary);
+    }
+}
+
+h1, .h1 {
+    @apply font-bold leading-tight text-balance;
     font-size: clamp(2.244rem, 1.930rem + 1.569vw, 3.813rem);
 }
 
-h2 {
+h2, .h2 {
+    @apply font-bold leading-tight text-balance;
     font-size: clamp(1.875rem, 1.65rem + 1.125vw, 3rem);
 }
 
-h3 {
+h3, .h3 {
+    @apply font-bold leading-tight text-balance;
     font-size: clamp(1.625rem, 1.462rem + 0.813vw, 2.438rem);
 }
 
-h4 {
+h4, .h4 {
+    @apply font-bold leading-tight text-balance;
     font-size: clamp(1.381rem, 1.27rem + 0.557vw, 1.938rem);
 }
 
-h5 {
+h5, .h5 {
+    @apply font-bold leading-tight text-balance;
     font-size: clamp(1.2rem, 1.127rem + 0.363vw, 1.563rem);
 }
 
-h6 {
+h6, .h6 {
+    @apply font-bold leading-tight text-balance;
     font-size: clamp(1.044rem, 1.003rem + 0.206vw, 1.25rem);
 }
 
+
 .nav-text-link {
-    @apply block relative whitespace-nowrap rounded px-3 py-2 desktop:p-0 desktop:max-large:text-sm text-(--wocap-gray-700) desktop:after:transition-all desktop:after:absolute desktop:after:bottom-0 desktop:after:rounded-sm desktop:after:left-0 desktop:after:w-full desktop:after:h-0.5 desktop:after:bg-(--wocap-primary) desktop:after:origin-left desktop:after:scale-x-0 desktop:hover:after:scale-x-100 desktop:data-[active]:after:scale-x-100 hover:bg-gray-100 desktop:hover:bg-transparent transition-all;
+    @apply block relative whitespace-nowrap rounded px-3 py-2 desktop:text-(--wocap-gray-700) desktop:p-0 desktop:max-large:text-sm desktop:after:duration-1000 desktop:after:transition-all desktop:after:absolute desktop:after:bottom-0 desktop:after:rounded-sm desktop:after:left-0 desktop:after:w-full desktop:after:h-0.5 desktop:after:bg-(--wocap-primary) desktop:after:origin-left desktop:after:scale-x-0 desktop:hover:after:scale-x-100 desktop:[&.active]:after:scale-x-100 [&.active]:font-bold  [&.active]:text-(--wocap-gray-900) hover:bg-gray-100 desktop:hover:text-(--wocap-gray-900) desktop:hover:bg-transparent duration-1000 transition-all;
+
+    &.nav-text-link--no-border {
+        @apply desktop:after:content-none desktop:hover:text-(--wocap-gray-900);
+    }
+
+    &.nav-text-link--dark-bg {
+        @apply desktop:text-(--wocap-white) desktop:hover:text-(--wocap-primary-light) max-desktop:not-[:hover]:text-(--wocap-white);
+    }
+
+    &.nav-text-link--white {
+        @apply text-(--wocap-white)  hover:text-(--wocap-white) p-0 after:transition-all after:duration-1000 after:absolute after:bottom-0 after:rounded-sm after:left-0 after:w-full after:h-0.5 after:bg-(--wocap-primary) after:origin-left after:scale-x-0 [&:hover]:after:scale-x-100 [&.active]:after:scale-x-100 hover:bg-transparent;
+    }
+}
+
+
+.btn-primary, .btn-outline, .btn-white {
+    @apply whitespace-nowrap inline-block text-center relative overflow-hidden px-6 leading-none rounded-full transition-all duration-1000;
 }
 
 .btn-primary {
-    @apply whitespace-nowrap inline-block text-center relative overflow-hidden after:content-[attr(data-after)] py-4 px-6 leading-none bg-(--wocap-primary) hover:bg-(--wocap-primary-light) text-(--wocap-primary-dark) rounded-full transition-all duration-[1000ms];
-    &:after{
-        @apply transition-all duration-[500ms] absolute left-0 top-0 w-full h-full flex items-center justify-center translate-y-full
+    @apply bg-(--wocap-primary) hover:bg-(--wocap-primary-light) text-(--wocap-gray-900);
+
+    &:not(.btn-primary--small) {
+        @apply py-5;
     }
 
-    &--outline {
-        @apply bg-transparent text-blue-500  hover:bg-blue-200 ring-1 ring-blue-500 hover:ring-blue-200 ;
+    &.btn-primary--small {
+        @apply py-3;
     }
 }
 
-:root {
-    color-scheme: light dark;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
+.btn-outline {
+    @apply bg-transparent text-(--wocap-gray-900) ring-1 ring-(--wocap-primary) hover:not-[.btn-outline--primaryText]:ring-(--wocap-primary-light);
+
+    &:not(.btn-outline--small) {
+        @apply py-5;
+    }
+
+    &.btn-outline--small {
+        @apply py-3;
+    }
+
+    &.btn-outline--primaryText {
+        @apply not-[:hover]:text-(--wocap-primary) hover:text-(--wocap-primary-light);
+    }
+}
+
+.btn-white {
+    @apply after:content-[attr(data-after)] bg-(--wocap-white) hover:bg-(--wocap-primary-lightest) text-(--wocap-gray-900);
+
+    &:not(.btn-white--small) {
+        @apply py-5;
+    }
+
+    &.btn-white--small {
+        @apply py-3;
+    }
+}
+
+
+.swiper-pagination {
+    @apply flex justify-center gap-2
+}
+
+.swiper-pagination-bullet {
+    @apply w-2.5 h-2.5 bg-(--wocap-gray-500) rounded-full block cursor-pointer transition-all duration-300 ease-in-out;
+
+    .swiper--principles &,
+    .swiper--press & {
+        @apply bg-[#D9D9D9];
+    }
+
+    &.swiper-pagination-bullet-active {
+        @apply bg-(--wocap-primary) w-6;
+    }
 }
 
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    @apply font-icoMoon;
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -172,18 +234,37 @@ h6 {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-linkedIn {
+.icon-arrowLeft {
     @apply before:content-['\e900'];
 }
-.icon-tag {
+
+.icon-arrowRight {
     @apply before:content-['\e901'];
 }
-.icon-arrow-up-right {
+
+.icon-plus {
     @apply before:content-['\e902'];
 }
 
-section:not(:last-of-type) {
-    margin-bottom: var(--section-margin);
+.icon-linkedIn {
+    @apply before:content-['\e903'];
+}
+
+.icon-tag {
+    @apply before:content-['\e904'];
+}
+
+.icon-arrow-up-right {
+    @apply before:content-['\e905'];
+}
+
+section {
+    &:not(:last-of-type):not(.colorful) {
+        margin-bottom: var(--section-margin-mobile);
+        @media (min-width: 1024px) {
+            margin-bottom: var(--section-margin-desktop);
+        }
+    }
 }
 
 .faqs {
@@ -209,21 +290,22 @@ section:not(:last-of-type) {
                 @apply pr-4 font-bold text-lg;
 
                 &:before {
-                    content: counter(element) '. ';
+                    /*content: counter(element) '. ';*/
                 }
             }
 
             &:after {
-                @apply content-['\002B'] pt-[3px] pl-[1px] shrink-0 grow-0 text-xl text-(--wocap-gray-900) w-8 h-8 rounded-full flex items-center justify-center border border-(--wocap-gray-500) transition-all;
+                @apply content-['\002B'] shrink-0 grow-0 text-xl text-(--wocap-gray-900) w-8 h-8 rounded-full flex items-center justify-center border border-(--wocap-gray-500) transition-all;
             }
         }
 
-        &:hover{
+        &:hover {
             @apply border-(--wocap-primary);
         }
 
         &[open] {
             @apply border-(--wocap-primary);
+
             summary::after {
                 @apply content-['\2212'] border border-(--wocap-primary);
             }
@@ -237,17 +319,23 @@ section:not(:last-of-type) {
             @apply mb-2;
         }
 
-        @apply px-8 max-h-0 overflow-hidden opacity-0 origin-top transition-all;
+        @apply px-4 max-h-0 overflow-hidden opacity-0 origin-top transition-all;
 
         & > * {
             @apply mb-6
         }
 
-        & > ul{
-            @apply list-disc list-outside;
+        & > ul,
+        & > ol {
+            @apply list-disc list-outside ml-4;
+
             & > li:not(:last-child) {
                 @apply mb-2;
             }
+        }
+
+        & > ol {
+            @apply list-decimal;
         }
     }
 

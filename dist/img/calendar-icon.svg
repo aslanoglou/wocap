@@ -1,0 +1,22 @@
+<svg width="153" height="152" viewBox="0 0 153 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="103.917" y="43.75" width="50.5" height="62.5" rx="7.25" transform="rotate(90 103.917 43.75)" fill="white" stroke="#333333" stroke-width="1.5"/>
+<rect x="78.4165" y="77.75" width="34.5" height="34.5" rx="17.25" fill="#00DF82" stroke="#333333" stroke-width="1.5"/>
+<rect width="2" height="2" rx="1" transform="matrix(-1 0 0 1 96.6665 80)" fill="#333333"/>
+<rect width="2" height="2" rx="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 110.667 97)" fill="#333333"/>
+<rect width="2" height="2" rx="1" transform="matrix(-1 0 0 1 96.6665 108)" fill="#333333"/>
+<rect width="2" height="2" rx="1" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 82.6665 97)" fill="#333333"/>
+<path d="M95.6665 87V95.5H104.667" stroke="#333333" stroke-width="1.5"/>
+<rect x="53.4165" y="55.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+<rect x="53.4165" y="39.75" width="2.5" height="8.5" rx="1.25" fill="white" stroke="#333333" stroke-width="1.5"/>
+<path d="M51.6665 48L51.6666 49.0001C51.6666 50.1046 52.562 51 53.6666 51H55.6666C56.7712 51 57.6666 50.1045 57.6666 48.9999L57.6665 48" stroke="#333333" stroke-width="1.5"/>
+<path d="M69.6665 48L69.6666 49.0001C69.6666 50.1046 70.562 51 71.6666 51H73.6666C74.7712 51 75.6666 50.1045 75.6666 48.9999L75.6665 48" stroke="#333333" stroke-width="1.5"/>
+<path d="M87.6665 48L87.6666 49.0001C87.6666 50.1046 88.562 51 89.6666 51H91.6666C92.7712 51 93.6666 50.1045 93.6666 48.9999L93.6665 48" stroke="#333333" stroke-width="1.5"/>
+<rect x="71.4165" y="39.75" width="2.5" height="8.5" rx="1.25" fill="white" stroke="#333333" stroke-width="1.5"/>
+<rect x="89.4165" y="39.75" width="2.5" height="8.5" rx="1.25" fill="white" stroke="#333333" stroke-width="1.5"/>
+<rect x="53.4165" y="67.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+<rect x="53.4165" y="79.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+<rect x="69.4165" y="55.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+<rect x="69.4165" y="67.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+<rect x="85.4165" y="55.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+<rect x="85.4165" y="67.75" width="6.5" height="6.5" stroke="#333333" stroke-width="1.5"/>
+</svg>
